@@ -1,6 +1,7 @@
 FROM node:12.14.0
 
-RUN apt update && apt install gcc g++ make python git glibc
+RUN apt update && apt upgrade && \
+    apt install gcc g++ make python git libc6-dev build-essential ligpng-dev libjpeg-dev
 
 RUN npm install --global gatsby-cli node-gyp sharp --unsafe-perm
 
