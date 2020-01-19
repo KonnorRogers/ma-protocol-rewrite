@@ -3,6 +3,8 @@ FROM node:12.14.0
 RUN apt update && apt upgrade -y && \
     apt install gcc g++ make python git libc6-dev build-essential libpng-dev libjpeg-dev libvips-dev musl-dev -y
 
+RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
+
 RUN npm install --global gatsby-cli node-gyp sharp --unsafe-perm
 
 # The port gatsby runs on
