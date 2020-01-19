@@ -1,19 +1,15 @@
-FROM node:13.6.0-alpine3.11
+FROM node:12.14.0
 
-# Taken from https://www.stoutlabs.com/blog/2019-02-05-my-docker-setup-gatsby-next/
-RUN \
-  apk add --no-cache python make g++ git && \
-  apk add vips-dev fftw-dev --no-cache --repository http://dl-3.alpinelinux.org/alpine/edge/community --repository http://dl-3.alpinelinux.org/alpine/edge/main && \
-  rm -fR /var/cache/apk/*
+RUN apt update && apt install gcc g++ make python git
 
-RUN yarn global add gatsby-cli
+RUN npm install --global add gatsby-cli node-gyp
 
 # The port gatsby runs on
 EXPOSE 8000
 
 WORKDIR /myapp
-COPY ./package.json .
-COPY ./yarn.lock .
-RUN yarn install && yarn cache clean
-COPY . ./myapp
+COPY ./package.json /myapp
+COPY ./package-lock.json /myapp
+RUN npm install --unsafe-perm
+COPY . /myapp
 CMD ["gatsby", "develop", "-H", "0.0.0.0" ]
