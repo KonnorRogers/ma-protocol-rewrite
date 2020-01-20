@@ -1,20 +1,21 @@
 FROM node:12.14.0
 
 RUN apt update && apt upgrade -y && \
-    apt install gcc g++ make python git libc6-dev build-essential libpng-dev libjpeg-dev libvips-dev musl-dev -y
+    apt install gcc g++ make python git libc6-dev build-essential libpng-dev \
+    libjpeg-dev libvips-dev libvips musl-dev node-gyp pngquant webp -y
 
 RUN ln -s /usr/lib/x86_64-linux-musl/libc.so /lib/libc.musl-x86_64.so.1
 
 WORKDIR /myapp
-RUN rm -rf node_modules .cache
 RUN npm cache clean --force
-RUN npm install --global gatsby-cli node-gyp sharp --unsafe-perm
+RUN npm install --global gatsby-cli --unsafe-perm
 
 # The port gatsby runs on
 EXPOSE 8000
 
 COPY ./package.json /myapp
 COPY ./package-lock.json /myapp
+# RUN npm install sharp --build-from-source
 RUN npm install --unsafe-perm
 COPY . /myapp
 CMD ["gatsby", "develop", "-H", "0.0.0.0" ]
