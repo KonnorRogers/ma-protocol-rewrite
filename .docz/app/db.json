@@ -7,54 +7,20 @@
     "repository": "https://github.com/gatsbyjs/gatsby-starter-default",
     "native": false,
     "themeConfig": {},
-    "separator": "-"
+    "separator": "-",
+    "src": "./src/pages"
   },
   "entries": [
     {
-      "key": "README.md",
-      "value": {
-        "id": "04c6e90faac2675aa89e2176d2eec7d8",
-        "filepath": "README.md",
-        "fullpath": "/myapp/README.md",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/README.md",
-        "slug": "readme",
-        "route": "/readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "-quick-start",
-            "depth": 2,
-            "value": "🚀 Quick start"
-          },
-          {
-            "slug": "🧐-whats-inside",
-            "depth": 2,
-            "value": "🧐 What's inside?"
-          },
-          {
-            "slug": "-learning-gatsby",
-            "depth": 2,
-            "value": "🎓 Learning Gatsby"
-          },
-          {
-            "slug": "-deploy",
-            "depth": 2,
-            "value": "💫 Deploy"
-          }
-        ]
-      }
-    },
-    {
-      "key": "src/pages/index.mdx",
+      "key": "src/pages/src/pages/index.mdx",
       "value": {
         "name": "Hello world",
         "route": "/",
         "id": "522b7407e210088f3588b943aec44115",
-        "filepath": "src/pages/index.mdx",
+        "filepath": "src/pages/src/pages/index.mdx",
         "fullpath": "/myapp/src/pages/index.mdx",
-        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/src/pages/index.mdx",
-        "slug": "src-pages-index",
+        "link": "https://github.com/gatsbyjs/gatsby-starter-default/edit/master/src/pages/src/pages/src/pages/index.mdx",
+        "slug": "src-pages-src-pages-index",
         "menu": "",
         "headings": [
           {
