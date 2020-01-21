@@ -7,8 +7,7 @@
     "repository": "https://github.com/gatsbyjs/gatsby-starter-default",
     "native": false,
     "themeConfig": {},
-    "separator": "-",
-    "src": "./src/pages"
+    "separator": "-"
   },
   "entries": [
     {
