@@ -7,50 +7,16 @@
     "repository": "https://github.com/paramagicdev/ma-protocol-rewrite",
     "native": false,
     "themeConfig": {},
-    "separator": "-"
+    "separator": "-",
+    "files": "./src/pages/**/*.{md,markdown,mdx}"
   },
   "entries": [
-    {
-      "key": "README.md",
-      "value": {
-        "id": "04c6e90faac2675aa89e2176d2eec7d8",
-        "filepath": "README.md",
-        "fullpath": "/myapp/README.md",
-        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/README.md",
-        "slug": "readme",
-        "route": "/readme",
-        "name": "Readme",
-        "menu": "",
-        "headings": [
-          {
-            "slug": "-quick-start",
-            "depth": 2,
-            "value": "🚀 Quick start"
-          },
-          {
-            "slug": "🧐-whats-inside",
-            "depth": 2,
-            "value": "🧐 What's inside?"
-          },
-          {
-            "slug": "-learning-gatsby",
-            "depth": 2,
-            "value": "🎓 Learning Gatsby"
-          },
-          {
-            "slug": "-deploy",
-            "depth": 2,
-            "value": "💫 Deploy"
-          }
-        ]
-      }
-    },
     {
       "key": "src/pages/index.mdx",
       "value": {
         "name": "Hello world",
         "route": "/",
-        "id": "522b7407e210088f3588b943aec44115",
+        "id": "1038f7b84325f4c63757d29fd5e007ac",
         "filepath": "src/pages/index.mdx",
         "fullpath": "/myapp/src/pages/index.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/pages/index.mdx",
