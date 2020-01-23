@@ -2,7 +2,17 @@
   "config": {
     "title": "Ma Protocol Rewrite",
     "description": "A rewrite of the massachusetts protocols",
-    "menu": [],
+    "menu": [
+      "Section 1: General Patient Care",
+      "Section 2: Medical Protocols",
+      "Section 3: Cardiac Emergencies",
+      "Section 4: Trauma Protocols",
+      "Section 5: Airway Protocols & Procedures",
+      "Section 6: Medical Director Options",
+      "Section 7: Medical Policies & Procedures",
+      "Section 8: Special Operations Principles",
+      "Appendices"
+    ],
     "version": "0.1.0",
     "repository": "https://github.com/paramagicdev/ma-protocol-rewrite",
     "native": false,
