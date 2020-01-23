@@ -40,6 +40,20 @@
           }
         ]
       }
+    },
+    {
+      "key": "src/pages/routinePatientCare.mdx",
+      "value": {
+        "name": "Routine Patient Care 1.0",
+        "route": "/routine-patient-care",
+        "menu": "Section 1: General Patient Care",
+        "id": "4730d615e471392da369163f444b5132",
+        "filepath": "src/pages/routinePatientCare.mdx",
+        "fullpath": "/myapp/src/pages/routinePatientCare.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/pages/routinePatientCare.mdx",
+        "slug": "src-pages-routine-patient-care",
+        "headings": []
+      }
     }
   ],
   "props": []
