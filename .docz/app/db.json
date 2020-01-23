@@ -3,6 +3,7 @@
     "title": "Ma Protocol Rewrite",
     "description": "A rewrite of the massachusetts protocols",
     "menu": [
+      "About",
       "Section 1: General Patient Care",
       "Section 2: Medical Protocols",
       "Section 3: Cardiac Emergencies",
@@ -18,19 +19,19 @@
     "native": false,
     "themeConfig": {},
     "separator": "-",
-    "files": "./src/pages/**/*.{md,markdown,mdx}"
+    "files": "./src/sections/**/*.{md,markdown,mdx}"
   },
   "entries": [
     {
-      "key": "src/pages/index.mdx",
+      "key": "src/sections/about.mdx",
       "value": {
-        "name": "Hello world",
+        "name": "About",
         "route": "/",
-        "id": "1038f7b84325f4c63757d29fd5e007ac",
-        "filepath": "src/pages/index.mdx",
-        "fullpath": "/myapp/src/pages/index.mdx",
-        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/pages/index.mdx",
-        "slug": "src-pages-index",
+        "id": "60b203ca8e5704db2caeeab2d175cc33",
+        "filepath": "src/sections/about.mdx",
+        "fullpath": "/myapp/src/sections/about.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/about.mdx",
+        "slug": "src-sections-about",
         "menu": "",
         "headings": [
           {
@@ -42,16 +43,16 @@
       }
     },
     {
-      "key": "src/pages/routinePatientCare.mdx",
+      "key": "src/sections/1/routine-patient-care.mdx",
       "value": {
-        "name": "Routine Patient Care 1.0",
-        "route": "/routine-patient-care",
+        "name": "Routine Patient Care - 1.0",
+        "route": "/sections/1/routine-patient-care",
         "menu": "Section 1: General Patient Care",
-        "id": "4730d615e471392da369163f444b5132",
-        "filepath": "src/pages/routinePatientCare.mdx",
-        "fullpath": "/myapp/src/pages/routinePatientCare.mdx",
-        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/pages/routinePatientCare.mdx",
-        "slug": "src-pages-routine-patient-care",
+        "id": "3231db3a01890a3865871aff9a18c339",
+        "filepath": "src/sections/1/routine-patient-care.mdx",
+        "fullpath": "/myapp/src/sections/1/routine-patient-care.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/routine-patient-care.mdx",
+        "slug": "src-sections-1-routine-patient-care",
         "headings": []
       }
     }

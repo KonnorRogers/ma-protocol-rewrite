@@ -1,6 +1,7 @@
 export default {
   // Configuring the left sidebar
   menu: [
+    "About",
     "Section 1: General Patient Care",
     "Section 2: Medical Protocols",
     "Section 3: Cardiac Emergencies",
@@ -11,5 +12,5 @@ export default {
     "Section 8: Special Operations Principles",
     "Appendices",
   ],
-  files: "./src/pages/**/*.{md,markdown,mdx}",
+  files: "./src/sections/**/*.{md,markdown,mdx}",
 }
