@@ -57,5 +57,26 @@
       }
     }
   ],
-  "props": []
+  "props": [
+    {
+      "key": "src/components/layout.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Layout",
+          "methods": [],
+          "actualName": "Layout",
+          "props": {
+            "children": {
+              "type": {
+                "name": "node"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
 }

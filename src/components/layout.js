@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          author
         }
       }
     }
@@ -25,7 +26,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
@@ -34,11 +34,16 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <main style={{ minHeight: "65vh" }}>{children}</main>
+        <footer class="mx-auto flex justify-center">
+          © {new Date().getFullYear()} | Built with
+          <a
+            href="https://www.gatsbyjs.org"
+            class="mx-1 text-purple-700 hover:bg-purple-700 hover:text-gray-100 px-1"
+          >
+            Gatsby
+          </a>
+          | Created and maintained by {data.site.siteMetadata.author}
         </footer>
       </div>
     </>
