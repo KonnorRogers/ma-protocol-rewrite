@@ -9,21 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
+import Footer from "../components/footer.js"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-          author
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <div
@@ -34,17 +23,9 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main style={{ minHeight: "65vh" }}>{children}</main>
-        <footer class="mx-auto flex justify-center">
-          © {new Date().getFullYear()} | Built with
-          <a
-            href="https://www.gatsbyjs.org"
-            class="mx-1 text-purple-700 hover:bg-purple-700 hover:text-gray-100 px-1"
-          >
-            Gatsby
-          </a>
-          | Created and maintained by {data.site.siteMetadata.author}
-        </footer>
+        <main style={{ minHeight: "80vh" }}>{children}</main>
+
+        <Footer />
       </div>
     </>
   )

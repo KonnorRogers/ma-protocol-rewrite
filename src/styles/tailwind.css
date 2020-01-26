@@ -13,5 +13,26 @@ h2 {
 }
 
 h2 > a {
-  text-decoration: underline;
+  @apply py-1 border-b border-solid;
+}
+
+a.css-1r0pe6c {
+  @apply no-underline;
+}
+
+a.css-1r0pe6c:hover {
+  @apply no-underline;
+  border-bottom-width: 3px;
+}
+
+html,
+body {
+  height: 100% !important;
+}
+body {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.content {
+  flex: 1 0 auto !important;
 }
