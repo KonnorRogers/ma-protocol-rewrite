@@ -3,3 +3,15 @@
 @tailwind components;
 
 @tailwind utilities;
+
+ul {
+  @apply list-disc;
+}
+
+h2 {
+  @apply mb-3;
+}
+
+h2 > a {
+  text-decoration: underline;
+}
