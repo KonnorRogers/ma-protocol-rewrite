@@ -57,5 +57,17 @@
       }
     }
   ],
-  "props": []
+  "props": [
+    {
+      "key": "src/components/footer.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Footer",
+          "methods": [],
+          "actualName": "Footer"
+        }
+      ]
+    }
+  ]
 }

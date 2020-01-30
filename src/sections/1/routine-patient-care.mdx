@@ -5,9 +5,9 @@ menu: "Section 1: General Patient Care"
 ---
 
 import { Link } from "gatsby";
-import Heading from "../../components/heading.js"
+import HeaderCSS from "../../styles/headerCSS.js";
 
-<h2 id="response">
+<h2 id="response" css="margin: 0 0 0.75rem 0;">
   Respond to scene in a safe manner:
 </h2>
 
@@ -16,9 +16,7 @@ import Heading from "../../components/heading.js"
   <li>Use lights and sirens and/or pre-emptive devices when responding as appropriate per emergency medical dispatch information and local guidelines.</li>
 </ul>
 
-<br></br>
-
-<h2 id="scene-arrival">
+<h2 id="scene-arrival" css={HeaderCSS}>
   Scene arrival and size-up:
 </h2>
 
