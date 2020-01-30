@@ -34,10 +34,10 @@ const Footer = () => {
     }
   `
 
-  const gatsbySpanCSS = css`
+  const gatsbyLinkCSS = css`
     padding: 0 0.25rem;
     margin: 0 0.25rem;
-    color: var(--gatsby-purple);
+    color: blueviolet;
 
     &:hover {
       background: var(--gatsby-purple);
@@ -61,7 +61,7 @@ const Footer = () => {
       <footer css={footerCSS}>
         © {new Date().getFullYear()}
         &nbsp; | &nbsp; Built with
-        <a href="https://www.gatsbyjs.org" css={gatsbySpanCSS}>
+        <a href="https://www.gatsbyjs.org" css={gatsbyLinkCSS}>
           Gatsby
         </a>
         <span css={authorCSS}>
