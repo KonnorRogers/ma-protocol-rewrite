@@ -9,6 +9,8 @@ RUN yarn global add gatsby-cli
 # The port gatsby runs on
 EXPOSE 8000
 
+RUN rm -rf .cache node_modules
+
 WORKDIR /myapp
 COPY ./package.json .
 COPY ./yarn.lock .
