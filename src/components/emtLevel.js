@@ -1,16 +1,15 @@
-import Screen from "../utils/screen.js"
 import { css } from "@emotion/core"
 
 const colors = {
   basic: "green",
-  advanced: "yellow",
+  advanced: "#ffff1c",
   paramedic: "red",
 }
 
 const emtLevelCSS = level => css`
   margin: 1.5rem auto;
   padding: 0.5rem 0.75rem;
-  border: 1px solid ${colors[level]};
+  border: 1.5px solid ${colors[level]};
 `
 
 const EmtLevel = ({ children, level }) => (
