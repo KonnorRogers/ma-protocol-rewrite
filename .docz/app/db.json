@@ -73,17 +73,6 @@
   ],
   "props": [
     {
-      "key": "src/components/emtLevel.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "EmtLevel",
-          "methods": [],
-          "actualName": "EmtLevel"
-        }
-      ]
-    },
-    {
       "key": "src/components/note.js",
       "value": [
         {

@@ -6,6 +6,7 @@ menu: "Section 1: General Patient Care"
 
 import EMTLevel from "../../components/emtLevel.js"
 import Note from "../../components/note.js"
+import { Link } from "gatsby"
 
 <Note>
   <strong>
@@ -14,13 +15,33 @@ import Note from "../../components/note.js"
     For primary respiratory etiology, ventilate immediately as part of CPR.
   </strong>
 </Note>
-<Note alignment="center">
+<Note alignment="left">
   <ul>
     <li>Perform 2 minutes cycles of uninterrupted chest compressions</li>
     <li>Interrupt chest compressions only after each 2 minute cycle</li>
     <li>Follow current AHA/ILCOR recommendations for cardiac arrest management.</li>
   </ul>
 </Note>
-    <br />
+<br />
 
+<EMTLevel level="basic">
+  <ul>
+    <a style={{ padding: "0 0.25rem"}} href="/sections/1/routine-patient-care">1.0 Routine Patient Care</a>
+     - with focus on high quality CPR
+    <li>Immediate chest compressions at a rate of 100-120 per minute</li>
+    <li>Use AED as soon as possible with minimal interruption of chest compressions</li>
+    <li>Continue 2 minute cycles of uninterrupted chest compressions followed by
+      AED analysis and shock for 4 cycles (8 minutes) </li>
+    <li>Place an oral or nasal airway</li>
+    <li>Ventilation / oxygenation options during 4 cycles (8 minutes):</li>
+    <li>Apply high flow oxygen via NRB, OR</li>
+    <li>BVM ventilation during recoil and without interrupting compressions</li>
+    <li>After 4 cycles (8 MINUTES):
+      <ul>
+        <li>Continue 2 minute cycles of uninterrupted chest compressions</li>
+        <li>If passive insufflation was used, switch to BVM ventilation.</li>
+      </ul>
+    </li>
+  </ul>
+</EMTLevel>
 <EMTLevel level="advanced">High quality cpr</EMTLevel>

@@ -10,6 +10,8 @@ const noteCSS = (alignment = "center") => css`
   text-align: ${alignment};
 `
 
-const Note = ({ children }) => <div css={noteCSS}>{children}</div>
+const Note = ({ children, alignment }) => (
+  <div css={noteCSS(alignment)}>{children}</div>
+)
 
 export default Note
