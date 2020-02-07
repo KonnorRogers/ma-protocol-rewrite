@@ -73,13 +73,13 @@
   ],
   "props": [
     {
-      "key": "src/components/note.js",
+      "key": "src/components/myLink.js",
       "value": [
         {
           "description": "",
-          "displayName": "Note",
+          "displayName": "MyLink",
           "methods": [],
-          "actualName": "Note"
+          "actualName": "MyLink"
         }
       ]
     },
@@ -91,17 +91,6 @@
           "displayName": "EmtLevel",
           "methods": [],
           "actualName": "EmtLevel"
-        }
-      ]
-    },
-    {
-      "key": "src/components/myLink.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MyLink",
-          "methods": [],
-          "actualName": "MyLink"
         }
       ]
     }

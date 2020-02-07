@@ -3,7 +3,7 @@ import Screen from "../utils/screen.js"
 
 const colors = {
   basic: "green",
-  advanced: "#ffff1c",
+  advanced: "orange",
   paramedic: "red",
 }
 
@@ -18,6 +18,7 @@ const emtLevelCSS = level => css`
   margin: 2rem auto 4rem auto;
   padding: 0.5rem 0.75rem;
   border: 1.5px solid ${colors[level]};
+  border-radius: 4px;
   font-size: 1.15rem;
 
   &::before {
