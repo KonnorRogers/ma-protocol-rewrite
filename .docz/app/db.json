@@ -71,28 +71,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/myLink.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MyLink",
-          "methods": [],
-          "actualName": "MyLink"
-        }
-      ]
-    },
-    {
-      "key": "src/components/emtLevel.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "EmtLevel",
-          "methods": [],
-          "actualName": "EmtLevel"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
