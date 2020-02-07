@@ -1,14 +1,15 @@
 const mediaQuery = "@media only screen and (min-width: "
 
-function insertSize(size) {
+// Creates a media query of `@media only screen and (min-width: ${size})`
+function mediaSize(size) {
   return mediaQuery.concat(size).concat(")")
 }
 
 const screens = {
-  small: insertSize("640px"),
-  medium: insertSize("768px"),
-  large: insertSize("1024px"),
-  extraLarge: insertSize("1280px"),
+  small: mediaSize("640px"),
+  medium: mediaSize("768px"),
+  large: mediaSize("1024px"),
+  extraLarge: mediaSize("1280px"),
 }
 
 export default (function Screen() {
