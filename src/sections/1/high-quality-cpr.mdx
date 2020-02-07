@@ -6,6 +6,7 @@ menu: "Section 1: General Patient Care"
 
 import EMTLevel from "../../components/emtLevel.js"
 import Note from "../../components/note.js"
+import MyLink from "../../components/myLink.js"
 import { Link } from "gatsby"
 
 <Note>
@@ -25,9 +26,11 @@ import { Link } from "gatsby"
 <br />
 
 <EMTLevel level="basic">
-  <ul>
-    <a style={{ padding: "0 0.25rem"}} href="/sections/1/routine-patient-care">1.0 Routine Patient Care</a>
-     - with focus on high quality CPR
+  <ul style={{ paddingTop: "0.5rem"}}>
+    <li>
+      <MyLink to="/sections/1/routine-patient/care"> 1.0 Routine Patient Care </MyLink>
+      - with focus on high quality CPR
+    </li>
     <li>Immediate chest compressions at a rate of 100-120 per minute</li>
     <li>Use AED as soon as possible with minimal interruption of chest compressions</li>
     <li>Continue 2 minute cycles of uninterrupted chest compressions followed by
