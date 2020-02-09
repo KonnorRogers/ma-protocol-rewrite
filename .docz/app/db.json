@@ -43,45 +43,47 @@
       }
     },
     {
-      "key": "src/sections/1/high-quality-cpr.mdx",
-      "value": {
-        "name": "1.1 - High Quality CPR",
-        "route": "/sections/1/high-quality-cpr-adult-1.1",
-        "menu": "Section 1: General Patient Care",
-        "id": "058b13e42396917d7475a4f5a40f910d",
-        "filepath": "src/sections/1/high-quality-cpr.mdx",
-        "fullpath": "/myapp/src/sections/1/high-quality-cpr.mdx",
-        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/high-quality-cpr.mdx",
-        "slug": "src-sections-1-high-quality-cpr",
-        "headings": []
-      }
-    },
-    {
-      "key": "src/sections/1/routine-patient-care.mdx",
+      "key": "src/sections/1/1-0-routine-patient-care.mdx",
       "value": {
         "name": "1.0 - Routine Patient Care",
         "route": "/sections/1/routine-patient-care-1.0",
         "menu": "Section 1: General Patient Care",
-        "id": "3231db3a01890a3865871aff9a18c339",
-        "filepath": "src/sections/1/routine-patient-care.mdx",
-        "fullpath": "/myapp/src/sections/1/routine-patient-care.mdx",
-        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/routine-patient-care.mdx",
-        "slug": "src-sections-1-routine-patient-care",
+        "id": "28035cbdac1444963fb62f043feab2e0",
+        "filepath": "src/sections/1/1-0-routine-patient-care.mdx",
+        "fullpath": "/myapp/src/sections/1/1-0-routine-patient-care.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-0-routine-patient-care.mdx",
+        "slug": "src-sections-1-1-0-routine-patient-care",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/sections/1/1-1-high-quality-cpr.mdx",
+      "value": {
+        "name": "1.1 - High Quality CPR",
+        "route": "/sections/1/high-quality-cpr-adult-1.1",
+        "menu": "Section 1: General Patient Care",
+        "id": "6d9cd51b9defc71ead314c7388834596",
+        "filepath": "src/sections/1/1-1-high-quality-cpr.mdx",
+        "fullpath": "/myapp/src/sections/1/1-1-high-quality-cpr.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-1-high-quality-cpr.mdx",
+        "slug": "src-sections-1-1-1-high-quality-cpr",
+        "headings": []
+      }
+    },
+    {
+      "key": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
+      "value": {
+        "id": "b86b65e3aa9b428ad9a6b6c31bc8c31b",
+        "filepath": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
+        "fullpath": "/myapp/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
+        "slug": "src-sections-2-2-1-adrenal-insufficiency-crisis",
+        "route": "/src-sections-2-2-1-adrenal-insufficiency-crisis",
+        "name": "2 1 adrenal insufficiency crisis",
+        "menu": "",
         "headings": []
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/emtLevel.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "EmtLevel",
-          "methods": [],
-          "actualName": "EmtLevel"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
