@@ -46,7 +46,7 @@
       "key": "src/sections/1/1-0-routine-patient-care.mdx",
       "value": {
         "name": "1.0 - Routine Patient Care",
-        "route": "/sections/1/routine-patient-care-1.0",
+        "route": "/sections/1/1.0-routine-patient-care",
         "menu": "Section 1: General Patient Care",
         "id": "28035cbdac1444963fb62f043feab2e0",
         "filepath": "src/sections/1/1-0-routine-patient-care.mdx",
@@ -60,7 +60,7 @@
       "key": "src/sections/1/1-1-high-quality-cpr.mdx",
       "value": {
         "name": "1.1 - High Quality CPR",
-        "route": "/sections/1/high-quality-cpr-adult-1.1",
+        "route": "/sections/1/1.1-high-quality-cpr",
         "menu": "Section 1: General Patient Care",
         "id": "6d9cd51b9defc71ead314c7388834596",
         "filepath": "src/sections/1/1-1-high-quality-cpr.mdx",
@@ -73,27 +73,60 @@
     {
       "key": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
       "value": {
+        "name": "2.1 - Adrenal Insufficiency / Crisis (Adult & Pediatric)",
+        "route": "/sections/2/2.1-adrenal-insufficiency-crisis",
+        "menu": "Section 2: Medical Protocols",
         "id": "b86b65e3aa9b428ad9a6b6c31bc8c31b",
         "filepath": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "fullpath": "/myapp/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "slug": "src-sections-2-2-1-adrenal-insufficiency-crisis",
-        "route": "/src-sections-2-2-1-adrenal-insufficiency-crisis",
-        "name": "2 1 adrenal insufficiency crisis",
-        "menu": "",
         "headings": []
       }
     }
   ],
   "props": [
     {
-      "key": "src/components/emtLevel.js",
+      "key": "src/components/title.js",
       "value": [
         {
           "description": "",
-          "displayName": "EmtLevel",
+          "displayName": "Title",
           "methods": [],
-          "actualName": "EmtLevel"
+          "actualName": "Title"
+        }
+      ]
+    },
+    {
+      "key": "src/components/prevPage.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PrevPage",
+          "methods": [],
+          "actualName": "PrevPage"
+        }
+      ]
+    },
+    {
+      "key": "src/components/nextPage.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NextPage",
+          "methods": [],
+          "actualName": "NextPage"
+        }
+      ]
+    },
+    {
+      "key": "src/components/pageNav.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PageNav",
+          "methods": [],
+          "actualName": "PageNav"
         }
       ]
     }

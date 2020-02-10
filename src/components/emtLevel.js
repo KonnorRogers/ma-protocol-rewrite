@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { css } from "@emotion/core"
 import Screen from "../utils/screen.js"
 
@@ -59,6 +60,10 @@ const EmtLevel = ({ children, level }) => {
       </section>
     </>
   )
+}
+
+EmtLevel.propTypes = {
+  level: PropTypes.node.isRequired,
 }
 
 export default EmtLevel

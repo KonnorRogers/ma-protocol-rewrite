@@ -37,7 +37,7 @@ const Footer = () => {
   const gatsbyLinkCSS = css`
     padding: 0 0.25rem;
     margin: 0 0.25rem;
-    color: blueviolet;
+    color: var(--gatsby-purple);
 
     &:hover {
       background: var(--gatsby-purple);

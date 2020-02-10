@@ -1,8 +1,24 @@
 ---
 name: 1.0 - Routine Patient Care
-route: /sections/1/routine-patient-care-1.0
+route: /sections/1/1.0-routine-patient-care
 menu: "Section 1: General Patient Care"
 ---
+
+import Title from "../../components/title.js"
+import PageNav from "../../components/pageNav.js"
+
+export const nav = () => (
+  <PageNav
+      prevTo=""
+      prevText=""
+      nextTo="/sections/1/1.1-high-quality-cpr"
+      nextText="1.1 - High Quality CPR"
+  />
+)
+
+<div> {nav()} </div>
+
+<Title title="1.0 - Routine Patient Care" />
 
 <h2 id="response">Respond to scene in a safe manner:</h2>
 
@@ -308,3 +324,5 @@ menu: "Section 1: General Patient Care"
   verification of tube placement (one being capnography) and must include at least three separate
   times in which verification was completed, including verification of tube placement at the time of
   arrival at the receiving department and staff.
+
+<div>{nav()}</div>

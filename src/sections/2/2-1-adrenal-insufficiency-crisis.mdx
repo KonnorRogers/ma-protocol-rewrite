@@ -1,0 +1,36 @@
+---
+name: 2.1 - Adrenal Insufficiency / Crisis (Adult & Pediatric)
+route: /sections/2/2.1-adrenal-insufficiency-crisis
+menu: "Section 2: Medical Protocols"
+---
+
+import EMTLevel from "../../components/emtLevel.js"
+import Note from "../../components/note.js"
+import MyLink from "../../components/myLink.js"
+import Title from "../../components/title.js"
+import PageNav from "../../components/pageNav.js"
+
+export const nav = () => (
+  <PageNav
+    prevTo="/sections/1/1.1-high-quality-cpr"
+    prevText="1.1 - High Quality CPR"
+    nextTo=""
+    nextText=""
+  />
+)
+
+<div>{nav()}</div>
+
+<Title title="2.1 - Adrenal Insufficiency / Crisis (Adult & Pediatric)" />
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/1/general-patient-care-1.0">1.0 - General Patient Care</MyLink>
+    </li>
+    <li>Identify and treat the underlying condition.</li>
+    <li>Consider paramedic intercept</li>
+  </ul>
+</EMTLevel>
+
+<div>{nav()}</div>

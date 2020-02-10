@@ -1,12 +1,27 @@
 ---
 name: 1.1 - High Quality CPR
-route: /sections/1/high-quality-cpr-adult-1.1
+route: /sections/1/1.1-high-quality-cpr
 menu: "Section 1: General Patient Care"
 ---
 
 import EMTLevel from "../../components/emtLevel.js"
 import Note from "../../components/note.js"
 import MyLink from "../../components/myLink.js"
+import Title from "../../components/title.js"
+import PagNav from "../../components/pageNav.js"
+
+export const nav = () => (
+  <PagNav
+    prevTo="/sections/1/1.0-routine-patient-care"
+    prevText="1.0 - Routine Patient Care"
+    nextTo="/sections/2/2.1-adrenal-insufficiency-crisis"
+    nextText="2.1 - Adrenal Insufficiency"
+  />
+)
+
+<div>{nav()}</div>
+
+<Title title="1.1 - High Quality CPR" />
 
 <Note>
   <strong>
@@ -124,3 +139,5 @@ import MyLink from "../../components/myLink.js"
     </li>
   </ul>
 </Note>
+
+<div>{nav()}</div>

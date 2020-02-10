@@ -4,14 +4,10 @@ import { Link } from "gatsby"
 const linkCSS = css`
   text-decoration: none;
   padding: 0.25rem;
-  color: #0b5fff;
+  color: var(--link-blue);
 
   &:hover {
     text-decoration: underline;
-  }
-
-  &:visited {
-    color: #0b5fff;
   }
 `
 
