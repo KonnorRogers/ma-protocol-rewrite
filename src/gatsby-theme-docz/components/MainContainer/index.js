@@ -7,7 +7,7 @@ import { MainContainer as OriginalMainContainer } from 'gatsby-theme-docz/src/co
 export const MainContainer = props => {
   return (
     <div>
-      <Title title={document.title}
+      <Title title={document.title} />
       <OriginalMainContainer {...props} />
     </div>
   )
