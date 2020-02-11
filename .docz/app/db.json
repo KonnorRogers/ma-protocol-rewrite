@@ -85,5 +85,17 @@
       }
     }
   ],
-  "props": []
+  "props": [
+    {
+      "key": "src/gatsby-theme-docz/components/MainContainer/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MainContainer",
+          "methods": [],
+          "actualName": "MainContainer"
+        }
+      ]
+    }
+  ]
 }
