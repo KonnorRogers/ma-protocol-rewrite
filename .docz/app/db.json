@@ -85,50 +85,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/title.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Title",
-          "methods": [],
-          "actualName": "Title"
-        }
-      ]
-    },
-    {
-      "key": "src/components/prevPage.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "PrevPage",
-          "methods": [],
-          "actualName": "PrevPage"
-        }
-      ]
-    },
-    {
-      "key": "src/components/nextPage.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "NextPage",
-          "methods": [],
-          "actualName": "NextPage"
-        }
-      ]
-    },
-    {
-      "key": "src/components/pageNav.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "PageNav",
-          "methods": [],
-          "actualName": "PageNav"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
