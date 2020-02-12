@@ -4,10 +4,11 @@ import React from "react";
 import ReactDOM from 'react-dom'
 import Title from "./src/components/title.js"
 
-export const onRouteChange = () => {
+export const onRouteUpdate = ({ location, prevLocation }) => {
   const mainContainer = document.querySelector(`[data-testid="main-container"]`);
   const titleDiv = document.createElement('div');
-  const titleComponent = <Title title={document.title} />
+  const titleComponent = <Title />
+
 
   mainContainer.insertAdjacentElement('afterbegin', titleDiv);
   ReactDOM.render(titleComponent, titleDiv);

@@ -1,4 +1,5 @@
 import React from "react"
+import { useCurrentDoc } from "docz"
 import { css } from "@emotion/core"
 
 const titleCSS = css`
@@ -17,9 +18,15 @@ const aCSS = css`
 `
 
 const Title = ({title}) => {
+  const x = useCurrentDoc().name
+  if (!title) {
+    // title = useCurrentDoc().name;
+    console.log(title);
+  }
+
   return (
-    <h2 id={title} css={titleCSS}>
-      <a href={`#${title}`} css={aCSS}>{title}</a>
+    <h2 id={x} css={titleCSS}>
+      <a href={`#${x}`} css={aCSS}>{x}</a>
     </h2>
   )
 }

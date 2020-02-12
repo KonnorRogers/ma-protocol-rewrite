@@ -105,6 +105,17 @@
           "methods": []
         }
       ]
+    },
+    {
+      "key": "src/components/title.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Title",
+          "methods": [],
+          "actualName": "Title"
+        }
+      ]
     }
   ]
 }
