@@ -17,16 +17,15 @@ const aCSS = css`
   }
 `
 
-const Title = ({title}) => {
-  const x = useCurrentDoc().name
+const Title = ({title, ...rest}) => {
+  console.log(useCurrentDoc());
   if (!title) {
-    // title = useCurrentDoc().name;
-    console.log(title);
+    title = useCurrentDoc().name;
   }
 
   return (
-    <h2 id={x} css={titleCSS}>
-      <a href={`#${x}`} css={aCSS}>{x}</a>
+    <h2 id={title} css={titleCSS} {...rest}>
+      <a href={`#${title}`} css={aCSS}>{title}</a>
     </h2>
   )
 }

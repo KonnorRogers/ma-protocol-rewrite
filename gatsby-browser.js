@@ -1,15 +1,17 @@
 import 'src/styles/global.css'
 
-import React from "react";
-import ReactDOM from 'react-dom'
-import Title from "./src/components/title.js"
+function getTitle() {
+  return document.querySelector('[data-testid="page-title"]');
+}
 
-export const onRouteUpdate = ({ location, prevLocation }) => {
-  const mainContainer = document.querySelector(`[data-testid="main-container"]`);
-  const titleDiv = document.createElement('div');
-  const titleComponent = <Title />
+function getPageNav() {
+  return document.querySelector('[data-testid="page-nav"]');
+}
 
+function getMainContainer() {
+  return document.querySelector('[data-testid="main-container"]')
+}
 
-  mainContainer.insertAdjacentElement('afterbegin', titleDiv);
-  ReactDOM.render(titleComponent, titleDiv);
+export const onRouteUpdate = () => {
+  getMainContainer().insertAdjacentElement('afterbegin', getTitle());
 }

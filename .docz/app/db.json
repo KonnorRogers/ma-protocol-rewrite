@@ -27,6 +27,7 @@
       "value": {
         "name": "About",
         "route": "/",
+        "pageNum": 1,
         "id": "60b203ca8e5704db2caeeab2d175cc33",
         "filepath": "src/sections/about.mdx",
         "fullpath": "/myapp/src/sections/about.mdx",
@@ -48,6 +49,7 @@
         "name": "1.0 - Routine Patient Care",
         "route": "/sections/1/1.0-routine-patient-care",
         "menu": "Section 1: General Patient Care",
+        "pageNum": 2,
         "id": "28035cbdac1444963fb62f043feab2e0",
         "filepath": "src/sections/1/1-0-routine-patient-care.mdx",
         "fullpath": "/myapp/src/sections/1/1-0-routine-patient-care.mdx",
@@ -62,6 +64,7 @@
         "name": "1.1 - High Quality CPR",
         "route": "/sections/1/1.1-high-quality-cpr",
         "menu": "Section 1: General Patient Care",
+        "pageNum": 3,
         "id": "6d9cd51b9defc71ead314c7388834596",
         "filepath": "src/sections/1/1-1-high-quality-cpr.mdx",
         "fullpath": "/myapp/src/sections/1/1-1-high-quality-cpr.mdx",
@@ -76,6 +79,7 @@
         "name": "2.1 - Adrenal Insufficiency / Crisis (Adult & Pediatric)",
         "route": "/sections/2/2.1-adrenal-insufficiency-crisis",
         "menu": "Section 2: Medical Protocols",
+        "pageNum": 4,
         "id": "b86b65e3aa9b428ad9a6b6c31bc8c31b",
         "filepath": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "fullpath": "/myapp/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
@@ -85,37 +89,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/gatsby-theme-docz/components/MainContainer/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MainContainer",
-          "methods": [],
-          "actualName": "MainContainer"
-        }
-      ]
-    },
-    {
-      "key": "src/gatsby-theme-docz/wrapper.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    },
-    {
-      "key": "src/components/title.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Title",
-          "methods": [],
-          "actualName": "Title"
-        }
-      ]
-    }
-  ]
+  "props": []
 }
