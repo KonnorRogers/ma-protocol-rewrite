@@ -102,6 +102,17 @@
           "methods": []
         }
       ]
+    },
+    {
+      "key": "src/components/pageNav.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PageNav",
+          "methods": [],
+          "actualName": "PageNav"
+        }
+      ]
     }
   ]
 }

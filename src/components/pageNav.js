@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 import PrevPage from "./prevPage.js"
 import NextPage from "./nextPage.js"
 import Screen from "../utils/screen.js"
+import { useDocs } from 'docz'
 
 const navCSS = css`
   display: flex;
