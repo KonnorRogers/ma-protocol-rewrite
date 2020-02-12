@@ -6,7 +6,7 @@ import Title from "../components/title.js"
 export default ({ children, doc }) => (
   <>
     <main>
-      {/* <PageNav data-testid="page-nav" /> */}
+      <PageNav data-testid="page-nav" />
       <Title data-testid="page-title" />
       {children}
       <Footer />
