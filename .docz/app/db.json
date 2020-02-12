@@ -95,24 +95,11 @@
   ],
   "props": [
     {
-      "key": "src/components/pageNav.js",
+      "key": "src/gatsby-theme-docz/wrapper.js",
       "value": [
         {
           "description": "",
-          "displayName": "PageNav",
-          "methods": [],
-          "actualName": "PageNav"
-        }
-      ]
-    },
-    {
-      "key": "src/gatsby-theme-docz/components/MainContainer/index.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MainContainer",
-          "methods": [],
-          "actualName": "MainContainer"
+          "methods": []
         }
       ]
     }
