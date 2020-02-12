@@ -29,7 +29,7 @@ const navCSS = css`
   }
 `
 
-const PageNav = () => {
+const PageNav = ({nextTo, nextText, prevTo, prevText}) => {
   // const prevTo =
   // const prevText =
   // const nextTo =

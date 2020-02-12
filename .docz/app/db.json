@@ -32,6 +32,7 @@
         "filepath": "src/sections/about.mdx",
         "fullpath": "/myapp/src/sections/about.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/about.mdx",
+        "hidden": false,
         "slug": "src-sections-about",
         "menu": "",
         "headings": [
@@ -54,6 +55,7 @@
         "filepath": "src/sections/1/1-0-routine-patient-care.mdx",
         "fullpath": "/myapp/src/sections/1/1-0-routine-patient-care.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-0-routine-patient-care.mdx",
+        "hidden": false,
         "slug": "src-sections-1-1-0-routine-patient-care",
         "headings": []
       }
@@ -69,6 +71,7 @@
         "filepath": "src/sections/1/1-1-high-quality-cpr.mdx",
         "fullpath": "/myapp/src/sections/1/1-1-high-quality-cpr.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-1-high-quality-cpr.mdx",
+        "hidden": false,
         "slug": "src-sections-1-1-1-high-quality-cpr",
         "headings": []
       }
@@ -84,6 +87,7 @@
         "filepath": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "fullpath": "/myapp/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
+        "hidden": false,
         "slug": "src-sections-2-2-1-adrenal-insufficiency-crisis",
         "headings": []
       }
@@ -102,11 +106,13 @@
       ]
     },
     {
-      "key": "src/gatsby-theme-docz/wrapper.js",
+      "key": "src/gatsby-theme-docz/components/MainContainer/index.js",
       "value": [
         {
           "description": "",
-          "methods": []
+          "displayName": "MainContainer",
+          "methods": [],
+          "actualName": "MainContainer"
         }
       ]
     }
