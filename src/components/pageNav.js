@@ -29,7 +29,11 @@ const navCSS = css`
   }
 `
 
-const PageNav = ({prevTo, prevText, nextTo, nextText}) => {
+const PageNav = () => {
+  // const prevTo =
+  // const prevText =
+  // const nextTo =
+  // const nextText =
   return (
     <div css={navCSS}>
       <PrevPage to={prevTo} text={prevText} />
@@ -39,20 +43,3 @@ const PageNav = ({prevTo, prevText, nextTo, nextText}) => {
 }
 
 export default PageNav
-
-// GRAPHQL QUERY FOR NEXT AND PREVIOUS
-// query nextPrevQuery {
-//   allDoczEntries {
-//     edges {
-//       next {
-//         name
-//         route
-//       }
-//       previous {
-//         name
-//         route
-//       }
-//     }
-//   }
-// }
-
