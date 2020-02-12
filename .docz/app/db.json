@@ -96,6 +96,15 @@
           "actualName": "MainContainer"
         }
       ]
+    },
+    {
+      "key": "src/gatsby-theme-docz/wrapper.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
     }
   ]
 }
