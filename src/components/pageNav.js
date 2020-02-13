@@ -35,6 +35,11 @@ const PageNav = ({...props}) => {
   const currentDoc = useCurrentDoc();
   const allDocs = useDocs();
 
+  // Way to fix about being at the end, temporary fix
+  const about = allDocs.pop()
+  allDocs.unshift(about);
+  //
+
   function getCurrentDocIndex() {
     const currentDocIndex = doc => doc.id === currentDoc.id
 

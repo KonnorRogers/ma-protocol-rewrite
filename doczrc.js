@@ -2,7 +2,7 @@ export default {
   title: "Massachusetts Protocols",
   // Configuring the left sidebar
   menu: [
-    "About"
+    "About",
     "Section 1: General Patient Care",
     "Section 2: Medical Protocols",
     "Section 3: Cardiac Emergencies",

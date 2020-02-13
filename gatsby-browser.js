@@ -12,10 +12,15 @@ function getMainContainer() {
   return document.querySelector('[data-testid="main-container"]');
 }
 
-export const onRouteUpdate = () => {
+export const onRouteUpdate = ({location}) => {
   const bottomPageNav = getPageNav().cloneNode(true);
   const mainContainer = getMainContainer();
-  mainContainer.insertAdjacentElement('afterbegin', getTitle());
+
+  if (location.pathname !== "/") {
+    mainContainer.insertAdjacentElement('afterbegin', getTitle());
+  } else {
+    getTitle().parentNode.removeChild(getTitle());
+  }
   mainContainer.insertAdjacentElement('afterbegin', getPageNav());
   mainContainer.insertAdjacentElement('beforeend', bottomPageNav);
 }

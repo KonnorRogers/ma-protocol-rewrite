@@ -3,7 +3,7 @@ import Footer from "../components/footer.js"
 import PageNav from "../components/pageNav.js"
 import Title from "../components/title.js"
 
-export default ({ children, doc }) => (
+export default ({ children }) => (
   <>
     <main>
       <PageNav data-testid="page-nav" />
