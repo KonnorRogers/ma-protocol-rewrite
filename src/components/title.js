@@ -18,7 +18,6 @@ const aCSS = css`
 `
 
 const Title = ({title, ...rest}) => {
-  console.log(useCurrentDoc());
   if (!title) {
     title = useCurrentDoc().name;
   }

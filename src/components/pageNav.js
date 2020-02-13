@@ -12,6 +12,7 @@ const navCSS = css`
 
   * {
     width: 50%;
+    padding: 0.25rem;
     margin: auto;
   }
 
@@ -30,7 +31,7 @@ const navCSS = css`
   }
 `
 
-const PageNav = () => {
+const PageNav = ({...props}) => {
   const currentDoc = useCurrentDoc();
   const allDocs = useDocs();
 
@@ -42,18 +43,29 @@ const PageNav = () => {
 
   function getPrevDoc() {
     const prevDoc = allDocs[getCurrentDocIndex() - 1];
+
+    if (!prevDoc) {
+      return [null, null]
+    }
+
     return [prevDoc.route, prevDoc.name];
   }
 
   function getNextDoc() {
     const nextDoc = allDocs[getCurrentDocIndex() + 1];
+
+    if (!nextDoc) {
+      return [null, null]
+    }
+
     return [nextDoc.route, nextDoc.name];
   }
 
-  const [prevTo, prevText] = getPrevDoc();
-  const [nextTo, nextText] = getNextDoc();
+    const [prevTo, prevText] = getPrevDoc();
+    const [nextTo, nextText] = getNextDoc();
+
   return (
-    <div css={navCSS}>
+    <div css={navCSS} {...props}>
       <PrevPage to={prevTo} text={prevText} />
       <NextPage to={nextTo} text={nextText} />
     </div>

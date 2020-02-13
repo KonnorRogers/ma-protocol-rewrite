@@ -2,32 +2,56 @@
   "config": {
     "title": "Ma Protocol Rewrite",
     "description": "A rewrite of the massachusetts protocols",
-    "menu": [
-      "About",
-      "Section 1: General Patient Care",
-      "Section 2: Medical Protocols",
-      "Section 3: Cardiac Emergencies",
-      "Section 4: Trauma Protocols",
-      "Section 5: Airway Protocols & Procedures",
-      "Section 6: Medical Director Options",
-      "Section 7: Medical Policies & Procedures",
-      "Section 8: Special Operations Principles",
-      "Appendices"
-    ],
+    "menu": [],
     "version": "0.1.0",
     "repository": "https://github.com/paramagicdev/ma-protocol-rewrite",
     "native": false,
     "themeConfig": {},
-    "separator": "-",
-    "files": "./src/sections/**/*.{md,markdown,mdx}"
+    "separator": "-"
   },
   "entries": [
+    {
+      "key": "README.md",
+      "value": {
+        "id": "04c6e90faac2675aa89e2176d2eec7d8",
+        "filepath": "README.md",
+        "fullpath": "/myapp/README.md",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/README.md",
+        "hidden": false,
+        "slug": "readme",
+        "route": "/readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "-quick-start",
+            "depth": 2,
+            "value": "🚀 Quick start"
+          },
+          {
+            "slug": "🧐-whats-inside",
+            "depth": 2,
+            "value": "🧐 What's inside?"
+          },
+          {
+            "slug": "-learning-gatsby",
+            "depth": 2,
+            "value": "🎓 Learning Gatsby"
+          },
+          {
+            "slug": "-deploy",
+            "depth": 2,
+            "value": "💫 Deploy"
+          }
+        ]
+      }
+    },
     {
       "key": "src/sections/about.mdx",
       "value": {
         "name": "About",
         "route": "/",
-        "id": "60b203ca8e5704db2caeeab2d175cc33",
+        "id": "5d7d8ff164f09dab3684dd8df2b5c49e",
         "filepath": "src/sections/about.mdx",
         "fullpath": "/myapp/src/sections/about.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/about.mdx",
@@ -36,9 +60,9 @@
         "menu": "",
         "headings": [
           {
-            "slug": "hello-world",
+            "slug": "about",
             "depth": 1,
-            "value": "Hello world"
+            "value": "About"
           }
         ]
       }
@@ -49,7 +73,7 @@
         "name": "1.0 - Routine Patient Care",
         "route": "/sections/1/1.0-routine-patient-care",
         "menu": "Section 1: General Patient Care",
-        "id": "28035cbdac1444963fb62f043feab2e0",
+        "id": "0ca5c952cfe400b18d7b68e14365405b",
         "filepath": "src/sections/1/1-0-routine-patient-care.mdx",
         "fullpath": "/myapp/src/sections/1/1-0-routine-patient-care.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-0-routine-patient-care.mdx",
@@ -64,7 +88,7 @@
         "name": "1.1 - High Quality CPR",
         "route": "/sections/1/1.1-high-quality-cpr",
         "menu": "Section 1: General Patient Care",
-        "id": "6d9cd51b9defc71ead314c7388834596",
+        "id": "cc4eb6501aff8cd2e546f1329e1eba81",
         "filepath": "src/sections/1/1-1-high-quality-cpr.mdx",
         "fullpath": "/myapp/src/sections/1/1-1-high-quality-cpr.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-1-high-quality-cpr.mdx",
@@ -79,7 +103,7 @@
         "name": "2.1 - Adrenal Insufficiency / Crisis (Adult & Pediatric)",
         "route": "/sections/2/2.1-adrenal-insufficiency-crisis",
         "menu": "Section 2: Medical Protocols",
-        "id": "b86b65e3aa9b428ad9a6b6c31bc8c31b",
+        "id": "f8dbe766e810d2892fc90417b93ab3fe",
         "filepath": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "fullpath": "/myapp/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
@@ -89,26 +113,5 @@
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/gatsby-theme-docz/wrapper.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    },
-    {
-      "key": "src/components/pageNav.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "PageNav",
-          "methods": [],
-          "actualName": "PageNav"
-        }
-      ]
-    }
-  ]
+  "props": []
 }

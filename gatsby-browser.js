@@ -1,10 +1,11 @@
 import 'src/styles/global.css'
 
-const title = document.querySelector('[data-testid="page-title"]');
-const mainContainer = document.querySelector('[data-testid="main-container"]');
-
 function getTitle() {
   return document.querySelector('[data-testid="page-title"]');
+}
+
+function getPageNav() {
+  return document.querySelector('[data-testid="page-nav"]');
 }
 
 function getMainContainer() {
@@ -12,5 +13,9 @@ function getMainContainer() {
 }
 
 export const onRouteUpdate = () => {
-  getMainContainer().insertAdjacentElement('afterbegin', getTitle());
+  const bottomPageNav = getPageNav().cloneNode(true);
+  const mainContainer = getMainContainer();
+  mainContainer.insertAdjacentElement('afterbegin', getTitle());
+  mainContainer.insertAdjacentElement('afterbegin', getPageNav());
+  mainContainer.insertAdjacentElement('beforeend', bottomPageNav);
 }
