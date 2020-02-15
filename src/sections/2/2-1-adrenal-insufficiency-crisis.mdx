@@ -7,6 +7,10 @@ menu: "Section 2: Medical Protocols"
 import EMTLevel from "../../components/emtLevel.js"
 import Note from "../../components/note.js"
 import MyLink from "../../components/myLink.js"
+import Screen from "../../utils/screen.js"
+import { css } from "@emotion/core"
+
+
 
 <EMTLevel level="basic">
   <ul>
@@ -23,3 +27,120 @@ import MyLink from "../../components/myLink.js"
     <li>Obtain vascular access if appropriate</li>
   </ul>
 </EMTLevel>
+
+<EMTLevel level="paramedic">
+  Stress dose:
+  <ul>
+    <li>
+      <strong>
+        Adult: &nbsp;
+      </strong>
+        History of adrenal insufficiency;
+        <br />
+        Administer:
+        <br />
+        <strong>Hydrocortisone 100mg</strong> IV/IO/IM or
+        <br />
+        <strong>Methylprednisolone 125mg </strong> IV/IO/IM.
+    </li>
+    <li>
+      <strong>Pediatric: </strong> History of adrenal insufficiency;
+      <br />
+      Administer:
+      <br />
+      <strong>Hydrocortisone 2mg/kg </strong> to a maximum of 100mg IV/IM/IO or
+      <br />
+      <strong>Methylprednisolone 2mg/kg </strong> to a maximum dose of 125mg IV/IM/IO
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl="true">
+  <ul>
+    <li>Additional doses of above medications</li>
+    <li>
+      In patients who continue demonstrating the following signs and symptoms,
+      consult medical control for repeat stress dose orders:
+    </li>
+    <ul>
+      <li>
+        Nausea, vomiting, weakness, dizzy, abdominal pain, muscle pain,
+        dehydration, hypotension, tachycardia, fever, mental status changes.
+      </li>
+    </ul>
+  </ul>
+  <ul>
+    <li>Additional Considerations:</li>
+    <ul>
+      <li> Aggressive volume replacement therapy. </li>
+      <li> Treat other conditions according to specific protocols. </li>
+      <li> Normalize body temperature. </li>
+    </ul>
+  </ul>
+</EMTLevel>
+
+export const flex = css`
+  box-shadow: none;
+  border: none;
+  ${Screen.extraLarge} {
+    display: flex;
+  }
+`
+
+export const innerBox = css`
+  ${Screen.extraLarge} {
+    width: 47%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+`
+
+<Note cssStyles={flex} id={"Note2"} text={"Note2"}>
+  <Note alignment="left" cssStyles={innerBox}>
+    Adrenal insufficiency results when the body does not
+    produce the essential life-sustaining hormones cortisol
+    and aldosterone, which are vital to maintaining blood
+    pressure, cardiac contractility, water, and salt balance.
+    Chronic adrenal insufficiency can be caused by a number
+    of conditions:
+    <br /><br />
+      <ul>
+        <li>
+          Congenital or acquired disorders of the adrenal
+          gland.
+        </li>
+        <li>
+          Congenital or acquired disorders of the pituitary
+          gland.
+        </li>
+        <li>
+          Regular use of steroids (COPD, asthma, rheumatoid
+          arthritis, and transplant patients).
+        </li>
+      </ul>
+    Acute adrenal insufficiency can result in refractory shock
+    or death in patients on a maintenance dose of
+    hydrocortisone (SoluCortef) / prednisone who experience
+    illness or trauma and are not given a stress dose and, as
+    necessary, supplemental doses of hydrocortisone.
+  </Note>
+  <Note alignment="left" cssStyles={innerBox}>
+    A “stress dose” of hydrocortisone should be given
+    to patients with known chronic adrenal insufficiency
+    who have the following illnesses/injuries:
+    <br /><br />
+    <ul>
+      <li>Shock (any cause).</li>
+      <li>Fever >100.4°F and ill-appearing.</li>
+      <li>Multi-system trauma.</li>
+      <li>Drowning.</li>
+      <li>Environmental hyperthermia or hypothermia.</li>
+      <li>Multiple long-bone fractures.</li>
+      <li>Vomiting/diarrhea accompanied by dehydration.</li>
+      <li>Respiratory distress.</li>
+      <li>2nd or 3rd degree burns >5% BSA</li>
+      <li>Hypoglycemia</li>
+    </ul>
+  </Note>
+</Note>
+

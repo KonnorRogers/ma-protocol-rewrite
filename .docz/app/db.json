@@ -31,7 +31,6 @@
         "filepath": "src/sections/about.mdx",
         "fullpath": "/myapp/src/sections/about.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/about.mdx",
-        "hidden": false,
         "slug": "src-sections-about",
         "menu": "",
         "headings": [
@@ -53,7 +52,6 @@
         "filepath": "src/sections/1/1-0-routine-patient-care.mdx",
         "fullpath": "/myapp/src/sections/1/1-0-routine-patient-care.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-0-routine-patient-care.mdx",
-        "hidden": false,
         "slug": "src-sections-1-1-0-routine-patient-care",
         "headings": []
       }
@@ -68,7 +66,6 @@
         "filepath": "src/sections/1/1-1-high-quality-cpr.mdx",
         "fullpath": "/myapp/src/sections/1/1-1-high-quality-cpr.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-1-high-quality-cpr.mdx",
-        "hidden": false,
         "slug": "src-sections-1-1-1-high-quality-cpr",
         "headings": []
       }
@@ -83,9 +80,28 @@
         "filepath": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "fullpath": "/myapp/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
-        "hidden": false,
         "slug": "src-sections-2-2-1-adrenal-insufficiency-crisis",
         "headings": []
+      }
+    },
+    {
+      "key": "src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
+      "value": {
+        "name": "2.2A - Allergic Reaction / Anaphylaxis",
+        "route": "/sections/2/2.2A-allergic-reaction-anaphylaxis",
+        "menu": "Section 2: Medical Protocols",
+        "id": "f5663346f3f6d14d112d5609df579d45",
+        "filepath": "src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
+        "fullpath": "/myapp/src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
+        "slug": "src-sections-2-2-2-a-allergic-reaction-anaphylaxis",
+        "headings": [
+          {
+            "slug": "hi",
+            "depth": 1,
+            "value": "Hi"
+          }
+        ]
       }
     }
   ],
@@ -96,6 +112,81 @@
         {
           "description": "",
           "methods": []
+        }
+      ]
+    },
+    {
+      "key": "src/components/emtLevel.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "EmtLevel",
+          "methods": [],
+          "actualName": "EmtLevel",
+          "props": {
+            "level": {
+              "type": {
+                "name": "node"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/title.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Title",
+          "methods": [],
+          "actualName": "Title"
+        }
+      ]
+    },
+    {
+      "key": "src/components/myLink.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MyLink",
+          "methods": [],
+          "actualName": "MyLink"
+        }
+      ]
+    },
+    {
+      "key": "src/components/note.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Note",
+          "methods": [],
+          "actualName": "Note"
+        }
+      ]
+    },
+    {
+      "key": "src/components/nextPage.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NextPage",
+          "methods": [],
+          "actualName": "NextPage"
+        }
+      ]
+    },
+    {
+      "key": "src/components/prevPage.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PrevPage",
+          "methods": [],
+          "actualName": "PrevPage"
         }
       ]
     }

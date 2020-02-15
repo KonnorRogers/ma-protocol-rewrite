@@ -1,15 +1,7 @@
 import { css } from "@emotion/core"
 import { Link } from "gatsby"
 
-const linkCSS = css`
-  text-decoration: none;
-  padding: 0.25rem;
-  color: var(--link-blue);
-
-  &:hover {
-    text-decoration: underline;
-  }
-`
+import * as styles from "../styles/global.js"
 
 const MyLink = ({
   children,
@@ -19,7 +11,7 @@ const MyLink = ({
   ...other
 }) => (
   <Link
-    css={linkCSS}
+    css={styles.links}
     to={to}
     activeClassName={activeClassName}
     partiallyActive={partiallyActive}

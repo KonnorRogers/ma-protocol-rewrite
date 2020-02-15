@@ -16,8 +16,10 @@ const noteCSS = (alignment = "center") => css`
   }
 `
 
-const Note = ({ children, alignment }) => (
-  <div css={noteCSS(alignment)}>{children}</div>
+const Note = ({ children, alignment, cssStyles, ...rest }) => (
+  <div css={[noteCSS(alignment), cssStyles]} {...rest}>
+    {children}
+  </div>
 )
 
 export default Note

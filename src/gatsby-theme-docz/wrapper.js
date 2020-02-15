@@ -5,32 +5,32 @@ import Title from "../components/title.js"
 
 export default ({ children }) => {
   function getTitle() {
-    return document.querySelector('[data-testid="page-title"]');
+    return document.querySelector('[data-testid="page-title"]')
   }
 
   function getPageNav() {
-    return document.querySelector('[data-testid="page-nav"]');
+    return document.querySelector('[data-testid="page-nav"]')
   }
 
   function getMainContainer() {
-    return document.querySelector('[data-testid="main-container"]');
+    return document.querySelector('[data-testid="main-container"]')
   }
 
   // Equivalent to componentDidMount / componentDidUpdate
   useEffect(() => {
+    const bottomPageNav = getPageNav().cloneNode(true)
+    const mainContainer = getMainContainer()
 
-  const bottomPageNav = getPageNav().cloneNode(true);
-  const mainContainer = getMainContainer();
+    if (window.location.pathname !== "/") {
+      mainContainer.insertAdjacentElement("afterbegin", getTitle())
+    } else {
+      // Remove the title if on the homepage
+      getTitle().parentNode.removeChild(getTitle())
+    }
 
-  // if (location.pathname !== "/") {
-  //   mainContainer.insertAdjacentElement('afterbegin', getTitle());
-  // } else {
-  //   getTitle().parentNode.removeChild(getTitle());
-  // }
-  mainContainer.insertAdjacentElement('afterbegin', getPageNav());
-  mainContainer.insertAdjacentElement('beforeend', bottomPageNav);
-  })
-
+    mainContainer.insertAdjacentElement("afterbegin", getPageNav())
+    mainContainer.insertAdjacentElement("beforeend", bottomPageNav)
+  }, [])
 
   return (
     <>

@@ -47,12 +47,28 @@ const emtLevelCSS = level => css`
   }
 `
 
-const EmtLevel = ({ children, level }) => {
+const EmtLevel = ({ children, level, medControl }) => {
+  function getLevel() {
+    if (medControl) {
+      return level + "-med-control"
+    }
+
+    return level
+  }
+
+  function getLevelText() {
+    const levelText = `EMT-${capitalize(level)}`
+    if (medControl) {
+      return levelText + " (Medical Control)"
+    }
+
+    return levelText
+  }
   return (
     <>
-      <h2 id={level} css={emtHeaderCSS(level)}>
-        <a css={linkAnchorCSS(level)} href={`#${level}`}>
-          {`EMT-${capitalize(level)}`}
+      <h2 id={getLevel()} css={emtHeaderCSS(level)}>
+        <a css={linkAnchorCSS(level)} href={`#${getLevel()}`}>
+          {getLevelText()}
         </a>
       </h2>
       <section className={level} css={emtLevelCSS(level)}>
