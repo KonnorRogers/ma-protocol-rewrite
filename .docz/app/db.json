@@ -95,13 +95,7 @@
         "fullpath": "/myapp/src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
         "slug": "src-sections-2-2-2-a-allergic-reaction-anaphylaxis",
-        "headings": [
-          {
-            "slug": "hi",
-            "depth": 1,
-            "value": "Hi"
-          }
-        ]
+        "headings": []
       }
     }
   ],
@@ -132,61 +126,6 @@
               "description": ""
             }
           }
-        }
-      ]
-    },
-    {
-      "key": "src/components/title.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Title",
-          "methods": [],
-          "actualName": "Title"
-        }
-      ]
-    },
-    {
-      "key": "src/components/myLink.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "MyLink",
-          "methods": [],
-          "actualName": "MyLink"
-        }
-      ]
-    },
-    {
-      "key": "src/components/note.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Note",
-          "methods": [],
-          "actualName": "Note"
-        }
-      ]
-    },
-    {
-      "key": "src/components/nextPage.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "NextPage",
-          "methods": [],
-          "actualName": "NextPage"
-        }
-      ]
-    },
-    {
-      "key": "src/components/prevPage.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "PrevPage",
-          "methods": [],
-          "actualName": "PrevPage"
         }
       ]
     }

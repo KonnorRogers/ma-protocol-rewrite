@@ -4,6 +4,7 @@ import { css } from "@emotion/core"
 import Screen from "../utils/screen.js"
 
 const colors = {
+  "first-responder": "deepskyblue",
   basic: "green",
   advanced: "#ffbc0d",
   paramedic: "red",
@@ -37,10 +38,15 @@ const linkAnchorCSS = level => css`
 
 const emtLevelCSS = level => css`
   margin: 0.5rem auto 2rem auto;
-  padding: 0.5rem 0.75rem;
+  padding: 1.5rem;
   border: 1.5px solid ${colors[level]};
   border-radius: 4px;
   font-size: 1.15rem;
+
+  ul {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
 
   ${Screen.small} {
     font-size: 1.25rem;
@@ -57,12 +63,24 @@ const EmtLevel = ({ children, level, medControl }) => {
   }
 
   function getLevelText() {
-    const levelText = `EMT-${capitalize(level)}`
-    if (medControl) {
-      return levelText + " (Medical Control)"
+    const firstResponder = "First-Responder"
+    const standingOrders = " (Standing Orders)"
+    const medicalControl = " (Medical Control)"
+    if (level === "first-responder") {
+      if (medControl) {
+        return firstResponder + medicalControl
+      }
+
+      return firstResponder + standingOrders
     }
 
-    return levelText
+    const text = `${capitalize(level)}`
+    const levelText = `EMT-${text}`
+    if (medControl) {
+      return levelText + medicalControl
+    }
+
+    return levelText + standingOrders
   }
   return (
     <>

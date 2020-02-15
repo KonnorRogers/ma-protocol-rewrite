@@ -8,8 +8,12 @@ export default ({ children }) => {
     return document.querySelector('[data-testid="page-title"]')
   }
 
-  function getPageNav() {
-    return document.querySelector('[data-testid="page-nav"]')
+  function getTopPageNav() {
+    return document.querySelector('[data-testid="top-page-nav"]')
+  }
+
+  function getBottomPageNav() {
+    return document.querySelector('[data-testid="bottom-page-nav"]')
   }
 
   function getMainContainer() {
@@ -18,7 +22,6 @@ export default ({ children }) => {
 
   // Equivalent to componentDidMount / componentDidUpdate
   useEffect(() => {
-    const bottomPageNav = getPageNav().cloneNode(true)
     const mainContainer = getMainContainer()
 
     if (window.location.pathname !== "/") {
@@ -28,14 +31,15 @@ export default ({ children }) => {
       getTitle().parentNode.removeChild(getTitle())
     }
 
-    mainContainer.insertAdjacentElement("afterbegin", getPageNav())
-    mainContainer.insertAdjacentElement("beforeend", bottomPageNav)
+    mainContainer.insertAdjacentElement("afterbegin", getTopPageNav())
+    mainContainer.insertAdjacentElement("beforeend", getBottomPageNav())
   }, children)
 
   return (
     <>
       <main>
-        <PageNav data-testid="page-nav" />
+        <PageNav data-testid="top-page-nav" />
+        <PageNav data-testid="bottom-page-nav" />
         <Title data-testid="page-title" />
         {children}
         <Footer />
