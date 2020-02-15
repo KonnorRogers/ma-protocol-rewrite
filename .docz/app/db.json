@@ -91,17 +91,6 @@
   ],
   "props": [
     {
-      "key": "src/components/pageNav.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "PageNav",
-          "methods": [],
-          "actualName": "PageNav"
-        }
-      ]
-    },
-    {
       "key": "src/gatsby-theme-docz/wrapper.js",
       "value": [
         {
