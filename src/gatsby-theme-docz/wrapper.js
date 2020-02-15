@@ -30,7 +30,7 @@ export default ({ children }) => {
 
     mainContainer.insertAdjacentElement("afterbegin", getPageNav())
     mainContainer.insertAdjacentElement("beforeend", bottomPageNav)
-  }, [])
+  }, children)
 
   return (
     <>
