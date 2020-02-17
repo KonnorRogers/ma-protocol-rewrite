@@ -39,8 +39,8 @@ const linkAnchorCSS = level => css`
 const emtLevelCSS = level => css`
   margin: 0.5rem auto 2rem auto;
   padding: 1.5rem;
-  border: 1.5px solid ${colors[level]};
-  border-radius: 4px;
+  box-shadow: inset 0 0 5px 3px ${colors[level]};
+  border-radius: 12px;
   font-size: 1.15rem;
 
   ul {

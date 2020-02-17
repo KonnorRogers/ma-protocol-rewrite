@@ -4,6 +4,7 @@ export const links = css`
   color: var(--link-blue);
   padding: 0.25rem;
   text-decoration: none;
+  display: inline-block;
 
   &:hover {
     text-decoration: underline;

@@ -97,18 +97,23 @@
         "slug": "src-sections-2-2-2-a-allergic-reaction-anaphylaxis",
         "headings": []
       }
+    },
+    {
+      "key": "src/sections/2/2-2P-allergic-reaction-anaphylaxis.mdx",
+      "value": {
+        "name": "2.2P - Allergic Reaction / Anaphylaxis",
+        "route": "/sections/2/2.2P-allergic-reaction-anaphylaxis",
+        "menu": "Section 2: Medical Protocols",
+        "id": "d51f71beece7b842944953cc923c0c75",
+        "filepath": "src/sections/2/2-2P-allergic-reaction-anaphylaxis.mdx",
+        "fullpath": "/myapp/src/sections/2/2-2P-allergic-reaction-anaphylaxis.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-2P-allergic-reaction-anaphylaxis.mdx",
+        "slug": "src-sections-2-2-2-p-allergic-reaction-anaphylaxis",
+        "headings": []
+      }
     }
   ],
   "props": [
-    {
-      "key": "src/gatsby-theme-docz/wrapper.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    },
     {
       "key": "src/components/emtLevel.js",
       "value": [
@@ -126,6 +131,39 @@
               "description": ""
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "src/components/caution.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Caution",
+          "methods": [],
+          "actualName": "Caution"
+        }
+      ]
+    },
+    {
+      "key": "src/components/informationBox.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "InformationBox",
+          "methods": [],
+          "actualName": "InformationBox"
+        }
+      ]
+    },
+    {
+      "key": "src/components/note.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Note",
+          "methods": [],
+          "actualName": "Note"
         }
       ]
     }
