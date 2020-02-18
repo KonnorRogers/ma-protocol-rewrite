@@ -139,6 +139,26 @@
           "methods": []
         }
       ]
+    },
+    {
+      "key": "src/components/emtLevel.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "EmtLevel",
+          "methods": [],
+          "actualName": "EmtLevel",
+          "props": {
+            "level": {
+              "type": {
+                "name": "node"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
     }
   ]
 }
