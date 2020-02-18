@@ -4,6 +4,7 @@ import { css } from "@emotion/core"
 import Screen from "../utils/screen.js"
 
 const colors = {
+  "first-responder": "deepskyblue",
   basic: "green",
   advanced: "#ffbc0d",
   paramedic: "red",
@@ -37,22 +38,55 @@ const linkAnchorCSS = level => css`
 
 const emtLevelCSS = level => css`
   margin: 0.5rem auto 2rem auto;
-  padding: 0.5rem 0.75rem;
-  border: 1.5px solid ${colors[level]};
-  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: inset 0 0 5px 3px ${colors[level]};
+  border-radius: 12px;
   font-size: 1.15rem;
+
+  ul {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
 
   ${Screen.small} {
     font-size: 1.25rem;
   }
 `
 
-const EmtLevel = ({ children, level }) => {
+const EmtLevel = ({ children, level, medControl }) => {
+  function getLevel() {
+    if (medControl) {
+      return level + "-med-control"
+    }
+
+    return level
+  }
+
+  function getLevelText() {
+    const firstResponder = "First-Responder"
+    const standingOrders = " (Standing Orders)"
+    const medicalControl = " (Medical Control)"
+    if (level === "first-responder") {
+      if (medControl) {
+        return firstResponder + medicalControl
+      }
+
+      return firstResponder + standingOrders
+    }
+
+    const text = `${capitalize(level)}`
+    const levelText = `EMT-${text}`
+    if (medControl) {
+      return levelText + medicalControl
+    }
+
+    return levelText + standingOrders
+  }
   return (
     <>
-      <h2 id={level} css={emtHeaderCSS(level)}>
-        <a css={linkAnchorCSS(level)} href={`#${level}`}>
-          {`EMT-${capitalize(level)}`}
+      <h2 id={getLevel()} css={emtHeaderCSS(level)}>
+        <a css={linkAnchorCSS(level)} href={`#${getLevel()}`}>
+          {getLevelText()}
         </a>
       </h2>
       <section className={level} css={emtLevelCSS(level)}>

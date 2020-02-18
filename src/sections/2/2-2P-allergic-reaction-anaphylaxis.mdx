@@ -1,0 +1,131 @@
+---
+name: 2.2P - Allergic Reaction / Anaphylaxis
+route: /sections/2/2.2P-allergic-reaction-anaphylaxis
+menu: "Section 2: Medical Protocols"
+---
+
+import EMTLevel from "../../components/emtLevel.js";
+import Caution from "../../components/caution.js"
+import Note from "../../components/note.js"
+import MyLink from "../../components/myLink.js"
+
+<EMTLevel level="first-responder">
+  <MyLink to='sections/1/1.0-routine-patient-care'> 1.0 Routine Patient Care </MyLink>
+  <ul>
+    <li>
+      In anaphylaxis, if patient is over 6 months age and under 25kg, administer
+      epinephrine 0.15mg via auto-injector or IM.
+    </li>
+    <li>
+      If body weight is over 25 kg,
+      administer epinephrine 0.3mg via auto-injector or IM.
+    </li>
+    <li>
+      When administering IM, EMTs may do so in accordance with
+      <MyLink to="@TODO">
+        Protocol 6.6 Check and Inject Epinephrine
+      </MyLink>
+      for BLS Providers.
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="first-responder" medControl="true">
+  <ul>
+    <li>Contact Medical Control if second dose of epinephrine is required after 5 minutes.</li>
+    <li>
+      First Responder and EMTs must contact Medical Control prior to administration
+      of epinephrine when patient is under 6 months of age
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="basic">
+  Follow above protocols for first responders
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  <ul>
+    <li>
+      In anaphylaxis, if patient is over 6 months age and under 25kg, administer
+      epinephrine 0.15mg via auto-injector or IM.
+    </li>
+    <li>
+      If body weight is over 25 kg,
+      administer epinephrine 0.3mg via auto-injector or IM.</li>
+    <li>
+    Must be administered in accordance with criteria listed in
+      <MyLink to="@TODO">
+        A1 Adult Medication Reference.
+      </MyLink>
+    </li>
+
+    <li>
+      <strong>
+        Contact Medical Control if second epinephrine dose required after 5 minutes
+      </strong>
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>Albuterol (via nebulizer):</li>
+    <ul>
+      <li>If age less than 2 years, 1.25 mg by nebulizer</li>
+      <li>If age 2 years or greater, 2.5-3 mg by nebulizer</li>
+    </ul>
+    <li>Give hydrocortisone 2 mg/kg to max. 100 mg IV/IO/IM, or
+    methylprednisolone 2 mg/kg to max. 125 mg IV/IO/IM</li>
+    <li>Diphenhydramine 1 mg/kg up to max. single dose of 50 mg IV/IO/IM</li>
+    <li>
+      <strong>
+        Contact Medical Control if second epinephrine dose required after 5
+        minutes.
+      </strong>
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl="true">
+  <ul>
+    <li>Additional doses of above medications.</li>
+    <li>Epinephrine infusion 1:1,000 (1 mg/mL) 0.1-1 mcg/kg/min IV/IO</li>
+    <li>Epinephrine 1:10,000; 0.01mg/kg IV/IO to max. single dose 0.3 mg.</li>
+  </ul>
+</EMTLevel>
+
+<Caution id="caution-1" alignment="left">
+  Epinephrine for anaphylaxis must be administered by Auto-Injector or IM if
+trained and authorized to do so in accordance with
+  <MyLink to="@TODO">
+    Medical Director Option Protocol 6.6 Check and Inject Epinephrine for BLS Providers.
+  </MyLink>
+  <br />
+
+  For patients under 12 years old, the airway is in most cases best managed with a BVM or SGA.
+  In some cases, intubation may be preferred. This is at the discretion of the treating paramedic.
+</Caution>
+
+<Note id="note-1" alignment="left">
+  <strong>Clinical Criteria for Anaphylaxis:</strong>
+  <br />
+  If one of these criteria is fulfilled, treat for anaphylaxis
+  <br /><br />
+  <ol>
+    <li>Acute onset of skin or mucosal involvement with at least one of the following:</li>
+    <ul style={{ listStyle: 'none' }}>
+      <li>a. Respiratory compromise</li>
+      <li>b. Decreased SBP or evidence of end-organ hypoperfusion</li>
+    </ul>
+
+    <li>Two or more of these occurring rapidly after exposure to a likely antigen:</li>
+    <ul style={{ listStyle: 'none' }}>
+      <li>a. Skin or mucosal involvement</li>
+      <li>b. Respiratory compromise</li>
+      <li>c. Decreased SBP or evidence of end-organ hypoperfusion</li>
+      <li>d. Persistent GI symptoms</li>
+    </ul>
+    <li>Decreased BP after exposure to a known allergen for that patient</li>
+  </ol>
+</Note>

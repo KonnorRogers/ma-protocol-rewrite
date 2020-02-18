@@ -8,14 +8,14 @@ import EMTLevel from "../../components/emtLevel.js"
 import Note from "../../components/note.js"
 import MyLink from "../../components/myLink.js"
 
-<Note>
+<Note id="note-1">
   <strong>
     Only for arrests of Cardiac etiology.
     <br />
     For primary respiratory etiology, ventilate immediately as part of CPR.
   </strong>
 </Note>
-<Note alignment="left">
+<Note id="note-2" alignment="left">
   <ul>
     <li>Perform 2 minutes cycles of uninterrupted chest compressions</li>
     <li>Interrupt chest compressions only after each 2 minute cycle</li>
@@ -27,18 +27,20 @@ import MyLink from "../../components/myLink.js"
 <EMTLevel level="basic">
   <ul style={{ paddingTop: "0.5rem"}}>
     <li>
-      <MyLink to="/sections/1/routine-patient/care"> 1.0 Routine Patient Care </MyLink>
+      <MyLink to="/sections/1/1.0-routine-patient-care">1.0 - Routine Patient Care</MyLink>
       - with focus on high quality CPR
     </li>
     <li>Immediate chest compressions at a rate of 100-120 per minute</li>
     <li>Use AED as soon as possible with minimal interruption of chest compressions</li>
     <li>Continue 2 minute cycles of uninterrupted chest compressions followed by
       AED analysis and shock for 4 cycles (first 8 MINUTES) </li>
-    <li>Place an oral or nasal airway</li>
+      <ul>
+        <li>Place an oral or nasal airway</li>
+      </ul>
     <li>Ventilation / oxygenation options during 4 cycles (8 minutes):</li>
       <ul>
-        <li>Apply high flow oxygen via NRB, OR</li>
-        <li>BVM ventilation during recoil and without interrupting compressions</li>
+        <li>BVM ventilation during recoil and without interrupting compressions OR </li>
+        <li>If part of a care bundle, apply high flow oxygen via NRB</li>
       </ul>
     <li>Ventilation / oxygenation options after 4 cycles (after 8 MINUTES):
       <ul>
@@ -93,7 +95,7 @@ import MyLink from "../../components/myLink.js"
   </ul>
 </EMTLevel>
 
-<Note alignment="left">
+<Note id="note-3" alignment="left">
   PEARLS:
   <ul>
     <li>
