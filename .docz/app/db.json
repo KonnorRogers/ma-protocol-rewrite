@@ -31,7 +31,6 @@
         "filepath": "src/sections/about.mdx",
         "fullpath": "/myapp/src/sections/about.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/about.mdx",
-        "hidden": false,
         "slug": "src-sections-about",
         "menu": "",
         "headings": [
@@ -53,7 +52,6 @@
         "filepath": "src/sections/1/1-0-routine-patient-care.mdx",
         "fullpath": "/myapp/src/sections/1/1-0-routine-patient-care.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-0-routine-patient-care.mdx",
-        "hidden": false,
         "slug": "src-sections-1-1-0-routine-patient-care",
         "headings": []
       }
@@ -68,7 +66,6 @@
         "filepath": "src/sections/1/1-1-high-quality-cpr.mdx",
         "fullpath": "/myapp/src/sections/1/1-1-high-quality-cpr.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/1/1-1-high-quality-cpr.mdx",
-        "hidden": false,
         "slug": "src-sections-1-1-1-high-quality-cpr",
         "headings": []
       }
@@ -83,7 +80,6 @@
         "filepath": "src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "fullpath": "/myapp/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-1-adrenal-insufficiency-crisis.mdx",
-        "hidden": false,
         "slug": "src-sections-2-2-1-adrenal-insufficiency-crisis",
         "headings": []
       }
@@ -98,7 +94,6 @@
         "filepath": "src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
         "fullpath": "/myapp/src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-2A-allergic-reaction-anaphylaxis.mdx",
-        "hidden": false,
         "slug": "src-sections-2-2-2-a-allergic-reaction-anaphylaxis",
         "headings": []
       }
@@ -113,52 +108,10 @@
         "filepath": "src/sections/2/2-2P-allergic-reaction-anaphylaxis.mdx",
         "fullpath": "/myapp/src/sections/2/2-2P-allergic-reaction-anaphylaxis.mdx",
         "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-2P-allergic-reaction-anaphylaxis.mdx",
-        "hidden": false,
         "slug": "src-sections-2-2-2-p-allergic-reaction-anaphylaxis",
         "headings": []
       }
     }
   ],
-  "props": [
-    {
-      "key": "src/components/footer.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Footer",
-          "methods": [],
-          "actualName": "Footer"
-        }
-      ]
-    },
-    {
-      "key": "src/gatsby-theme-docz/wrapper.js",
-      "value": [
-        {
-          "description": "",
-          "methods": []
-        }
-      ]
-    },
-    {
-      "key": "src/components/emtLevel.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "EmtLevel",
-          "methods": [],
-          "actualName": "EmtLevel",
-          "props": {
-            "level": {
-              "type": {
-                "name": "node"
-              },
-              "required": true,
-              "description": ""
-            }
-          }
-        }
-      ]
-    }
-  ]
+  "props": []
 }
