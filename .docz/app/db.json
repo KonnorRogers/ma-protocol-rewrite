@@ -127,5 +127,35 @@
       }
     }
   ],
-  "props": []
+  "props": [
+    {
+      "key": "src/gatsby-theme-docz/wrapper.js",
+      "value": [
+        {
+          "description": "",
+          "methods": []
+        }
+      ]
+    },
+    {
+      "key": "src/components/emtLevel.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "EmtLevel",
+          "methods": [],
+          "actualName": "EmtLevel",
+          "props": {
+            "level": {
+              "type": {
+                "name": "node"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
