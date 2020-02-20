@@ -7,9 +7,9 @@ import * as styles from "../styles/global.js"
 const infoCSS = ({ alignment = "center", borderColor }) => {
   return css`
     margin: 0.75rem;
-    padding: 0.5rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 0 5px 3px ${borderColor};
+    border: 2px solid ${borderColor};
     text-align: ${alignment};
     font-size: 1rem;
 
