@@ -111,6 +111,20 @@
         "slug": "src-sections-2-2-2-p-allergic-reaction-anaphylaxis",
         "headings": []
       }
+    },
+    {
+      "key": "src/sections/2/2-3A-altered-mental-neurological-status-diabetic-emergencies-coma.mdx",
+      "value": {
+        "name": "2.3A - Altered Mental / Neurological Status / Diabetic Emergencies / Coma - Adult",
+        "route": "/sections/2/2.3A-altered-mental",
+        "menu": "Section 2: Medical Protocols",
+        "id": "c24b123c2b86dbfa6cb1c7755c80ce2a",
+        "filepath": "src/sections/2/2-3A-altered-mental-neurological-status-diabetic-emergencies-coma.mdx",
+        "fullpath": "/myapp/src/sections/2/2-3A-altered-mental-neurological-status-diabetic-emergencies-coma.mdx",
+        "link": "https://github.com/paramagicdev/ma-protocol-rewrite/edit/master/src/sections/2/2-3A-altered-mental-neurological-status-diabetic-emergencies-coma.mdx",
+        "slug": "src-sections-2-2-3-a-altered-mental-neurological-status-diabetic-emergencies-coma",
+        "headings": []
+      }
     }
   ],
   "props": []
