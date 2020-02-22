@@ -1,19 +1,13 @@
 import React from "react"
-import MyLink from "./myLink.js"
-import { css } from "@emotion/core"
+import MyLink from "../myLink/myLink.js"
 
-import * as styles from "../styles/global.js"
-
-const prevPageCSS = css`
-  text-align: left;
-  padding: 0;
-  margin: 0;
-`
+import * as styles from "../../styles/global.js"
+import * as prevPageStyles from "./styles.js"
 
 const PrevPage = ({ to, text }) => {
   if (to && text) {
     return (
-      <div css={prevPageCSS}>
+      <div css={prevPageStyles.prevPage}>
         <MyLink to={to}>
           <span className="prev-text">
             <span css={styles.arrow}>{`\u2190`}</span>

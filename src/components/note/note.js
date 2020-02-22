@@ -1,5 +1,5 @@
 import React from "react"
-import InformationBox from "./informationBox.js"
+import InformationBox from "../informationBox/informationBox.js"
 
 const Note = ({ children, id, ...rest }) => {
   const borderColor = `#6666ff`

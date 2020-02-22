@@ -1,18 +1,12 @@
 import React from "react"
 import MyLink from "./myLink.js"
-import { css } from "@emotion/core"
-import * as styles from "../styles/global.js"
-
-const nextPageCSS = css`
-  text-align: right;
-  padding: 0;
-  margin: 0;
-`
+import * as styles from "../../styles/global.js"
+import * as nextPageStyles from "./styles.js"
 
 const NextPage = ({ to, text }) => {
   if (to && text) {
     return (
-      <div css={nextPageCSS}>
+      <div css={nextPageStyles.nextPage}>
         <MyLink to={to}>
           <span className="next-text">
             {`${text}`}

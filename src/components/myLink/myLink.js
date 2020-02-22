@@ -1,7 +1,6 @@
-import { css } from "@emotion/core"
 import { Link } from "gatsby"
 
-import * as styles from "../styles/global.js"
+import * as styles from "../../styles/global.js"
 
 const MyLink = ({
   children,
