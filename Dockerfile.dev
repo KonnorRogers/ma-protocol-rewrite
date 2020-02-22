@@ -10,9 +10,8 @@ WORKDIR /myapp
 COPY ./package.json .
 COPY ./yarn.lock .
 
-COPY entrypoint.sh /usr/bin
-RUN chmod +x /usr/bin/entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+# Regen node_modules
+RUN rm -rf node_modules .cache
 
 # The port gatsby runs on
 EXPOSE 8000
