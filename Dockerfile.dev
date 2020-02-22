@@ -6,14 +6,16 @@ RUN apt update && apt upgrade -y && \
 
 RUN yarn global add gatsby-cli
 
-# The port gatsby runs on
-EXPOSE 8000
-
-RUN rm -rf .cache node_modules
-
 WORKDIR /myapp
 COPY ./package.json .
 COPY ./yarn.lock .
+
+COPY entrypoint.sh /usr/bin
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
+
+# The port gatsby runs on
+EXPOSE 8000
 
 RUN yarn install && yarn cache clean
 COPY . .
