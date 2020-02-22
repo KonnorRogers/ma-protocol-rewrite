@@ -42,6 +42,7 @@
     "clean": "gatsby clean",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:watchAll": "jest --watchAll",
     "test:update": "jest -u"
   },
   "repository": {
