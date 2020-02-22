@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import "./layout.css"
-import Footer from "../components/footer.js"
+import Footer from "../footer/footer.js"
 
 const Layout = ({ children }) => {
   return (

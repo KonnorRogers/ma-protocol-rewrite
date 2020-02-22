@@ -1,5 +1,5 @@
 import React from "react"
-import MyLink from "./myLink.js"
+import MyLink from "../myLink/myLink.js"
 import * as styles from "../../styles/global.js"
 import * as nextPageStyles from "./styles.js"
 
