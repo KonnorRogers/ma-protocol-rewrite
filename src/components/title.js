@@ -14,6 +14,10 @@ const Title = ({ title, ...rest }) => {
     title = useCurrentDoc().name
   }
 
+  if (window.location.pathname === "/") {
+    return null
+  }
+
   return (
     <h2 id={title} css={titleCSS} {...rest}>
       <a href={`#${title}`} css={styles.links}>
