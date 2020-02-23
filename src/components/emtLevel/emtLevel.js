@@ -39,7 +39,6 @@ const EmtLevel = ({ children, level, medControl }) => {
 
   function firstResponderText() {
     const text = "First-Responder"
-    console.log(level)
 
     if (!isFirstResponder(level)) {
       return null
