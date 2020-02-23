@@ -3,22 +3,105 @@
 exports[`Matches snapshot 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .emotion-1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: red;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-1 {
+    font-size: 1.3rem;
+  }
+}
+
+.emotion-0 {
+  color: red;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 {
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid red;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
+.emotion-1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: red;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-1 {
+    font-size: 1.3rem;
+  }
+}
+
+.emotion-0 {
+  color: red;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 {
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid red;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
+<body>
     <div>
       <h2
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="emotion-1"
         id="paramedic"
       >
         <a
-          css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+          class="emotion-0"
           href="#paramedic"
         >
           EMT-Paramedic (Standing Orders)
         </a>
       </h2>
       <section
-        class="paramedic"
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="paramedic emotion-2"
       >
         <ul>
           <li>
@@ -28,21 +111,104 @@ Object {
       </section>
     </div>
   </body>,
-  "container": <div>
+  "container": .emotion-1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: red;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-1 {
+    font-size: 1.3rem;
+  }
+}
+
+.emotion-0 {
+  color: red;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 {
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid red;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
+.emotion-1 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: red;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-1 {
+    font-size: 1.3rem;
+  }
+}
+
+.emotion-0 {
+  color: red;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-2 {
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid red;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
+<div>
     <h2
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="emotion-1"
       id="paramedic"
     >
       <a
-        css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+        class="emotion-0"
         href="#paramedic"
       >
         EMT-Paramedic (Standing Orders)
       </a>
     </h2>
     <section
-      class="paramedic"
-      css="You have tried to stringify object returned from \`css\` function. It isn't supposed to be used directly (e.g. as value of the \`className\` prop), but rather handed to emotion so it can handle it (e.g. as value of \`css\` prop)."
+      class="paramedic emotion-2"
     >
       <ul>
         <li>

@@ -1,80 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Matches previous snapshot 1`] = `
+exports[`Should match snapshot 1`] = `
 Object {
   "asFragment": [Function],
-  "baseElement": .emotion-0 {
-  margin: 0.75rem;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  border: 2px solid rgba(218,165,32,1);
-  text-align: center;
-  font-size: 1rem;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.1rem;
-  }
-}
-
-.emotion-0 {
-  margin: 0.75rem;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  border: 2px solid rgba(218,165,32,1);
-  text-align: center;
-  font-size: 1rem;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.1rem;
-  }
-}
-
-<body>
-    <div>
-      <div
-        class="emotion-0"
-      />
-    </div>
+  "baseElement": <body>
+    <div />
   </body>,
-  "container": .emotion-0 {
-  margin: 0.75rem;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  border: 2px solid rgba(218,165,32,1);
-  text-align: center;
-  font-size: 1rem;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.1rem;
-  }
-}
-
-.emotion-0 {
-  margin: 0.75rem;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  border: 2px solid rgba(218,165,32,1);
-  text-align: center;
-  font-size: 1rem;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.1rem;
-  }
-}
-
-<div>
-    <div
-      class="emotion-0"
-    />
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
