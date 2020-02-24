@@ -4,6 +4,22 @@ exports[`Renders without error 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": .emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0 -0.25rem 0;
+  padding-left: 1rem;
+  color: #6666ff;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
   margin: 0.75rem;
   padding: 1.5rem 2rem;
   border-radius: 12px;
@@ -13,12 +29,28 @@ Object {
 }
 
 @media only screen and (min-width:640px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1.1rem;
   }
 }
 
 .emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0 -0.25rem 0;
+  padding-left: 1rem;
+  color: #6666ff;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
   margin: 0.75rem;
   padding: 1.5rem 2rem;
   border-radius: 12px;
@@ -28,19 +60,44 @@ Object {
 }
 
 @media only screen and (min-width:640px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1.1rem;
   }
 }
 
 <body>
     <div>
-      <div
+      <a
         class="emotion-0"
+        href="#test-note"
+      >
+        <strong>
+          Note:
+        </strong>
+      </a>
+      <div
+        class="emotion-1"
+        id="test-note"
       />
     </div>
   </body>,
   "container": .emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0 -0.25rem 0;
+  padding-left: 1rem;
+  color: #6666ff;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
   margin: 0.75rem;
   padding: 1.5rem 2rem;
   border-radius: 12px;
@@ -50,12 +107,28 @@ Object {
 }
 
 @media only screen and (min-width:640px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1.1rem;
   }
 }
 
 .emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem 0 -0.25rem 0;
+  padding-left: 1rem;
+  color: #6666ff;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
   margin: 0.75rem;
   padding: 1.5rem 2rem;
   border-radius: 12px;
@@ -65,14 +138,23 @@ Object {
 }
 
 @media only screen and (min-width:640px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1.1rem;
   }
 }
 
 <div>
-    <div
+    <a
       class="emotion-0"
+      href="#test-note"
+    >
+      <strong>
+        Note:
+      </strong>
+    </a>
+    <div
+      class="emotion-1"
+      id="test-note"
     />
   </div>,
   "debug": [Function],

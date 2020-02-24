@@ -33,6 +33,7 @@ Object {
     <div>
       <a
         class="emotion-0"
+        href="/"
       />
     </div>
   </body>,
@@ -65,6 +66,7 @@ Object {
 <div>
     <a
       class="emotion-0"
+      href="/"
     />
   </div>,
   "debug": [Function],

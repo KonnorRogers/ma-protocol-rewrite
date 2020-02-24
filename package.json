@@ -46,9 +46,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:watchAll": "jest --watchAll",
+    "test": "jest --runInBand",
+    "test:watch": "yarn run jest --watch",
+    "test:watchAll": "yarn run jest --watchAll",
     "test:update": "jest -u"
   },
   "repository": {
