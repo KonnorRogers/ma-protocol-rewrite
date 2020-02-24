@@ -4,7 +4,7 @@ import PageNav from "./pageNav.js"
 
 jest.mock("docz")
 
-test("Should match snapshot", () => {
+test("Renders without error", () => {
   const tree = render(<PageNav />)
 
   expect(tree).toMatchSnapshot()

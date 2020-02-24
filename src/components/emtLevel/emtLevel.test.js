@@ -2,7 +2,7 @@ import React from "react"
 import { render } from "@testing-library/react"
 import EMTLevel from "./emtLevel.js"
 
-test("Matches snapshot", () => {
+test("Renders without error", () => {
   const tree = render(
     <EMTLevel level="paramedic">
       <ul>

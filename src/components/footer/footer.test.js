@@ -2,7 +2,7 @@ import React from "react"
 import { render } from "@testing-library/react"
 import Footer from "./footer.js"
 
-test("Should match snapshot", () => {
+test("Renders without error", () => {
   const tree = render(<Footer />)
 
   expect(tree).toMatchSnapshot()

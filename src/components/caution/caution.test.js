@@ -2,7 +2,7 @@ import React from "react"
 import { render } from "@testing-library/react"
 import Caution from "./caution.js"
 
-test("Matches previous snapshot", () => {
+test("Renders without error", () => {
   const tree = render(<Caution />)
   expect(tree).toMatchSnapshot()
 })
