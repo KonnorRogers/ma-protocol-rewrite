@@ -1,15 +1,18 @@
 import React from "react"
+import PropTypes from "prop-types"
 import InformationBox from "../informationBox/informationBox.js"
 
-export const Caution = ({ children, ...rest }) => {
-  const borderColor = `rgba(218, 165, 32, 1)`
-  const text = "Caution:"
-
+const Caution = ({ children, borderColor, text, ...rest }) => {
   return (
     <InformationBox text={text} borderColor={borderColor} {...rest}>
       {children}
     </InformationBox>
   )
+}
+
+Caution.defaultProps = {
+  borderColor: `rgba(218, 165, 32, 1)`,
+  text: "Caution:",
 }
 
 export default Caution

@@ -46,7 +46,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest --runInBand",
+    "test": "jest",
+    "test:docker": "yarn run test --runInBand",
     "test:watch": "yarn run jest --watch",
     "test:watchAll": "yarn run jest --watchAll",
     "test:update": "jest -u"
