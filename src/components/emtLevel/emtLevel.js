@@ -10,7 +10,7 @@ const capitalize = level => {
   return firstLetter + restOfWord
 }
 
-const EmtLevel = ({ children, level, medControl }) => {
+const EMTLevel = ({ children, level, medControl }) => {
   const standingOrders = " (Standing Orders)"
   const medicalControl = " (Medical Control)"
 
@@ -22,7 +22,7 @@ const EmtLevel = ({ children, level, medControl }) => {
     return level
   }
 
-  function toEmtText() {
+  function prependEMT() {
     const text = `${capitalize(level)}`
     const levelText = `EMT-${text}`
 
@@ -57,13 +57,15 @@ const EmtLevel = ({ children, level, medControl }) => {
       return firstResponderTxt
     }
 
-    const levelText = toEmtText(level)
+    const levelText = prependEMT(level)
+
     if (medControl) {
       return levelText + medicalControl
     }
 
     return levelText + standingOrders
   }
+
   return (
     <>
       <h2 id={getLevel()} css={styles.header(level)}>
@@ -78,8 +80,9 @@ const EmtLevel = ({ children, level, medControl }) => {
   )
 }
 
-EmtLevel.propTypes = {
-  level: PropTypes.node.isRequired,
+EMTLevel.propTypes = {
+  level: PropTypes.string.isRequired,
+  medControl: PropTypes.bool,
 }
 
-export default EmtLevel
+export default EMTLevel

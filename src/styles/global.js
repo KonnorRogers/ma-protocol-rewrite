@@ -12,5 +12,6 @@ export const links = css`
 `
 
 export const arrow = css`
-  font-size: 2.2rem;
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
 `

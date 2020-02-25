@@ -13,3 +13,13 @@ test("Renders without error", () => {
 
   expect(tree).toMatchSnapshot()
 })
+
+test("Renders med control without error", () => {
+  const tree = render(
+    <EMTLevel level="advanced" medControl={true}>
+      <ul>
+        <li>More Protocols</li>
+      </ul>
+    </EMTLevel>
+  )
+})

@@ -15,4 +15,9 @@ Caution.defaultProps = {
   text: "Caution:",
 }
 
+Caution.propTypes = {
+  borderColor: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+}
+
 export default Caution
