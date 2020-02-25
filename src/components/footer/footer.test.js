@@ -10,6 +10,6 @@ test("Renders without error", () => {
       },
     },
   }
-  const tree = render(<Footer data={data} />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<Footer data={data} />)
+  expect(asFragment).toMatchSnapshot()
 })

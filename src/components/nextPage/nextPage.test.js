@@ -3,7 +3,7 @@ import { render } from "@testing-library/react"
 import NextPage from "./nextPage.js"
 
 test("Renders without error", () => {
-  const tree = render(<NextPage />)
+  const { asFragment } = render(<NextPage />)
 
-  expect(tree).toMatchSnapshot()
+  expect(asFragment).toMatchSnapshot()
 })

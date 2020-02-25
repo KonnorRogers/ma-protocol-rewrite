@@ -3,6 +3,6 @@ import { render } from "@testing-library/react"
 import Note from "./note.js"
 
 test("Renders without error", () => {
-  const tree = render(<Note id="test-note" />)
-  expect(tree).toMatchSnapshot()
+  const { asFragment } = render(<Note id="test-note" />)
+  expect(asFragment).toMatchSnapshot()
 })

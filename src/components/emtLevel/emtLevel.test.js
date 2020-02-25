@@ -3,7 +3,7 @@ import { render } from "@testing-library/react"
 import EMTLevel from "./emtLevel.js"
 
 test("Renders without error", () => {
-  const tree = render(
+  const { asFragment } = render(
     <EMTLevel level="paramedic">
       <ul>
         <li>Protocols</li>
@@ -11,15 +11,17 @@ test("Renders without error", () => {
     </EMTLevel>
   )
 
-  expect(tree).toMatchSnapshot()
+  expect(asFragment).toMatchSnapshot()
 })
 
 test("Renders med control without error", () => {
-  const tree = render(
+  const { asFragment } = render(
     <EMTLevel level="advanced" medControl={true}>
       <ul>
         <li>More Protocols</li>
       </ul>
     </EMTLevel>
   )
+
+  expect(asFragment).toMatchSnapshot()
 })

@@ -9,7 +9,7 @@ const Title = ({ title, ...rest }) => {
     title = useCurrentDoc().name
   }
 
-  if (window.location.pathname === "/") {
+  if (useCurrentDoc().route === "/") {
     return null
   }
 

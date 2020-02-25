@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 import * as styles from "../../styles/global.js"
 import * as infoStyles from "./styles.js"
@@ -41,6 +42,22 @@ const InformationBox = ({
   }
 
   return <InfoBox />
+}
+
+InformationBox.propTypes = {
+  id: PropTypes.string,
+  text: PropTypes.string,
+  children: PropTypes.node,
+  alignment: PropTypes.oneOf(["left", "center", "right"]),
+  css: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]),
+  borderColor: PropTypes.string.isRequired,
+}
+
+InformationBox.defaultProps = {
+  alignment: "center",
 }
 
 export default InformationBox
