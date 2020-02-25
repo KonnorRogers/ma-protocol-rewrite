@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import PropTypes from "prop-types"
 
 import * as styles from "./styles.js"
 
@@ -17,6 +18,21 @@ export const PureFooter = ({ data }) => (
     </footer>
   </>
 )
+
+/**
+To ensure the author is pulled in correctly
+data: { site: { siteMetadata: { author: 'string' } } }
+should be how the graphql queries returns the data
+*/
+PureFooter.propTypes = {
+  data: PropTypes.shape({
+    site: PropTypes.shape({
+      siteMetadata: PropTypes.shape({
+        author: PropTypes.string,
+      }),
+    }),
+  }),
+}
 
 export const Footer = props => {
   const data = useStaticQuery(graphql`
