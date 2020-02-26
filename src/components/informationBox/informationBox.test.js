@@ -4,5 +4,5 @@ import InformationBox from "./informationBox.js"
 
 test("Renders without error", () => {
   const { asFragment } = render(<InformationBox borderColor="red" />)
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })

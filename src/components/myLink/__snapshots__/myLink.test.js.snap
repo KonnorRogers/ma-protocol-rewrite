@@ -1,3 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders without error 1`] = `[Function]`;
+exports[`Renders without error 1`] = `
+<DocumentFragment>
+  .emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<a
+    class="emotion-0"
+    href="/"
+  />
+</DocumentFragment>
+`;

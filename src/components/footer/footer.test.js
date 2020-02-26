@@ -11,5 +11,5 @@ test("Renders without error", () => {
     },
   }
   const { asFragment } = render(<Footer data={data} />)
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })

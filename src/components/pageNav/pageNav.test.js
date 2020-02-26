@@ -11,19 +11,19 @@ test("Renders without error for 1st doc", () => {
   setCurrentDoc(0)
   const { asFragment } = render(<PageNav />)
 
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })
 
 test("Renders without error for 2nd doc", () => {
   setCurrentDoc(1)
   const { asFragment } = render(<PageNav />)
 
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })
 
 test("Renders without error for 3rd doc", () => {
   setCurrentDoc(2)
   const { asFragment } = render(<PageNav />)
 
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })

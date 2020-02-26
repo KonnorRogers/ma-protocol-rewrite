@@ -4,5 +4,5 @@ import Note from "./note.js"
 
 test("Renders without error", () => {
   const { asFragment } = render(<Note id="test-note" />)
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })
