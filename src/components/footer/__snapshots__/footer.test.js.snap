@@ -1,3 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders without error 1`] = `[Function]`;
+exports[`Renders without error 1`] = `
+<DocumentFragment>
+  .emotion-2 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: small;
+  text-align: center;
+  background: rgba(0,0,0,0.07);
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: medium;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-2 {
+    font-size: large;
+    padding: 0.25rem;
+  }
+}
+
+.emotion-0 {
+  padding: 0 0.25rem;
+  margin: 0 0.25rem;
+  color: var(--gatsby-purple);
+}
+
+.emotion-0:hover {
+  background: var(--gatsby-purple);
+  color: white;
+}
+
+.emotion-1 {
+  display: block;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-1::before {
+    content: " | ";
+    margin: 1px;
+    padding: 1px;
+  }
+}
+
+.emotion-2 {
+  margin: 0;
+  padding: 0.5rem;
+  font-size: small;
+  text-align: center;
+  background: rgba(0,0,0,0.07);
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: medium;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-2 {
+    font-size: large;
+    padding: 0.25rem;
+  }
+}
+
+.emotion-0 {
+  padding: 0 0.25rem;
+  margin: 0 0.25rem;
+  color: var(--gatsby-purple);
+}
+
+.emotion-0:hover {
+  background: var(--gatsby-purple);
+  color: white;
+}
+
+.emotion-1 {
+  display: block;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-1::before {
+    content: " | ";
+    margin: 1px;
+    padding: 1px;
+  }
+}
+
+<footer
+    class="emotion-2"
+  >
+    © 2020  |   Built with
+    <a
+      class="emotion-0"
+      href="https://www.gatsbyjs.org"
+    >
+      Gatsby
+    </a>
+    <span
+      class="emotion-1"
+    >
+      Created and maintained by Konnor Rogers
+    </span>
+  </footer>
+</DocumentFragment>
+`;

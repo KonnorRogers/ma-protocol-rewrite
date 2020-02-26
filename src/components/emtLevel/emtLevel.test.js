@@ -11,7 +11,7 @@ test("Renders without error", () => {
     </EMTLevel>
   )
 
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })
 
 test("Renders med control without error", () => {
@@ -23,5 +23,5 @@ test("Renders med control without error", () => {
     </EMTLevel>
   )
 
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })

@@ -5,5 +5,5 @@ import MyLink from "./myLink.js"
 test("Renders without error", () => {
   const { asFragment } = render(<MyLink to="/" />)
 
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })

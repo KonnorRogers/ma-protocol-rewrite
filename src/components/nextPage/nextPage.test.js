@@ -5,5 +5,5 @@ import NextPage from "./nextPage.js"
 test("Renders without error", () => {
   const { asFragment } = render(<NextPage />)
 
-  expect(asFragment).toMatchSnapshot()
+  expect(asFragment()).toMatchSnapshot()
 })

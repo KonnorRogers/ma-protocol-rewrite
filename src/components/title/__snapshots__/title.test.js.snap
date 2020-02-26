@@ -1,9 +1,159 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Renders without error when given a title 1`] = `[Function]`;
+exports[`Renders without error when given a title 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin-top: 2rem;
+  text-align: center;
+}
 
-exports[`Renders without error when not given a title for 1st doc 1`] = `[Function]`;
+.emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
 
-exports[`Renders without error when not given a title for 2nd doc 1`] = `[Function]`;
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
 
-exports[`Renders without error when not given a title for 3rd doc 1`] = `[Function]`;
+.emotion-1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<h2
+    class="emotion-1"
+    id="Title Test"
+  >
+    <a
+      class="emotion-0"
+      href="#Title Test"
+    >
+      Title Test
+    </a>
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Renders without error when not given a title for 1st doc 1`] = `<DocumentFragment />`;
+
+exports[`Renders without error when not given a title for 2nd doc 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<h2
+    class="emotion-1"
+    id="secondDoc"
+  >
+    <a
+      class="emotion-0"
+      href="#secondDoc"
+    >
+      secondDoc
+    </a>
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`Renders without error when not given a title for 3rd doc 1`] = `
+<DocumentFragment>
+  .emotion-1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.emotion-0 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<h2
+    class="emotion-1"
+    id="secondDoc"
+  >
+    <a
+      class="emotion-0"
+      href="#secondDoc"
+    >
+      secondDoc
+    </a>
+  </h2>
+</DocumentFragment>
+`;
