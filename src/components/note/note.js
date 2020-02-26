@@ -16,6 +16,7 @@ Note.defaultProps = {
 }
 
 Note.propTypes = {
+  id: PropTypes.string.isRequired,
   borderColor: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 }
