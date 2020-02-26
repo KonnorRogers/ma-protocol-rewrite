@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without error when given a title 1`] = `[Function]`;
+
+exports[`Renders without error when not given a title for 1st doc 1`] = `[Function]`;
+
+exports[`Renders without error when not given a title for 2nd doc 1`] = `[Function]`;
+
+exports[`Renders without error when not given a title for 3rd doc 1`] = `[Function]`;

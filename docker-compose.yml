@@ -11,4 +11,3 @@ services:
       - .:/myapp
     environment:
       - NODE_ENV=development
-      - GATSBY_WEBPACK_PUBLICPATH=/

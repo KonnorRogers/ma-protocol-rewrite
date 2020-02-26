@@ -1,0 +1,96 @@
+---
+name: 2.2A - Allergic Reaction / Anaphylaxis
+route: /sections/2/2.2A-allergic-reaction-anaphylaxis
+menu: "Section 2: Medical Protocols"
+---
+
+import EMTLevel from "../../components/emtLevel/emtLevel.js"
+import Caution from "../../components/caution/caution.js"
+import Note from "../../components/note/note.js"
+import MyLink from "../../components/myLink/myLink.js"
+
+<EMTLevel level="first-responder">
+  <ul>
+     <li>
+       <MyLink to="/sections/1/1.0-routine-patient-care">1.0 - Routine Patient Care</MyLink>
+     </li>
+  </ul>
+  <strong>MILD Distress</strong>
+    <ul>
+      <li>Monitor for severe distress.</li>
+    </ul>
+  <strong>SEVERE Distress</strong>
+    <ul>
+      <li>
+      Epinephrine auto-injector 0.3mg or IM in accordance with
+        <MyLink to={"@TODO"}>
+          Protocol 6.6 Check and Inject Epinephrine for BLS Providers.
+        </MyLink>
+      </li>
+      <li>2nd dose may be administered in 5 minutes if necessary.</li>
+    </ul>
+</EMTLevel>
+<EMTLevel level="first-responder" medControl={true}>
+  <ul>
+    <li>
+      <strong><em>
+        If patient is greater than 65 years old, First Responders and EMTs must
+        contact Medical Control to administer a second dose.
+      </em></strong>
+    </li>
+  </ul>
+</EMTLevel>
+<EMTLevel level="basic">
+  Follow above protocols
+</EMTLevel>
+<EMTLevel level="advanced">
+  <ul>
+    <li>Albuterol 2.5mg via nebulizer. Repeat every 5 minutes up to 4 doses.</li>
+    <li>
+      If approved, epinephrine 1:1,000 0.3mg IM-ONLY.
+      Must be administered in accordance with criteria listed in
+      <MyLink to={"@TODO"}>
+        A1 Adult Medication Reference.
+      </MyLink>
+    </li>
+  </ul>
+</EMTLevel>
+<EMTLevel level="paramedic">
+  <ul>
+    <li>Hydrocortisone 100 mg IV/IO/IM, or methylprednisolone 125 mg IV/IO/IM.</li>
+    <li><strong>Mild Distress:</strong></li>
+    <ul>
+      <li>Diphenhydramine 25-50 mg IV/IO/IM.</li>
+    </ul>
+  </ul>
+</EMTLevel>
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>Additional doses of above medications.</li>
+    <li>Epinephrine 1:10,000 Bolus: &nbsp; 0.1 mg – 0.5 mg IV/IO.</li>
+    <li>Epinephrine 1:10,000 Infusion: &nbsp; 2-10 mcg/min IV/IO.</li>
+    <li>
+      Norepinephrine infusion by pump: &nbsp; 0.1-0.5 mcg/kg/min IV/IO, titrate to goal
+      systolic blood pressure of 90mmHg.
+    </li>
+    <li>
+      Dopamine infusion: &nbsp; 2-20 mcg/kg/min IV/IO
+    </li>
+  </ul>
+</EMTLevel>
+<Caution id="caution-1">
+  Epinephrine for anaphylaxis must be administered by Auto-Injector or IM if
+trained and authorized to do so in accordance with
+  <MyLink to={"@TODO"}>
+    Medical Director Option Protocol 6.6 Check and Inject Epinephrine for BLS Providers
+  </MyLink>
+</Caution>
+<Note id="note-1" alignment="left">
+  <ul>
+    <li><strong>Mild Distress </strong>: itching, urticaria, nausea, and no respiratory distress.</li>
+    <li>
+      <strong>Severe Distress </strong>: stridor, bronchospasm, severe abdominal pain, respiratory
+      distress, tachycardia, shock, edema of lips, tongue or face.
+    </li>
+  </ul>
+</Note>
