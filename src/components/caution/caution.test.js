@@ -9,7 +9,12 @@ test("Renders without error", () => {
 
 test("Renders with different props", () => {
   const { asFragment, getByTestId } = render(
-    <Caution text="My caution" borderColor="green" data-testid="caution" />
+    <Caution
+      id="caution-1"
+      text="My caution"
+      borderColor="green"
+      data-testid="caution"
+    />
   )
   expect(asFragment()).toMatchSnapshot()
   expect(getByTestId("caution")).toBeTruthy()
