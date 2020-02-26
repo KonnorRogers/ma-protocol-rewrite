@@ -4,24 +4,92 @@ route: /sections/2/2.3P-altered-mental
 menu: "Section 2: Medical Protocols"
 ---
 
-import EMTLevel from "../../emtLevel.js";
-import MyLink from "../../myLink.js";
-
+import EMTLevel from "../../components/emtLevel/emtLevel.js";
+import MyLink from "../../components/myLink/myLink.js";
 
 <EMTLevel level="basic">
-  <MyLink to="/sections/1/1.0-routine-patient-care">
-    1.0 Routine Patient Care
-  </MyLink>
- If patient is unconscious or seizing, transport on left side (recovery position).
- Glucose is indicated only for documented hypoglycemia. If authorized and
-trained to do so, obtain a blood sugar reading.
- If glucose is known to be less than 70 mg/dL and the patient is conscious
-and can speak and swallow, administer oral glucose or other sugar source
-as tolerated.
- Oral glucose ½ tube for a patient under 20 kg.
-1 tube for a patient 20kg or over.
-o Other sugar sources are acceptable.
- A second dose may be necessary after 10 minutes if patient remains
-symptomatic
+  <ul>
+    <li>
+      <MyLink to="/sections/1/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+    <li>
+      If patient is unconscious or seizing, transport on left side (recovery position).
+    </li>
+    <li>
+      Glucose is indicated only for documented hypoglycemia. If authorized and
+      trained to do so, obtain a blood sugar reading.
+    </li>
+    <ul>
+      <li>
+        If glucose is known to be less than 70 mg/dL and the patient is conscious
+        and can speak and swallow, administer oral glucose or other sugar source
+        as tolerated.
+      </li>
+      <li>
+        Oral glucose:
+        <ul>
+          <li>
+            ½ tube for a patient under 20 kg.
+          </li>
+          <li>
+            1 tube for a patient 20kg or over.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        Other sugar sources are acceptable.
+      </li>
+    </ul>
+    <li>
+      A second dose may be necessary after 10 minutes if patient remains
+      symptomatic
+    </li>
+  </ul>
+</EMTLevel>
 
+<EMTLevel level="advanced">
+<ul>
+  <li>
+    Treatment for specific etiologies, or coma of unknown etiology:
+  </li>
+<ul>
+
+    <li>
+      Known <strong>HYPO</strong>glycemia (glucose &lt; 70 mg/dL):
+    </li>
+    <ul>
+      <li>
+        Dextrose 10% 0.5 gm/kg IV/IO.
+      </li>
+      <li>
+        Glucagon 0.1 mg/kg IV/IO/IM up to max. of 1 mg.
+      </li>
+    </ul>
+    <li>
+      Known <strong>HYPER</strong>glycemia:
+    </li>
+    <ul>
+      <li>
+        Administer 10mL/kg fluid bolus.
+      </li>
+    </ul>
+  </ul>
+</ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  For patients with confirmed adrenal insufficiency, see
+  <MyLink to="/sections/2/2.1-adrenal-insufficiency-crisis">
+    2.1 Adrenal Insufficiency Adult/Pediatric.
+  </MyLink>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>Additional doses of above medications.</li>
+  </ul>
 </EMTLevel>
