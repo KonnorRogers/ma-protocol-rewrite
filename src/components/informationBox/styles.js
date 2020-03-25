@@ -18,7 +18,7 @@ export const info = ({ alignment = "center", borderColor }) => {
 
 export const text = ({ alignment, borderColor }) => css`
   margin: 1rem 0 -0.25rem 0;
-  padding-left: 1rem;
+  padding: 0.25rem 1rem;
   text-align: ${alignment};
   color: ${borderColor};
 `
