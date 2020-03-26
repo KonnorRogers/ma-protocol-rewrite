@@ -2,9 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import InformationBox from "../informationBox/informationBox.js"
 
-const Caution = ({ children, borderColor, text, ...rest }) => {
+const Caution = ({ children, borderColor, text, alignment, ...rest }) => {
   return (
-    <InformationBox text={text} borderColor={borderColor} {...rest}>
+    <InformationBox
+      text={text}
+      borderColor={borderColor}
+      alignment={alignment}
+      {...rest}
+    >
       {children}
     </InformationBox>
   )
@@ -13,10 +18,12 @@ const Caution = ({ children, borderColor, text, ...rest }) => {
 Caution.defaultProps = {
   borderColor: `rgba(218, 165, 32, 1)`,
   text: "Caution:",
+  alignment: "left",
 }
 
 Caution.propTypes = {
   borderColor: PropTypes.string.isRequired,
+  alignment: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 }
 
