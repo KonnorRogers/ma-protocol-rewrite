@@ -4,4 +4,65 @@ route: /sections/2/2.08-hypothermia
 menu: "Section 2: Medical Protocols"
 ---
 
-Placeholder
+import EMTLevel from "../../components/emtLevel/emtLevel.js";
+import Caution from "../../components/caution/caution.js";
+import MyLink from "../../components/myLink/myLink.js";
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/1/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+    <li>Avoid Rough Movement and Prevent Further Heat Loss:</li>
+    <li>Insulate from the ground and shield from wind/water</li>
+    <li>Move to a warm environment as soon as practical</li>
+    <li>Remove any wet clothing</li>
+    <li>Cover with warm blankets, particularly the head</li>
+    <li>
+      Determine patient’s hemodynamic status: Assess pulse and respiratory rates
+      for a period of 60 seconds to determine pulselessness or profound asystole, for
+      which CPR would be required.
+    </li>
+    <li>
+      If patient is in cardiopulmonary arrest, refer to:
+      <ul>
+        3.4A Cardiac Arrest - Asystole/Pulseless Electrical Activity
+        3.4P Cardiac Arrest - Asystole/Pulseless Electrical Activity
+        3.5A Cardiac Arrest - Ventricular Fibrillation/Pulseless Ventricular Tachycardia.
+        3.5P Cardiac Arrest - Ventricular Fibrillation/Pulseless Ventricular Tachycardia.
+      </ul>
+    </li>
+    <ul>
+      <li>
+        Initiate CPR and administer oxygen using appropriate oxygen delivery
+        device, as clinically indicated.
+      </li>
+      <li>
+        Use AED according to the ECC guidelines or as otherwise noted in these
+        Protocols and other advisories.
+      </li>
+    </ul>
+    <li>
+      Whenever possible, use warmed, humidified oxygen (104°F – 107°F, 40°C –
+      42°C) by non-rebreather mask, during resuscitation procedures for hypothermic
+      patients.
+    </li>
+    <li>
+      CAUTION: Do NOT administer anything orally if patient does not have a
+      reasonable level of consciousness and normal gag reflex.
+    </li>
+    <li>
+      Manage hypoglycemia and narcotic overdose per protocol.
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  Warm IV Fluids should be used.
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  If pulse and breathing are absent, treat per Cardiac Arrest Protocols.
+</EMTLevel>

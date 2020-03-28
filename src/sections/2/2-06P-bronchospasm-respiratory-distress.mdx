@@ -6,6 +6,8 @@ menu: "Section 2: Medical Protocols"
 
 import MyLink from "../../components/myLink/myLink.js";
 import EMTLevel from "../../components/emtLevel/emtLevel.js";
+import Caution from "../../components/caution/caution.js"
+import Note from "../../components/note/note.js"
 
 <EMTLevel level="basic">
   <ul>
@@ -59,7 +61,7 @@ import EMTLevel from "../../components/emtLevel/emtLevel.js";
       <li>
         **If properly trained and authorized, use
 
-        <MyLink to="/sections/6/6-01-bls-bronchodilators">
+        <MyLink to="/sections/6/6.01-bls-bronchodilators">
           6.1 BLS Albuterol.
         </MyLink>
       </li>
@@ -118,5 +120,105 @@ import EMTLevel from "../../components/emtLevel/emtLevel.js";
 </ul>
 </EMTLevel>
 
+<EMTLevel level="advanced">
+  <ul>
+    <li>
+      If the condition is not improving with administration of supplemental oxygen,
+      consider the following:
+    </li>
+    <li>
+      Albuterol sulfate 1.25 mg with ipratropium bromide, 250 mcg via nebulizer if
+      less than 2 years of age.
+    </li>
+    <li>
+      Albuterol sulfate 2.5-3 mg with ipratropium bromide, 500 mcg via nebulizer if
+      age 2 years or greater.
+    </li>
+    <li>
+      A second dose of albuterol, with or without ipratropium bromide, may be
+      administered as necessary.
+    </li>
+  </ul>
 
+<strong>Note:</strong> a multi-dose inhaler may be used to give albuterol or ipratropium (instead of
+nebulizer) if infection control is an issue (e.g., influenza-like-illness).
 
+<strong style="display: block; margin-top: 1rem; margin-bottom: 0.5rem;">
+  ADVANCED EMT STANDING ORDERS
+</strong>
+
+<ul>
+  <strong>
+    SEVERE DISTRESS:
+  </strong>
+  <li>
+    If patient is over 6 months age and under 25kg, administer epinephrine 0.15mg
+    via auto-injector or IM. If body weight is over 25 kg, administer epinephrine
+    0.3mg via auto-injector or IM.
+  </li>
+  <li>
+    Contact Medical Control if second dose is required after 5 minutes
+  </li>
+</ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      For a child age 2 years old or more who has a known diagnosis of asthma,
+      consider:
+      <ul>
+        <li>hydrocortisone 2 mg/kg to max. 100 mg IV/IO/IM; or</li>
+        <li>methylprednisolone 2 mg/kg to max. 125 mg IV/IO/IM.</li>
+      </ul>
+    </li>
+    <li>
+      Consider magnesium sulfate 25 mg/kg IV/IO over 10 min. (maximum dose 2
+      grams).
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl="{true}">
+  <ul>
+    <li>Additional doses of above medications.</li>
+  </ul>
+</EMTLevel>
+
+<Caution id="caution-1">
+  Epinephrine for anaphylaxis must be administered by Auto-Injector or IM if
+  trained and authorized to do so in accordance with:
+
+  <MyLink to="/sections/6/6-6-check-inject-epinephrine-emt-basic">
+    Medical Director Option Protocol 6.6
+    Check and Inject Epinephrine for BLS Providers
+  </MyLink>
+</Caution>
+
+<Caution id="caution-2">
+  For patients under 12 years old, the airway is in most cases best managed with a BVM or SGA.
+  <div>
+    In some cases, intubation may be preferred. This is at the discretion of the treating paramedic.
+  </div>
+</Caution>
+
+<Note id="note-1" alignment="left">
+  <div>
+    <strong>Mild distress </strong>in children is evidenced by minor wheezing and good air entry.
+  </div>
+
+  <div style="margin: 1.25rem 0">
+    <strong>Severe distress</strong> in children is evidenced by poor air entry, extreme use of accessory muscles,
+    nasal flaring, grunting, cyanosis and/or altered mental status (weak cry, somnolence, poor
+    responsiveness). <strong>REMEMBER:</strong> Severe bronchospasm may present without wheezes, if there is
+    minimal air movement.
+  </div>
+
+  <div>
+    <strong>Respiratory Distress</strong> is defined as inadequate breathing in terms of rate, rhythm, quality and/or
+    depth of breathing. Children who are breathing too fast or slow, or in an abnormal pattern or
+    manner, may not be receiving enough oxygen to support bodily functions and may allow an
+    increase in carbon dioxide to dangerous levels. Cyanosis is usually a late sign and requires
+    immediate treatment.
+  </div>
+</Note>
