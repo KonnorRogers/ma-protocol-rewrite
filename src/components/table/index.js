@@ -1,14 +1,16 @@
 import * as React from "react"
 import * as styles from "./styles.js"
 import PropTypes from "prop-types"
+import { useColorMode } from "theme-ui"
 
-let ColumnContext
+let TableContext
 
 function Table({ columns, children, ...rest }) {
-  ColumnContext = React.createContext(columns)
+  const [colorMode, _setColorMode] = useColorMode()
+  TableContext = React.createContext({ columns, colorMode })
 
   return (
-    <div css={styles.table} {...rest}>
+    <div css={styles.table(colorMode)} {...rest}>
       {children}
     </div>
   )
@@ -19,8 +21,9 @@ Table.propTypes = {
 }
 
 export function TableRow({ children, heading, lastRow, css, ...rest }) {
+  const colorMode = React.useContext(TableContext).colorMode
   return (
-    <div css={[styles.row(lastRow, heading), css]} {...rest}>
+    <div css={[styles.row({ lastRow, heading, colorMode }), css]} {...rest}>
       {children}
     </div>
   )
@@ -37,10 +40,11 @@ TableRow.defaultProps = {
 }
 
 export function TableItem({ children, align, lastItem, ...rest }) {
-  const columns = React.useContext(ColumnContext)
+  const columns = React.useContext(TableContext).columns
+  const colorMode = React.useContext(TableContext).colorMode
 
   return (
-    <div css={styles.item({ lastItem, align, columns })} {...rest}>
+    <div css={styles.item({ lastItem, align, columns, colorMode })} {...rest}>
       {children}
     </div>
   )
