@@ -1,19 +1,20 @@
+/** @jsx jsx */
 import * as React from "react"
-import Table, { TableRow, TableItem } from "../table"
+import Table, { TableRow, TableItem } from "../../../components/table"
 import data from "./data"
 import { jsx, css } from "@emotion/core"
-import Screen from "../../utils/screen"
+import Screen from "../../../utils/screen.js"
 
 function Header() {
   const headerRow = css`
-    font-size: 0.7rem;
+    font-size: 0.65rem;
 
-    {Screen.medium} {
-      font-size: 1rem;
+    ${Screen.small} {
+      font-size: 0.75rem;
     }
 
-    {Screen.extraLarge} {
-      font-size: 1.2rem;
+    ${Screen.large} {
+      font-size: 1.1rem;
     }
   `
   return (
@@ -27,7 +28,7 @@ function Header() {
   )
 }
 
-function Row({ object, lastRow = false, ...props }) {
+function Row({ object, lastRow, ...props }) {
   const { kg, age, atropine, pralidoxime, midazolam } = object
 
   const rowCss = css`
@@ -54,11 +55,13 @@ function Row({ object, lastRow = false, ...props }) {
 
 function Rows({ data }) {
   const rows = data.map((object, index) => {
-    if (index < data.length - 1) {
-      return <Row object={object} key={object.kg.toString()} />
+    let lastRow = false
+
+    if (index >= data.length - 1) {
+      lastRow = true
     }
 
-    return <Row object={object} key={object.kg.toString()} lastRow={true} />
+    return <Row object={object} key={object.kg.toString()} lastRow={lastRow} />
   })
 
   return rows

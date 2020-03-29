@@ -11,7 +11,7 @@ export const table = css`
 export const row = (lastRow, heading) => {
   const borderBottom = lastRow ? "none" : "1px solid black"
 
-  const fontSize = heading ? "1.25rem" : "inherit"
+  const fontSize = heading ? "1.25rem" : "initial"
   const fontWeight = heading ? "bold" : "normal"
 
   return css`

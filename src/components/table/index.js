@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from "./styles"
+import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 
 let ColumnContext

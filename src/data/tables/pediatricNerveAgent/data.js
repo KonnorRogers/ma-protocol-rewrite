@@ -1,5 +1,12 @@
 const data = [
   {
+    kg: 0,
+    age: 0,
+    atropine: "0.02-0.05mg/kg",
+    pralidoxime: "20-40 mg/kg",
+    midazolam: "0.1mg/kg",
+  },
+  {
     kg: 1,
     age: "Preemie",
     atropine: "0.1mg",
