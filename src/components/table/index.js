@@ -18,27 +18,29 @@ Table.propTypes = {
   columns: PropTypes.number.isRequired,
 }
 
-export function TableRow({ children, lastRow, ...rest }) {
+export function TableRow({ children, heading, lastRow, ...rest }) {
   return (
-    <div css={styles.row(lastRow)} {...rest}>
+    <div css={styles.row(lastRow, heading)} {...rest}>
       {children}
     </div>
   )
 }
 
 TableRow.propsTypes = {
+  heading: PropTypes.bool,
   lastRow: PropTypes.bool,
 }
 
 TableRow.defaultProps = {
+  heading: false,
   lastRow: false,
 }
 
-export function TableItem({ children, lastItem, ...rest }) {
+export function TableItem({ children, align, lastItem, ...rest }) {
   const columns = React.useContext(ColumnContext)
 
   return (
-    <div css={styles.item({ lastItem, columns })} {...rest}>
+    <div css={styles.item({ lastItem, align, columns })} {...rest}>
       {children}
     </div>
   )
@@ -46,10 +48,20 @@ export function TableItem({ children, lastItem, ...rest }) {
 
 TableItem.propTypes = {
   lastItem: PropTypes.bool,
+  align: PropTypes.string,
 }
 
 TableItem.defaultProps = {
   lastItem: false,
+  align: "center",
+}
+
+export function TableCell({ children, ...rest }) {
+  return (
+    <div css={styles.tableCell} {...rest}>
+      {children}
+    </div>
+  )
 }
 
 export default Table

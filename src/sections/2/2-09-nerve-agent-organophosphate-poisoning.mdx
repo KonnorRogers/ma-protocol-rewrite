@@ -6,7 +6,10 @@ menu: "Section 2: Medical Protocols"
 
 import EMTLevel from "../../components/emtLevel/emtLevel.js";
 import MyLink from "../../components/myLink/myLink.js";
-import Table, {TableRow, TableItem} from "../../components/table"
+import Table, {TableRow, TableItem, TableCell} from "../../components/table"
+import Caution from "../../components/caution/caution"
+import Note from "../../components/note/note";
+import PediatricNerveAgent from "../../components/pediatricNerveAgent"
 
 <EMTLevel level="first-responder">
     <EMTLevel level="basic">
@@ -67,13 +70,112 @@ import Table, {TableRow, TableItem} from "../../components/table"
 </EMTLevel>
 
 <Table columns={3}>
-  <TableRow>
+  <TableRow heading={true}>
     <TableItem>Severity</TableItem>
-    <TableItem>Cholinergic AGENT Signs & Symptoms</TableItem>
-    <TableItem lastItem={true}>ADULT TREATMENT STANDING ORDERS</TableItem>
+    <TableItem>Signs & Symptoms</TableItem>
+    <TableItem lastItem={true}>Adult Treatment</TableItem>
   </TableRow>
 
+  <TableRow>
+    <TableItem>
+      <TableCell>Mild</TableCell>
+    </TableItem>
+    <TableItem align='left'>
+      <div>Runny Nose</div>
+      <div>Cough</div>
+      <div>Pupils may be pinpoint</div>
+      <div>Eye Pain</div>
+      <div>Lacrimation</div>
+    </TableItem>
+    <TableItem align='left'>
+      <div>Decontaminate</div>
+      <div>Administer 100% Oxygen</div>
+      <div>Administer One kit IM <strong> OR </strong></div>
+      <div>2mg atropine IM only & either:</div>
+      <div>600mg IM pralidoximine OR</div>
+      <div>1g IV pralidoximine</div>
+    </TableItem>
+  </TableRow>
+  <TableRow>
+    <TableItem><TableCell>Moderate</TableCell></TableItem>
+    <TableItem align='left'>
+      <div>Runny Nose</div>
+      <div>Cough</div>
+      <div>Sweating, twitching</div>
+      <div>Nausea, abdominal cramping</div>
+      <div>Weakness</div>
+      <div>Localized sweating (seen with dermal exposure)</div>
+      <div>Eye pain, trouble seeing </div>
+      <div>Wheezing, shortness of breath</div>
+    </TableItem>
+    <TableItem align='left'>
+      <div>Decontaminate</div>
+      <div>Administer 100% Oxygen</div>
+      <div>Administer <strong>Two to Three kits</strong> IM</div>
+      <div>OR</div>
+      <div>4mg atropine IM <strong>only</strong> & either:</div>
+      <div>600-1200mg IM pralidoxime OR</div>
+      <div>1gm IV pralidoxime</div>
+    </TableItem>
+  </TableRow>
   <TableRow lastRow={true}>
-    <TableItem>And anotha one</TableItem>
+    <TableItem><TableCell>Severe</TableCell></TableItem>
+    <TableItem align='left' style="padding-left: 1.25rem;">
+      All the above, plus:
+        <ul>
+          <li>Vomiting</li>
+          <li>Diarrhea</li>
+          <li>Drooling, copious respiratory secretions</li>
+          <li>Significant weakness</li>
+          <li>Seizures</li>
+          <li>Decreased level of consciousness</li>
+          <li>Apnea</li>
+        </ul>
+    </TableItem>
+    <TableItem align='left'>
+      <div>Decontaminate</div>
+      <div>Administer 100% Oxygen</div>
+      <div>Administer Three kits IM</div>
+      <div>OR</div>
+      <div>6mg atropine IM only & either:</div>
+      <div>1200-1800mg IM pralidoxime OR</div>
+      <div>1gm IV pralidoxime</div>
+      <div>&</div>
+      <div>Diazepam 10mg IM Autoinjector (CANA Kit) </div>
+      <div>OR</div>
+      <div>Midazolam 6-10mg IV/IO/IM</div>
+    </TableItem>
   </TableRow>
 </Table>
+
+<Caution id="caution-1">
+  Do not administer an adult dose to a child &lt;50kg.
+</Caution>
+
+<Caution id="caution-2">
+  Dermal absorption of nerve agents may lead to delayed symptom
+  onset up to 18 hours after exposure. Initial symptoms/signs may only be
+  local such as localized fasiculations and sweating.
+</Caution>
+
+<Note id="note-1">
+  <strong>PROCEDURES FOR SELF-CARE AND CARE OF AUTHORIZED PUBLIC EMPLOYEES
+  OR FIRST RESPONDERS</strong>
+  <ol style="text-align: left;">
+    <li>Remove self or fellow authorized public employee from area if possible.</li>
+    <li>Assess degree of symptoms: Mild, Moderate or Severe.</li>
+    <li>
+      Administer 1 to 3 auto-injector kits IM (each kit with atropine 2mg IM and pralidoxime chloride
+      600mg IM) as guided by degree of symptoms.
+    </li>
+    <li>
+      Seek additional medical support for further monitoring and transport of anyone receiving therapy.
+    </li>
+    <li>
+      Disrobing will significantly enhance the decontamination process. Perform decontamination, and
+      seek assistance in further decontamination measures.
+    </li>
+  </ol>
+</Note>
+
+<PediatricNerveAgent />
