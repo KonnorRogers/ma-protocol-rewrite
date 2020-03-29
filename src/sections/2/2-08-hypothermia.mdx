@@ -28,10 +28,26 @@ import MyLink from "../../components/myLink/myLink.js";
     <li>
       If patient is in cardiopulmonary arrest, refer to:
       <ul>
-        3.4A Cardiac Arrest - Asystole/Pulseless Electrical Activity
-        3.4P Cardiac Arrest - Asystole/Pulseless Electrical Activity
-        3.5A Cardiac Arrest - Ventricular Fibrillation/Pulseless Ventricular Tachycardia.
-        3.5P Cardiac Arrest - Ventricular Fibrillation/Pulseless Ventricular Tachycardia.
+        <li>
+          <MyLink to="/sections/3/3.04A-asystole-pea">
+            3.4A Cardiac Arrest - Asystole/Pulseless Electrical Activity
+          </MyLink>
+        </li>
+        <li>
+          <MyLink to="/sections/3/3.04P-asystole-pea">
+            3.4P Cardiac Arrest - Asystole/Pulseless Electrical Activity
+          </MyLink>
+        </li>
+        <li>
+          <MyLink to="/sections/3/3.05A-vfib-pulseless-vtach">
+            3.5A Cardiac Arrest - Ventricular Fibrillation/Pulseless Ventricular Tachycardia.
+          </MyLink>
+        </li>
+        <li>
+          <MyLink to="/sections/3/3.05P-vfib-pulseless-vtach">
+            3.5P Cardiac Arrest - Ventricular Fibrillation/Pulseless Ventricular Tachycardia.
+          </MyLink>
+        </li>
       </ul>
     </li>
     <ul>
@@ -50,7 +66,7 @@ import MyLink from "../../components/myLink/myLink.js";
       patients.
     </li>
     <li>
-      CAUTION: Do NOT administer anything orally if patient does not have a
+      <strong>CAUTION:</strong> Do <strong>NOT</strong> administer anything orally if patient does not have a
       reasonable level of consciousness and normal gag reflex.
     </li>
     <li>
@@ -66,3 +82,7 @@ import MyLink from "../../components/myLink/myLink.js";
 <EMTLevel level="paramedic">
   If pulse and breathing are absent, treat per Cardiac Arrest Protocols.
 </EMTLevel>
+
+<Caution id="caution-1">
+  Do NOT massage extremities in an attempt to actively rewarm the patient.
+</Caution>

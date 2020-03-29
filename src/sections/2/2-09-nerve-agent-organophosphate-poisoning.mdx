@@ -3,3 +3,77 @@ name: 2.09 - Nerve Agent / Organophosphate Poisoning
 route: /sections/2/2.09-nerve-agent-orgranophosphate-poisoning
 menu: "Section 2: Medical Protocols"
 ---
+
+import EMTLevel from "../../components/emtLevel/emtLevel.js";
+import MyLink from "../../components/myLink/myLink.js";
+import Table, {TableRow, TableItem} from "../../components/table"
+
+<EMTLevel level="first-responder">
+    <EMTLevel level="basic">
+      <EMTLevel level="advanced">
+        <ul>
+          <li>
+            <MyLink to="/sections/1/1.0-routine-patient-care">
+              1.0 Routine Patient Care
+            </MyLink>
+          </li>
+          <li>
+            Assess for SLUDGEM (Salivation, Lacrimation, Urination, Defecation, Gastric
+            upset, Emesis, Muscle twitching/miosis (constricted pupils) and KILLER Bs
+            (Bradycardia, Bronchorrhea, Bronchospasm).
+          </li>
+          <li>Remove to cold zone after decontamination and monitor for symptoms.</li>
+          <li>Antidotal therapy should be started as soon as symptoms appear.</li>
+          <li>All antidote auto-injections must be administered IM.</li>
+          <li>
+            Determine dosing according to the following symptom assessment and guidelines.
+          </li>
+        </ul>
+      </EMTLevel>
+    </EMTLevel>
+</EMTLevel>
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      If field conditions permit, initiate cardiac monitoring and consider the
+      administration of IV medications.
+    </li>
+    <li>If symptoms persist after the administration of 3 DuoDote kits:</li>
+
+    <ul>
+      <li>Atropine 2mg IV/IO; repeat every 5 minutes until secretions clear</li>
+      <li>Pralidoxime 1 – 2 gram IV/IO over 30 – 60 minutes</li>
+      <li>Diazepam 10mg IM by auto-injector every 10 minutes, as needed.</li>
+
+    Instead of diazepam, may use :
+
+      <ul>
+        <li>Midazolam 2 mg IV/IO/IN every 5 minutes; or 6 mg IM every 10 minutes</li>
+      </ul>
+    </ul>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>
+      Additional doses of above medications.
+    </li>
+    <li>
+      Pralidoxime maintenance infusion: up to 500mg per hour (maximum of 12
+      grams/day).
+    </li>
+  </ul>
+</EMTLevel>
+
+<Table columns={3}>
+  <TableRow>
+    <TableItem>Severity</TableItem>
+    <TableItem>Cholinergic AGENT Signs & Symptoms</TableItem>
+    <TableItem lastItem={true}>ADULT TREATMENT STANDING ORDERS</TableItem>
+  </TableRow>
+
+  <TableRow lastRow={true}>
+    <TableItem>And anotha one</TableItem>
+  </TableRow>
+</Table>
