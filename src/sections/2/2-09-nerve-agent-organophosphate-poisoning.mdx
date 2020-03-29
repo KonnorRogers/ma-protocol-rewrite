@@ -11,8 +11,8 @@ import Caution from "../../components/caution/caution"
 import Note from "../../components/note/note";
 import PediatricNerveAgent from "../../components/pediatricNerveAgent"
 
-<EMTLevel level="first-responder">
-    <EMTLevel level="basic">
+<EMTLevel level="first-responder" outside={true}>
+    <EMTLevel level="basic" outside={true}>
       <EMTLevel level="advanced">
         <ul>
           <li>
@@ -87,7 +87,7 @@ import PediatricNerveAgent from "../../components/pediatricNerveAgent"
       <div>Eye Pain</div>
       <div>Lacrimation</div>
     </TableItem>
-    <TableItem align='left'>
+    <TableItem align='left' lastItem={true}>
       <div>Decontaminate</div>
       <div>Administer 100% Oxygen</div>
       <div>Administer One kit IM <strong> OR </strong></div>
@@ -108,7 +108,7 @@ import PediatricNerveAgent from "../../components/pediatricNerveAgent"
       <div>Eye pain, trouble seeing </div>
       <div>Wheezing, shortness of breath</div>
     </TableItem>
-    <TableItem align='left'>
+    <TableItem align='left' lastItem={true}>
       <div>Decontaminate</div>
       <div>Administer 100% Oxygen</div>
       <div>Administer <strong>Two to Three kits</strong> IM</div>
@@ -132,7 +132,7 @@ import PediatricNerveAgent from "../../components/pediatricNerveAgent"
           <li>Apnea</li>
         </ul>
     </TableItem>
-    <TableItem align='left'>
+    <TableItem align='left' lastItem={true}>
       <div>Decontaminate</div>
       <div>Administer 100% Oxygen</div>
       <div>Administer Three kits IM</div>

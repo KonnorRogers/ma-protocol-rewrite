@@ -43,3 +43,15 @@ export const level = level => css`
     font-size: 1.25rem;
   }
 `
+
+export const outerBlock = css`
+  padding-bottom: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+
+  ${Screen.small} {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.75rem;
+  }
+`

@@ -18,9 +18,9 @@ Table.propTypes = {
   columns: PropTypes.number.isRequired,
 }
 
-export function TableRow({ children, heading, lastRow, ...rest }) {
+export function TableRow({ children, heading, lastRow, css, ...rest }) {
   return (
-    <div css={styles.row(lastRow, heading)} {...rest}>
+    <div css={[styles.row(lastRow, heading), css]} {...rest}>
       {children}
     </div>
   )
