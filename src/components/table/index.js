@@ -6,7 +6,7 @@ import { useColorMode } from "theme-ui"
 let TableContext
 
 function Table({ columns, children, ...rest }) {
-  const [colorMode, _setColorMode] = useColorMode()
+  const colorMode = useColorMode()[0]
   TableContext = React.createContext({ columns, colorMode })
 
   return (
@@ -39,12 +39,15 @@ TableRow.defaultProps = {
   lastRow: false,
 }
 
-export function TableItem({ children, align, lastItem, ...rest }) {
+export function TableItem({ colspan, children, align, lastItem, ...rest }) {
   const columns = React.useContext(TableContext).columns
   const colorMode = React.useContext(TableContext).colorMode
 
   return (
-    <div css={styles.item({ lastItem, align, columns, colorMode })} {...rest}>
+    <div
+      css={styles.item({ colspan, lastItem, align, columns, colorMode })}
+      {...rest}
+    >
       {children}
     </div>
   )
@@ -53,11 +56,13 @@ export function TableItem({ children, align, lastItem, ...rest }) {
 TableItem.propTypes = {
   lastItem: PropTypes.bool,
   align: PropTypes.string,
+  colspan: PropTypes.number,
 }
 
 TableItem.defaultProps = {
   lastItem: false,
   align: "center",
+  colspan: 1,
 }
 
 export function TableCell({ children, ...rest }) {

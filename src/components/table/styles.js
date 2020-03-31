@@ -33,8 +33,8 @@ export const row = ({ lastRow, heading, colorMode }) => {
   `
 }
 
-export const item = ({ columns, align, lastItem, colorMode }) => {
-  const columnWidth = 100 / columns
+export const item = ({ colspan, columns, align, lastItem, colorMode }) => {
+  const columnWidth = (100 / columns) * colspan
   const color = toColor(colorMode)
 
   const borderRight = lastItem ? "none" : `1px solid ${color}`

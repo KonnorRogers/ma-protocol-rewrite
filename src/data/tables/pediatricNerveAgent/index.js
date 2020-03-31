@@ -52,7 +52,6 @@ function Row({ object, lastRow, ...props }) {
     </TableRow>
   )
 }
-
 function Rows({ data }) {
   const rows = data.map((object, index) => {
     let lastRow = false
