@@ -1,14 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import { capitalize } from "../../utils/stringUtils"
 import * as styles from "./styles.js"
-
-const capitalize = level => {
-  const firstLetter = level[0].toUpperCase()
-  const restOfWord = level.slice(1)
-
-  return firstLetter + restOfWord
-}
 
 const EMTLevel = ({ children, level, medControl, outside }) => {
   const standingOrders = " (Standing Orders)"

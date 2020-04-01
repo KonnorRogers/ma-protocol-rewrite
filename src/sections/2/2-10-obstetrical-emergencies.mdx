@@ -4,4 +4,87 @@ route: /sections/2/2.10-obstetrical-emergencies
 menu: "Section 2: Medical Protocols"
 ---
 
+import EMTLevel from "../../components/emtLevel/emtLevel.js"
+import MyLink from "../../components/myLink/myLink.js"
+import Note from "../../components/note/note.js"
 
+<EMTLevel level="basic" outside={true}>
+  <EMTLevel level="advanced">
+    <ul>
+      <li>
+        <MyLink to="/sections/1/1.0-routine-patient-care">
+          1.0 Routine Patient Care
+        </MyLink>
+      </li>
+      <li>
+        Expose as necessary to access for bleeding/discharge, crowning, prolapsed
+        cord, breech, limb presentation.
+      </li>
+      <li>
+        Do not digitally examine or insert anything into the vagina.
+      </li>
+      <ul>
+        <li>
+          Exceptions: fingers may be inserted to manage baby’s airway in breech
+          presentation or to treat prolapsed or nuchal cord.
+        </li>
+      </ul>
+      <li>
+        Place mother in left-lateral recumbent position except as noted:
+      </li>
+      <ul>
+        <li>
+          Prolapsed cord:
+        </li>
+        <ul>
+          <li>
+            Knee-chest position or Trendelenburg position
+          </li>
+          <li>
+            If only the cord has prolapsed and the presenting part has yet to go
+            through the cervix, gently elevate the presenting part to remove pressure
+            on the umbilical vessels to permit blood flow through cord.
+          </li>
+        </ul>
+      </ul>
+    </ul>
+  </EMTLevel>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+<ul>
+  <li>
+    Eclamptic Seizures
+  </li>
+  <ul>
+   <li> Midazolam 2 - 6 mg slow IV/IO/IM or</li>
+   <li> Midazolam 2 - 6 mg IN</li>
+   <li> Magnesium sulfate 2-4 grams IV/IO over 5 minutes. </li>
+  </ul>
+</ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl="{true}">
+  <ul>
+    <li>
+      Administration of additional IV Normal Saline.
+    </li>
+    <li>
+      Calcium chloride 10% 20 mg/kg IV/IO administer slowly over 5 minutes to a
+      maximum dose of 1 gram. (Antidote for Magnesium Sulfate).
+    </li>
+    <li>
+      Further anticonvulsant therapy.
+    </li>
+  </ul>
+</EMTLevel>
+
+<Note id="note-1" alignment="left">
+  Special Considerations in Cardiac Arrest (with additional resources)
+  <ul>
+    <li>
+      If the fundus height is at or above the level of the umbilicus
+    </li>
+  </ul>
+  Manually displace the gravid uterus to the left to enhance venous return.
+</Note>

@@ -73,7 +73,9 @@ export default function PediatricNerveAgent({ children, ...rest }) {
         id="pedi-nerve-agent"
         style={{ textAlign: "center", marginTop: "2rem" }}
       >
-        <a href="#pedi-nerve-agent">Pediatric Nerve Agent Table</a>
+        <a href="#pedi-nerve-agent">
+          Pediatric Dosing for Nerve Agent Exposures
+        </a>
       </h3>
       <Table columns={5} {...rest}>
         <Header />

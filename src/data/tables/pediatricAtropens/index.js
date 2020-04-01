@@ -1,16 +1,10 @@
-/** @jsx jsx */
 import * as React from "react"
 import Table, { TableRow, TableItem } from "../../../components/table"
 import data from "./data"
-import { jsx, css } from "@emotion/core"
-import Screen from "../../../utils/screen.js"
+import * as styles from "./styles"
 
 function TableHeader(_props) {
-  function capitalize(string) {
-    return string.replace(/^\w/, (c) => c.toUpperCase())
-  }
-
-  function TableHeaderItems({ children }) {
+  function TableHeaderItems(_props) {
     const keys = Object.keys(data[0])
     const columns = keys.map((key, index) => {
       let lastItem = false
@@ -30,7 +24,7 @@ function TableHeader(_props) {
   }
 
   return (
-    <TableRow heading={true}>
+    <TableRow heading={true} css={styles.header}>
       <TableHeaderItems />
     </TableRow>
   )
@@ -40,13 +34,16 @@ function TableData(_props) {
   return data.map((obj, index) => {
     let lastRow = false
 
-    if (data.length >= index - 1) {
+    if (index >= data.length - 1) {
       lastRow = true
     }
 
     return (
-      <TableRow lastRow={lastRow}>
-        <TableItem lastItem
+      <TableRow key={obj.weight.toString()} lastRow={lastRow} css={styles.row}>
+        <TableItem>{obj.weight}</TableItem>
+        <TableItem>{obj.mild}</TableItem>
+        <TableItem>{obj.moderate}</TableItem>
+        <TableItem lastItem={true}>{obj.severe}</TableItem>
       </TableRow>
     )
   })
@@ -54,10 +51,25 @@ function TableData(_props) {
 
 function PediatricAtropens(_props) {
   return (
-    <Table columns={4}>
-      <TableHeader />
-      <TableData />
-    </Table>
+    <>
+      <h3
+        id="pediatric-atropens"
+        style={{ textAlign: "center", marginTop: "0.5rem" }}
+      >
+        <a href="#pediatric-atropens">Pediatric Atropens</a>
+      </h3>
+      <p>
+        Pediatric Atropine Dosing for Nerve Agent Toxicity Using Pediatric
+        Atropens
+      </p>
+      <Table columns={4}>
+        <TableHeader />
+        <TableData />
+      </Table>
+      <p>
+        Note: Pralidoxime reduced dose pediatric autoinjectors are not available
+      </p>
+    </>
   )
 }
 
