@@ -1,0 +1,386 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PediatricAtropens Should render without error 1`] = `
+<DocumentFragment>
+  <h3
+    id="pediatric-atropens"
+    style="text-align: center; margin-top: 0.5rem;"
+  >
+    <a
+      href="#pediatric-atropens"
+    >
+      Pediatric Atropens
+    </a>
+  </h3>
+  <p>
+    Pediatric Atropine Dosing for Nerve Agent Toxicity Using Pediatric Atropens
+  </p>
+  .emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.emotion-4 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-4 {
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-4 {
+    font-size: 1.15rem;
+  }
+}
+
+.emotion-0 {
+  width: 25%;
+  border-right: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-3 {
+  width: 25%;
+  border-right: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-9 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-9 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-9 {
+    font-size: 0.85rem;
+  }
+}
+
+.emotion-19 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: none;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-19 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-19 {
+    font-size: 0.85rem;
+  }
+}
+
+.emotion-20 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.emotion-4 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.75rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-4 {
+    font-size: 0.95rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-4 {
+    font-size: 1.15rem;
+  }
+}
+
+.emotion-0 {
+  width: 25%;
+  border-right: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-3 {
+  width: 25%;
+  border-right: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-9 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-9 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-9 {
+    font-size: 0.85rem;
+  }
+}
+
+.emotion-19 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: none;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-19 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-19 {
+    font-size: 0.85rem;
+  }
+}
+
+<div
+    class="emotion-20"
+  >
+    <div
+      class="emotion-4"
+    >
+      <div
+        class="emotion-0"
+      >
+        Weight
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Mild
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Moderate
+      </div>
+      <div
+        class="emotion-3"
+      >
+        Severe
+      </div>
+    </div>
+    <div
+      class="emotion-9"
+    >
+      <div
+        class="emotion-0"
+      >
+        15-40lbs (7-18kg)
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1 x 0.5mg Atropen
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1 x 1mg Atropen
+      </div>
+      <div
+        class="emotion-3"
+      >
+        3 x 0.5mg Atropen
+      </div>
+    </div>
+    <div
+      class="emotion-9"
+    >
+      <div
+        class="emotion-0"
+      >
+        40-90lbs (18-41kg)
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1 x 1mg Atropen
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1 x 2mg Atropen
+      </div>
+      <div
+        class="emotion-3"
+      >
+        3 x 1mg Atropen
+      </div>
+    </div>
+    <div
+      class="emotion-19"
+    >
+      <div
+        class="emotion-0"
+      >
+        &gt;90lbs (41kg)
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1 x 2mg Atropen
+      </div>
+      <div
+        class="emotion-0"
+      >
+        2 x 2mg Atropen
+      </div>
+      <div
+        class="emotion-3"
+      >
+        3 x 2mg Atropen
+      </div>
+    </div>
+  </div>
+  <p>
+    Note: Pralidoxime reduced dose pediatric autoinjectors are not available
+  </p>
+</DocumentFragment>
+`;

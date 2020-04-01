@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdultAutoInjector Renders without error 1`] = `
+<DocumentFragment>
+  <h3
+    align="center"
+    id="adult-auto-injectors"
+    style="margin-top: 2rem;"
+  >
+    <a
+      href="#adult-auto-injectors"
+    >
+      Adult AutoInjectors
+    </a>
+  </h3>
+  <p>
+    Pediatric Dosing for SEVERE Nerve Agent Toxicity Using Adult Autoinjectors (i.e. seizures, hypotension, coma, cardiac arrest).
+    <br />
+    Use only if Pediatric Atropen or when Atropine/Pralidoxime vials are not available
+  </p>
+  .emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.emotion-5 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-5 {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-5 {
+    font-size: 0.95rem;
+  }
+}
+
+.emotion-0 {
+  width: 20%;
+  border-right: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-4 {
+  width: 20%;
+  border-right: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-11 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-11 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-11 {
+    font-size: 0.85rem;
+  }
+}
+
+.emotion-23 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: none;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-23 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-23 {
+    font-size: 0.85rem;
+  }
+}
+
+.emotion-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.emotion-5 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.7rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-5 {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-5 {
+    font-size: 0.95rem;
+  }
+}
+
+.emotion-0 {
+  width: 20%;
+  border-right: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-4 {
+  width: 20%;
+  border-right: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-11 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-11 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-11 {
+    font-size: 0.85rem;
+  }
+}
+
+.emotion-23 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: none;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-23 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-23 {
+    font-size: 0.85rem;
+  }
+}
+
+<div
+    class="emotion-24"
+  >
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-0"
+      >
+        Approximate Age
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Approximate Weight
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Number of Autoinjectors (each type)
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Atropine dosing range (mg/kg)
+      </div>
+      <div
+        class="emotion-4"
+      >
+        Pralidoxime dosing range (mg/kg)
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        3-7yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        13-25kg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.08-0.13
+      </div>
+      <div
+        class="emotion-4"
+      >
+        24-46
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        8-14yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        25-50kg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        2
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.08-0.13
+      </div>
+      <div
+        class="emotion-4"
+      >
+        24-46
+      </div>
+    </div>
+    <div
+      class="emotion-23"
+    >
+      <div
+        class="emotion-0"
+      >
+        &gt;14yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        &gt;51kg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        3
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.11 or less
+      </div>
+      <div
+        class="emotion-4"
+      >
+        35 or less
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

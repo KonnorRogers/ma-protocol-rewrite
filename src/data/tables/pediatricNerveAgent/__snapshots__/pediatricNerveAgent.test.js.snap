@@ -1,0 +1,806 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PediatricNerveAgent Renders without error 1`] = `
+<DocumentFragment>
+  <h3
+    id="pedi-nerve-agent"
+    style="text-align: center; margin-top: 2rem;"
+  >
+    <a
+      href="#pedi-nerve-agent"
+    >
+      Pediatric Dosing for Nerve Agent Exposures
+    </a>
+  </h3>
+  .emotion-108 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.emotion-5 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-5 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .emotion-5 {
+    font-size: 1.1rem;
+  }
+}
+
+.emotion-0 {
+  width: 20%;
+  border-right: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-4 {
+  width: 20%;
+  border-right: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-11 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-11 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .emotion-11 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-107 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: none;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-107 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .emotion-107 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-108 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border: 1px solid white;
+}
+
+.emotion-5 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-5 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .emotion-5 {
+    font-size: 1.1rem;
+  }
+}
+
+.emotion-0 {
+  width: 20%;
+  border-right: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-4 {
+  width: 20%;
+  border-right: none;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.emotion-11 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid white;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-11 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .emotion-11 {
+    font-size: 1rem;
+  }
+}
+
+.emotion-107 {
+  font-weight: normal;
+  font-size: initial;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: none;
+  font-size: 0.65rem;
+}
+
+@media only screen and (min-width:768px) {
+  .emotion-107 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  .emotion-107 {
+    font-size: 1rem;
+  }
+}
+
+<div
+    class="emotion-108"
+  >
+    <div
+      class="emotion-5"
+    >
+      <div
+        class="emotion-0"
+      >
+        Kg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Age
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Atropine
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Pralidoxime
+      </div>
+      <div
+        class="emotion-4"
+      >
+        Midazolam
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        0
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.02-0.05mg/kg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        20-40 mg/kg
+      </div>
+      <div
+        class="emotion-4"
+      >
+        0.1mg/kg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        1
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Preemie
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.1mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        20-40mg
+      </div>
+      <div
+        class="emotion-4"
+      >
+        0.05-0.1mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        2
+      </div>
+      <div
+        class="emotion-0"
+      >
+        Newborn
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.1mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        40-80mg
+      </div>
+      <div
+        class="emotion-4"
+      >
+        0.1-0.2mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        5
+      </div>
+      <div
+        class="emotion-0"
+      >
+        3mos
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.1mg-0.25mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        100-200mg
+      </div>
+      <div
+        class="emotion-4"
+      >
+        0.25-0.5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        10
+      </div>
+      <div
+        class="emotion-0"
+      >
+        12mos
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.2-0.5mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        200-400mg
+      </div>
+      <div
+        class="emotion-4"
+      >
+        0.5-1mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        15
+      </div>
+      <div
+        class="emotion-0"
+      >
+        2-3yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.3-0.75mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        300-600mg
+      </div>
+      <div
+        class="emotion-4"
+      >
+        2mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        20
+      </div>
+      <div
+        class="emotion-0"
+      >
+        4-7yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.4-1mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        400-800mg
+      </div>
+      <div
+        class="emotion-4"
+      >
+        2.5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        25
+      </div>
+      <div
+        class="emotion-0"
+      >
+        6-9yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.5-1.25mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        500mg-1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        3mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        30
+      </div>
+      <div
+        class="emotion-0"
+      >
+        7-11yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.6-1.5mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        600mg-1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        3.5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        35
+      </div>
+      <div
+        class="emotion-0"
+      >
+        8-13yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.7-1.75mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        700mg-1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        4mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        40
+      </div>
+      <div
+        class="emotion-0"
+      >
+        9-14yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.8-2mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        800mg-1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        4.5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        45
+      </div>
+      <div
+        class="emotion-0"
+      >
+        10-16yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        0.9-2mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        900mg-1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        50
+      </div>
+      <div
+        class="emotion-0"
+      >
+        11-18yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1-2mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        55
+      </div>
+      <div
+        class="emotion-0"
+      >
+        12-18yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1.25-2mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        60
+      </div>
+      <div
+        class="emotion-0"
+      >
+        13-18yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1.5-2mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        5mg
+      </div>
+    </div>
+    <div
+      class="emotion-11"
+    >
+      <div
+        class="emotion-0"
+      >
+        65
+      </div>
+      <div
+        class="emotion-0"
+      >
+        14-18yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        2mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        5mg
+      </div>
+    </div>
+    <div
+      class="emotion-107"
+    >
+      <div
+        class="emotion-0"
+      >
+        70
+      </div>
+      <div
+        class="emotion-0"
+      >
+        16-18yrs
+      </div>
+      <div
+        class="emotion-0"
+      >
+        2mg
+      </div>
+      <div
+        class="emotion-0"
+      >
+        1g
+      </div>
+      <div
+        class="emotion-4"
+      >
+        5mg
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
