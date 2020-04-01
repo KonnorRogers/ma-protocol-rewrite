@@ -10,5 +10,6 @@ function useColorMode() {
   return [color, setColorMode]
 }
 
+themeUI.setColorMode = setColorMode
 themeUI.useColorMode = useColorMode
 module.exports = themeUI
