@@ -5,12 +5,12 @@ import { useColorMode } from "theme-ui"
 
 let TableContext
 
-function Table({ columns, children, ...rest }) {
+function Table({ columns, children, minWidth, ...rest }) {
   const colorMode = useColorMode()[0]
   TableContext = React.createContext({ columns, colorMode })
 
   return (
-    <div css={styles.table(colorMode)} {...rest}>
+    <div css={styles.table(colorMode, minWidth)} {...rest}>
       {children}
     </div>
   )

@@ -19,6 +19,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
     Use only if Pediatric Atropen or when Atropine/Pralidoxime vials are not available
   </p>
   .emotion-24 {
+  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -35,11 +36,18 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid white;
+  min-width: 400px;
+}
+
+@media only screen and (min-width:400px) {
+  .emotion-24 {
+    overflow-x: auto;
+  }
 }
 
 .emotion-5 {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,6 +159,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
 }
 
 .emotion-24 {
+  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -167,11 +176,18 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid white;
+  min-width: 400px;
+}
+
+@media only screen and (min-width:400px) {
+  .emotion-24 {
+    overflow-x: auto;
+  }
 }
 
 .emotion-5 {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
