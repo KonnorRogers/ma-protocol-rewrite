@@ -4,8 +4,9 @@ function toColor(colormode) {
   return colormode === "dark" ? "white" : "black"
 }
 
-export const table = minWidth => {
+export const table = ({ colorMode, minWidth }) => {
   minWidth = minWidth || "400px"
+  const color = toColor(colorMode)
   return css`
     overflow-x: scroll;
     display: flex;
@@ -39,9 +40,9 @@ export const row = ({ lastRow, heading, colorMode }) => {
   `
 }
 
-export const item = ({ colspan, columns, align, lastItem, colormode }) => {
+export const item = ({ colspan, columns, align, lastItem, colorMode }) => {
   const columnWidth = (100 / columns) * colspan
-  const color = toColor(colormode)
+  const color = toColor(colorMode)
 
   const borderRight = lastItem ? "none" : `1px solid ${color}`
 

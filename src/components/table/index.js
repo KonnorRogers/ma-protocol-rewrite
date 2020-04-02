@@ -5,12 +5,16 @@ import { useColorMode } from "theme-ui"
 
 let TableContext
 
-function Table({ columns, children, minWidth, ...rest }) {
-  const colorMode = useColorMode()[0]
+function Table({ columns, children, minWidth, colormode, ...rest }) {
+  let colorMode = useColorMode()[0]
   TableContext = React.createContext({ columns, colorMode })
 
+  if (colormode) {
+    colorMode = colorMode
+  }
+
   return (
-    <div css={styles.table(minWidth)} {...rest}>
+    <div css={styles.table({ minWidth, colorMode })} {...rest}>
       {children}
     </div>
   )
@@ -20,8 +24,15 @@ Table.propTypes = {
   columns: PropTypes.number.isRequired,
 }
 
-export function TableRow({ children, heading, lastRow, css, ...rest }) {
-  const colorMode = React.useContext(TableContext).colorMode
+export function TableRow({
+  children,
+  heading,
+  lastRow,
+  css,
+  colormode,
+  ...rest
+}) {
+  const colorMode = colormode || React.useContext(TableContext).colorMode
   return (
     <div css={[styles.row({ lastRow, heading, colorMode }), css]} {...rest}>
       {children}
@@ -39,9 +50,17 @@ TableRow.defaultProps = {
   lastRow: false,
 }
 
-export function TableItem({ colspan, children, align, lastItem, ...rest }) {
+export function TableItem({
+  colspan,
+  children,
+  align,
+  lastItem,
+  colormode,
+  ...rest
+}) {
   const columns = React.useContext(TableContext).columns
-  const colorMode = React.useContext(TableContext).colorMode
+
+  const colorMode = colormode || React.useContext(TableContext).colorMode
 
   return (
     <div
