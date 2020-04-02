@@ -1,5 +1,5 @@
 import * as React from "react"
-import { data, headers } from "./data"
+import { data, colors, headers } from "./data"
 import Table, {
   TableCell,
   TableRow,
@@ -47,9 +47,12 @@ function Data(_props) {
         }
 
         return (
-          <TableItem key={data[item][key]} lastItem={lastItem}>
-            {/* <TableCell>{data[item][key]}</TableCell> */}
-            {data[item][key]}
+          <TableItem
+            style={{ backgroundColor: colors[key] }}
+            key={data[item][key]}
+            lastItem={lastItem}
+          >
+            <TableCell>{data[item][key]}</TableCell>
           </TableItem>
         )
       })

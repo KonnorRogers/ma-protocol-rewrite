@@ -1,11 +1,10 @@
 import { jsx, css } from "@emotion/core"
 
-function toColor(colorMode) {
-  return colorMode === "dark" ? "white" : "black"
+function toColor(colormode) {
+  return colormode === "dark" ? "white" : "black"
 }
 
-export const table = (colorMode, minWidth) => {
-  const color = toColor(colorMode)
+export const table = minWidth => {
   minWidth = minWidth || "400px"
   return css`
     overflow-x: scroll;
@@ -40,9 +39,9 @@ export const row = ({ lastRow, heading, colorMode }) => {
   `
 }
 
-export const item = ({ colspan, columns, align, lastItem, colorMode }) => {
+export const item = ({ colspan, columns, align, lastItem, colormode }) => {
   const columnWidth = (100 / columns) * colspan
-  const color = toColor(colorMode)
+  const color = toColor(colormode)
 
   const borderRight = lastItem ? "none" : `1px solid ${color}`
 

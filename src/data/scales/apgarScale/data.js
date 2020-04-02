@@ -43,3 +43,11 @@ export const headers = {
   onePt: "1 Point",
   zeroPts: "0 Points",
 }
+
+export const colors = {
+  activity: "#ffe3e3",
+  pulse: "#ddd6e5",
+  grimace: "#d7e3bf",
+  appearance: "#bfcfe2",
+  respiration: "#fafaaf",
+}

@@ -10,7 +10,7 @@ function Table({ columns, children, minWidth, ...rest }) {
   TableContext = React.createContext({ columns, colorMode })
 
   return (
-    <div css={styles.table(colorMode, minWidth)} {...rest}>
+    <div css={styles.table(minWidth)} {...rest}>
       {children}
     </div>
   )
