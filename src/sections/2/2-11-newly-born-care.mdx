@@ -6,6 +6,7 @@ menu: "Section 2: Medical Protocols"
 
 import EMTLevel from "../../components/emtLevel/emtLevel.js"
 import ApgarScale from "../../data/scales/apgarScale"
+import Note from "../../components/note/note"
 
 <EMTLevel level="basic" outside={true}>
   <EMTLevel level="advanced" outside={true}>
@@ -78,3 +79,17 @@ import ApgarScale from "../../data/scales/apgarScale"
 </EMTLevel>
 
 <ApgarScale />
+
+<Note id="note-1" alignment="left">
+  <strong>PEARLS:</strong>
+  <ul>
+    <li>
+      Newly born are prone to hypothermia which may lead to hypoglycemia, hypoxia and lethargy.
+      Aggressive warming techniques should be initiated including drying, swaddling, and warm blankets
+      covering body and head.
+    </li>
+    <li>
+      Raise temperature in ambulance patient compartment.
+    </li>
+  </ul>
+</Note>

@@ -89,10 +89,15 @@ function Data(_props) {
 
 function ApgarScale(_props) {
   return (
-    <Table columns={4}>
-      <HeaderRow />
-      <Data />
-    </Table>
+    <>
+      <h3 id="apgar-scale" style={{ textAlign: "center", marginTop: "1.5rem" }}>
+        <a href="#apgar-scale">APGAR Scale</a>
+      </h3>
+      <Table columns={4}>
+        <HeaderRow />
+        <Data />
+      </Table>
+    </>
   )
 }
 

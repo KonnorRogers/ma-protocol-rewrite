@@ -2,6 +2,16 @@
 
 exports[`ApgarScale() Should render without error 1`] = `
 <DocumentFragment>
+  <h3
+    id="apgar-scale"
+    style="text-align: center; margin-top: 1.5rem;"
+  >
+    <a
+      href="#apgar-scale"
+    >
+      APGAR Scale
+    </a>
+  </h3>
   .emotion-50 {
   overflow-x: scroll;
   display: -webkit-box;
