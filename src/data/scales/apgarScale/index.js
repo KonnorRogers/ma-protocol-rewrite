@@ -13,9 +13,9 @@ function HeaderRow(_props) {
   function Items(_props) {
     const headerValues = Object.values(headers)
     return headerValues.map((header, index) => {
-      const lastItem = false
+      let lastItem = false
 
-      if (index >= headers) {
+      if (index >= headerValues.length - 1) {
         lastItem = true
       }
 
@@ -54,10 +54,10 @@ function Data(_props) {
         // Only bold the first column
         if (index === 0) {
           string = (
-            <p>
+            <span>
               <strong>{firstLetter}</strong>
               {restOfWord}
-            </p>
+            </span>
           )
         }
 
