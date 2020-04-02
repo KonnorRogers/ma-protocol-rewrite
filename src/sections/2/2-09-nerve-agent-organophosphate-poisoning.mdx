@@ -1,0 +1,207 @@
+---
+name: 2.09 - Nerve Agent / Organophosphate Poisoning
+route: /sections/2/2.09-nerve-agent-orgranophosphate-poisoning
+menu: "Section 2: Medical Protocols"
+---
+
+import EMTLevel from "../../components/emtLevel/emtLevel.js";
+import MyLink from "../../components/myLink/myLink.js";
+import Table, {TableRow, TableItem, TableCell} from "../../components/table"
+import Caution from "../../components/caution/caution"
+import Note from "../../components/note/note";
+import PediatricNerveAgent from "../../data/tables/pediatricNerveAgent"
+import PediatricAtropens from "../../data/tables/pediatricAtropens"
+import AdultAutoInjectors from "../../data/tables/adultAutoInjectors"
+
+<EMTLevel level="first-responder" outside={true}>
+    <EMTLevel level="basic" outside={true}>
+      <EMTLevel level="advanced">
+        <ul>
+          <li>
+            <MyLink to="/sections/1/1.0-routine-patient-care">
+              1.0 Routine Patient Care
+            </MyLink>
+          </li>
+          <li>
+            Assess for SLUDGEM (Salivation, Lacrimation, Urination, Defecation, Gastric
+            upset, Emesis, Muscle twitching/miosis (constricted pupils) and KILLER Bs
+            (Bradycardia, Bronchorrhea, Bronchospasm).
+          </li>
+          <li>Remove to cold zone after decontamination and monitor for symptoms.</li>
+          <li>Antidotal therapy should be started as soon as symptoms appear.</li>
+          <li>All antidote auto-injections must be administered IM.</li>
+          <li>
+            Determine dosing according to the following symptom assessment and guidelines.
+          </li>
+        </ul>
+      </EMTLevel>
+    </EMTLevel>
+</EMTLevel>
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      If field conditions permit, initiate cardiac monitoring and consider the
+      administration of IV medications.
+    </li>
+    <li>If symptoms persist after the administration of 3 DuoDote kits:</li>
+
+    <ul>
+      <li>Atropine 2mg IV/IO; repeat every 5 minutes until secretions clear</li>
+      <li>Pralidoxime 1 – 2 gram IV/IO over 30 – 60 minutes</li>
+      <li>Diazepam 10mg IM by auto-injector every 10 minutes, as needed.</li>
+
+    Instead of diazepam, may use :
+
+      <ul>
+        <li>Midazolam 2 mg IV/IO/IN every 5 minutes; or 6 mg IM every 10 minutes</li>
+      </ul>
+    </ul>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>
+      Additional doses of above medications.
+    </li>
+    <li>
+      Pralidoxime maintenance infusion: up to 500mg per hour (maximum of 12
+      grams/day).
+    </li>
+  </ul>
+</EMTLevel>
+
+<Table columns={3}>
+  <TableRow heading={true}>
+    <TableItem>Severity</TableItem>
+    <TableItem>Signs & Symptoms</TableItem>
+    <TableItem lastItem={true}>Adult Treatment</TableItem>
+  </TableRow>
+
+  <TableRow>
+    <TableItem>
+      <TableCell>Mild</TableCell>
+    </TableItem>
+    <TableItem align='left'>
+      <div>Runny Nose</div>
+      <div>Cough</div>
+      <div>Pupils may be pinpoint</div>
+      <div>Eye Pain</div>
+      <div>Lacrimation</div>
+    </TableItem>
+    <TableItem align='left' lastItem={true}>
+      <div>Decontaminate</div>
+      <div>Administer 100% Oxygen</div>
+      <div>Administer One kit IM <strong> OR </strong></div>
+      <div>2mg atropine IM only & either:</div>
+      <div>600mg IM pralidoximine OR</div>
+      <div>1g IV pralidoximine</div>
+    </TableItem>
+  </TableRow>
+  <TableRow>
+    <TableItem><TableCell>Moderate</TableCell></TableItem>
+    <TableItem align='left'>
+      <div>Runny Nose</div>
+      <div>Cough</div>
+      <div>Sweating, twitching</div>
+      <div>Nausea, abdominal cramping</div>
+      <div>Weakness</div>
+      <div>Localized sweating (seen with dermal exposure)</div>
+      <div>Eye pain, trouble seeing </div>
+      <div>Wheezing, shortness of breath</div>
+    </TableItem>
+    <TableItem align='left' lastItem={true}>
+      <div>Decontaminate</div>
+      <div>Administer 100% Oxygen</div>
+      <div>Administer <strong>Two to Three kits</strong> IM</div>
+      <div>OR</div>
+      <div>4mg atropine IM <strong>only</strong> & either:</div>
+      <div>600-1200mg IM pralidoxime OR</div>
+      <div>1gm IV pralidoxime</div>
+    </TableItem>
+  </TableRow>
+  <TableRow lastRow={true}>
+    <TableItem><TableCell>Severe</TableCell></TableItem>
+    <TableItem align='left' style="padding-left: 1.25rem;">
+      All the above, plus:
+        <ul>
+          <li>Vomiting</li>
+          <li>Diarrhea</li>
+          <li>Drooling, copious respiratory secretions</li>
+          <li>Significant weakness</li>
+          <li>Seizures</li>
+          <li>Decreased level of consciousness</li>
+          <li>Apnea</li>
+        </ul>
+    </TableItem>
+    <TableItem align='left' lastItem={true}>
+      <div>Decontaminate</div>
+      <div>Administer 100% Oxygen</div>
+      <div>Administer Three kits IM</div>
+      <div>OR</div>
+      <div>6mg atropine IM only & either:</div>
+      <div>1200-1800mg IM pralidoxime OR</div>
+      <div>1gm IV pralidoxime</div>
+      <div>&</div>
+      <div>Diazepam 10mg IM Autoinjector (CANA Kit) </div>
+      <div>OR</div>
+      <div>Midazolam 6-10mg IV/IO/IM</div>
+    </TableItem>
+  </TableRow>
+</Table>
+
+<Caution id="caution-1">
+  Do not administer an adult dose to a child &lt;50kg.
+</Caution>
+
+<Caution id="caution-2">
+  Dermal absorption of nerve agents may lead to delayed symptom
+  onset up to 18 hours after exposure. Initial symptoms/signs may only be
+  local such as localized fasiculations and sweating.
+</Caution>
+
+<Note id="note-1">
+  <strong>PROCEDURES FOR SELF-CARE AND CARE OF AUTHORIZED PUBLIC EMPLOYEES
+  OR FIRST RESPONDERS</strong>
+  <ol style="text-align: left;">
+    <li>Remove self or fellow authorized public employee from area if possible.</li>
+    <li>Assess degree of symptoms: Mild, Moderate or Severe.</li>
+    <li>
+      Administer 1 to 3 auto-injector kits IM (each kit with atropine 2mg IM and pralidoxime chloride
+      600mg IM) as guided by degree of symptoms.
+    </li>
+    <li>
+      Seek additional medical support for further monitoring and transport of anyone receiving therapy.
+    </li>
+    <li>
+      Disrobing will significantly enhance the decontamination process. Perform decontamination, and
+      seek assistance in further decontamination measures.
+    </li>
+  </ol>
+</Note>
+
+<PediatricNerveAgent />
+
+<br />
+
+<PediatricAtropens />
+
+<br /> 
+
+<AdultAutoInjectors />
+
+<Note id="note-2" alignment="left">
+  Mark I kits and Duodote are not approved for pediatric use, however, they should be used as
+  initial therapy in circumstances for children with severe life-threatening nerve agent toxicity when IV
+  therapy is not available. This assumes 0.8 inch needle insertion depth.
+
+  <br /><br />
+
+  Potential high dose of atropine and pralidoxime for age/weight. However, these numbers are
+  within the general guidelines recommended for the first 60-90 minutes of therapy after a severe
+  exposure.
+
+  <br /><br />
+
+  Administer injection in large muscle mass. Avoid deltoid. Suggest using thigh.
+</Note>

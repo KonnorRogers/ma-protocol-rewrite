@@ -2,187 +2,6 @@
 
 exports[`Renders without error for 1st doc 1`] = `
 <DocumentFragment>
-  .emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.emotion-6 * {
-  width: 50%;
-  padding: 0.25rem;
-  margin: auto;
-}
-
-.emotion-6 .prev-text,
-.emotion-6 .next-text {
-  display: none;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-6 .next-word,
-  .emotion-6 .prev-word {
-    display: none;
-  }
-
-  .emotion-6 .prev-text,
-  .emotion-6 .next-text {
-    display: inline;
-  }
-}
-
-.emotion-2 {
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-
-.emotion-1 {
-  color: var(--link-blue);
-  padding: 0.25rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.emotion-1:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0 {
-  padding: 0 0.5rem;
-  font-size: 1.2rem;
-}
-
-.emotion-5 {
-  text-align: right;
-  padding: 0;
-  margin: 0;
-}
-
-.emotion-6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.emotion-6 * {
-  width: 50%;
-  padding: 0.25rem;
-  margin: auto;
-}
-
-.emotion-6 .prev-text,
-.emotion-6 .next-text {
-  display: none;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-6 .next-word,
-  .emotion-6 .prev-word {
-    display: none;
-  }
-
-  .emotion-6 .prev-text,
-  .emotion-6 .next-text {
-    display: inline;
-  }
-}
-
-.emotion-2 {
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-
-.emotion-1 {
-  color: var(--link-blue);
-  padding: 0.25rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.emotion-1:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.emotion-0 {
-  padding: 0 0.5rem;
-  font-size: 1.2rem;
-}
-
-.emotion-5 {
-  text-align: right;
-  padding: 0;
-  margin: 0;
-}
-
-<div
-    class="emotion-6"
-  >
-    <div
-      class="emotion-2"
-    >
-      <a
-        class="emotion-1"
-        href="/second-doc"
-      >
-        <span
-          class="prev-text"
-        >
-          <span
-            class="emotion-0"
-          >
-            ←
-          </span>
-          secondDoc
-        </span>
-        <span
-          class="prev-word"
-        >
-          Prev
-        </span>
-      </a>
-    </div>
-    <div
-      class="emotion-5"
-    >
-      <a
-        class="emotion-1"
-        href="/second-doc"
-      >
-        <span
-          class="next-text"
-        >
-          secondDoc
-          <span
-            class="emotion-0"
-          >
-            →
-          </span>
-        </span>
-        <span
-          class="next-word"
-        >
-          Next
-        </span>
-      </a>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Renders without error for 2nd doc 1`] = `
-<DocumentFragment>
   .emotion-3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -216,7 +35,7 @@ exports[`Renders without error for 2nd doc 1`] = `
 }
 
 .emotion-2 {
-  text-align: left;
+  text-align: right;
   padding: 0;
   margin: 0;
 }
@@ -272,7 +91,7 @@ exports[`Renders without error for 2nd doc 1`] = `
 }
 
 .emotion-2 {
-  text-align: left;
+  text-align: right;
   padding: 0;
   margin: 0;
 }
@@ -298,12 +117,170 @@ exports[`Renders without error for 2nd doc 1`] = `
 <div
     class="emotion-3"
   >
+    <div />
     <div
       class="emotion-2"
     >
       <a
         class="emotion-1"
         href="/second-doc"
+      >
+        <span
+          class="next-text"
+        >
+          secondDoc
+          <span
+            class="emotion-0"
+          >
+            →
+          </span>
+        </span>
+        <span
+          class="next-word"
+        >
+          Next
+        </span>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Renders without error for 2nd doc 1`] = `
+<DocumentFragment>
+  .emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.emotion-6 * {
+  width: 50%;
+  padding: 0.25rem;
+  margin: auto;
+}
+
+.emotion-6 .prev-text,
+.emotion-6 .next-text {
+  display: none;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-6 .next-word,
+  .emotion-6 .prev-word {
+    display: none;
+  }
+
+  .emotion-6 .prev-text,
+  .emotion-6 .next-text {
+    display: inline;
+  }
+}
+
+.emotion-5 {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.emotion-1 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0 {
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.emotion-2 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.emotion-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.emotion-6 * {
+  width: 50%;
+  padding: 0.25rem;
+  margin: auto;
+}
+
+.emotion-6 .prev-text,
+.emotion-6 .next-text {
+  display: none;
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-6 .next-word,
+  .emotion-6 .prev-word {
+    display: none;
+  }
+
+  .emotion-6 .prev-text,
+  .emotion-6 .next-text {
+    display: inline;
+  }
+}
+
+.emotion-5 {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.emotion-1 {
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.emotion-1:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-0 {
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.emotion-2 {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+<div
+    class="emotion-6"
+  >
+    <div
+      class="emotion-2"
+    >
+      <a
+        class="emotion-1"
+        href="/"
       >
         <span
           class="prev-text"
@@ -313,7 +290,7 @@ exports[`Renders without error for 2nd doc 1`] = `
           >
             ←
           </span>
-          secondDoc
+          firstDoc
         </span>
         <span
           class="prev-word"
@@ -322,7 +299,30 @@ exports[`Renders without error for 2nd doc 1`] = `
         </span>
       </a>
     </div>
-    <div />
+    <div
+      class="emotion-5"
+    >
+      <a
+        class="emotion-1"
+        href="/second-doc"
+      >
+        <span
+          class="next-text"
+        >
+          secondDoc
+          <span
+            class="emotion-0"
+          >
+            →
+          </span>
+        </span>
+        <span
+          class="next-word"
+        >
+          Next
+        </span>
+      </a>
+    </div>
   </div>
 </DocumentFragment>
 `;
@@ -380,7 +380,7 @@ exports[`Renders without error for 3rd doc 1`] = `
 }
 
 .emotion-2 {
-  text-align: right;
+  text-align: left;
   padding: 0;
   margin: 0;
 }
@@ -436,7 +436,7 @@ exports[`Renders without error for 3rd doc 1`] = `
 }
 
 .emotion-2 {
-  text-align: right;
+  text-align: left;
   padding: 0;
   margin: 0;
 }
@@ -444,7 +444,6 @@ exports[`Renders without error for 3rd doc 1`] = `
 <div
     class="emotion-3"
   >
-    <div />
     <div
       class="emotion-2"
     >
@@ -453,22 +452,23 @@ exports[`Renders without error for 3rd doc 1`] = `
         href="/second-doc"
       >
         <span
-          class="next-text"
+          class="prev-text"
         >
-          secondDoc
           <span
             class="emotion-0"
           >
-            →
+            ←
           </span>
+          secondDoc
         </span>
         <span
-          class="next-word"
+          class="prev-word"
         >
-          Next
+          Prev
         </span>
       </a>
     </div>
+    <div />
   </div>
 </DocumentFragment>
 `;

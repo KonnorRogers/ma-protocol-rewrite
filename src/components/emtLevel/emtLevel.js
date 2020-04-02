@@ -1,16 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import { capitalize } from "../../utils/stringUtils"
 import * as styles from "./styles.js"
 
-const capitalize = level => {
-  const firstLetter = level[0].toUpperCase()
-  const restOfWord = level.slice(1)
-
-  return firstLetter + restOfWord
-}
-
-const EMTLevel = ({ children, level, medControl }) => {
+const EMTLevel = ({ children, level, medControl, outside }) => {
   const standingOrders = " (Standing Orders)"
   const medicalControl = " (Medical Control)"
 
@@ -66,6 +60,25 @@ const EMTLevel = ({ children, level, medControl }) => {
     return levelText + standingOrders
   }
 
+  function EmtBox({ outside, children, level }) {
+    if (outside) {
+      return (
+        <section
+          className={level}
+          css={[styles.level(level), styles.outerBlock]}
+        >
+          {children}
+        </section>
+      )
+    }
+
+    return (
+      <section className={level} css={styles.level(level)}>
+        {children}
+      </section>
+    )
+  }
+
   return (
     <>
       <h2 id={getLevel()} css={styles.header(level)}>
@@ -73,9 +86,9 @@ const EMTLevel = ({ children, level, medControl }) => {
           {getLevelText()}
         </a>
       </h2>
-      <section className={level} css={styles.level(level)}>
+      <EmtBox level={level} outside={outside}>
         {children}
-      </section>
+      </EmtBox>
     </>
   )
 }
@@ -83,6 +96,11 @@ const EMTLevel = ({ children, level, medControl }) => {
 EMTLevel.propTypes = {
   level: PropTypes.string.isRequired,
   medControl: PropTypes.bool,
+  outside: PropTypes.bool,
+}
+
+EMTLevel.defaultProps = {
+  outside: false,
 }
 
 export default EMTLevel

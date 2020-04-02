@@ -1,0 +1,147 @@
+---
+name: 2.06A - Bronchospasm  / Respiratory Distress (Adult)
+route: /sections/2/2.06A-bronchospasm-respiratory-distress
+menu: "Section 2: Medical Protocols"
+---
+
+import EMTLevel from "../../components/emtLevel/emtLevel.js";
+import MyLink from "../../components/myLink/myLink.js";
+import Caution from "../../components/caution/caution.js"
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/1/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+    <li>
+      <strong>IF</strong> the patient has not taken the prescribed maximum dose of their own inhaler prior to
+      the arrival of EMS, <strong>AND</strong> the inhaler is present:
+    </li>
+    <ul>
+      <li>
+        Encourage and/or assist patient to self-administer their own prescribed inhaler
+        medication if indicated.
+      </li>
+      <li>
+        If patient is unable to self-administer their prescribed inhaler, administer patient’s
+        prescribed inhaler.
+      </li>
+    </ul>
+
+    <strong style="display: inline-block; margin: 1rem 0;">
+      NOTE: EMT-B and AEMT administration of an inhaler is CONTRAINDICATED, if:
+    </strong>
+
+    <ul>
+      <li>
+        The maximum dose has been administered prior to the arrival of the EMT.
+        the patient cannot physically use the device properly. (Patient cannot receive inhalation
+        properly.)
+      </li>
+      <li>
+        The device has not specifically been prescribed for the patient.
+      </li>
+    </ul>
+    <li>
+      **If properly trained and authorized, use
+      <MyLink to="/sections/6/6.01-bls-bronchodilators
+">
+        6.01 BLS Albuterol.
+      </MyLink>
+    </li>
+    <li>
+      CPAP in accordance with:
+      <MyLink to="/sections/6/6-09-continuous-positive-airway-pressure-emt-basic-and-emt-advanced">
+        Protocol 6.9 Continuous Positive Airway Pressure (CPAP) by EMT-Basic and/or Advanced EMT.
+      </MyLink>
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="basic" medControl="{true}">
+  <ul>
+    <li>
+      Additional doses of above medications, if prescribed to patient or authorized, and if
+      maximum dose has not been administered.
+    </li>
+    <li>
+      Epinephrine 0.3 mg via auto-injector. If approved under
+      <MyLink to="/sections/6/6-06-check-inject-epinephrine-emt-basic">
+        Protocol 6.6 Check and inject Epinephrine by EMT Basic
+      </MyLink>
+      epinephrine 0.3 mg IM.
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  <ul>
+    <li>
+      Albuterol 2.5-3 mg via nebulizer. Ipratropium Bromide 0.5mg may be combined with the
+      albuterol treatment.
+      <br />
+      Additional albuterol treatments may be administered as necessary
+      with or without ipratropium bromide.
+    </li>
+    <li>
+      Note that a multi-dose inhaler may be used to give albuterol or ipratropium (instead of
+      nebulizer) if infection control is an issue (e.g. influenza-like-illness).
+    </li>
+    <li>
+      If approved, epinephrine 1:1,000 0.3mg IM-ONLY.
+    </li>
+    <li>
+      Must be administered in accordance with criteria listed in
+      <MyLink to="/sections/appendices/A-01-adult-medication-reference">
+        A1 Adult Medication Reference.
+      </MyLink>
+    </li>
+    <li>
+      CPAP in accordance with
+      <MyLink to="/sections/6/6-09-continuous-positive-airway-pressure-emt-basic-and-emt-advanced">
+        Protocol 6.9 Continuous Positive Airway Pressure (CPAP) by
+        EMT-Basic and/or Advanced EMT.
+      </MyLink>
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      In a patient with a known diagnosis of asthma or COPD, who does not have history
+      or findings concerning for congestive heart failure, consider hydrocortisone 100 mg.
+      IV/IO/IM or methylprednisolone 125 mg. IV/IO/IM.
+    </li>
+    <li>
+      In patients ≤40 years old, epinephrine 0.3 mg IM as a one time dose.
+    </li>
+    <li>
+      Continuous positive airway pressure (CPAP) assistance, if not contraindicated, and if
+    nebulizer therapy can be continued with the CPAP device.
+    </li>
+    <li>
+      For Asthma only, consider magnesium sulfate 2-4 grams IV/IO over 20 minutes.
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>Additional doses of above medications.</li>
+    <li>Epinephrine 1:10,000, 0.1-0. 5 mg IV/IO very slowly</li>
+  </ul>
+</EMTLevel>
+
+<Caution id="caution-1">
+  The use of Epinephrine in patients over the age of 40 or with known cardiac
+  disease and patients who have already taken high dosage of inhalant bronchodilator
+  medications may result in cardiac complications.
+</Caution>
+
+<Caution id="caution-2">
+  Epinephrine for bronchospasm must be administered by Auto-Injector ONLY,
+  except by medical control order or department authorization.
+</Caution>
