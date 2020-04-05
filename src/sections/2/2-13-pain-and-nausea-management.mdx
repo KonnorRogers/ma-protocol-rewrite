@@ -3,3 +3,100 @@ name: 2.13 - Pain and Nausea Management
 route: /sections/2/2.13-pain-and-nausea-management
 menu: "Section 2: Medical Protocols"
 ---
+
+import EMTLevel from "../../components/emtLevel/emtLevel"
+import MyLink from "../../components/myLink/myLink"
+import Note from "../../components/note/note"
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/2/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  <h4 id="advanced-adult" style={{ marginBottom: '0.15rem'}}>
+    <a href="#advanced-adult">
+      Adult:
+    </a>
+  </h4>
+  <ul>
+    <li>
+      Ondansetron 4 mg PO (Oral Disintegrating Tablet (ODT) is the preferred route)
+      IV/IO/IM.
+    </li>
+  </ul>
+
+  <h4 id="advanced-pedi" style={{ marginBottom: '0.15rem'}}>
+    <a href="#advanced-pedi">
+      Pediatric:
+    </a>
+  </h4>
+  <ul>
+    <li>
+      Ondansetron for child under or up to 25 kg 2 mg PO by Oral Disintegrating
+      Tablet (ODT).ODT is the preferred route /IV/IM;
+      for a child over 25 kg, 4 mg PO by ODT(the preferred route)/IV/IM.
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <h4 id="paramedic-adult" style={{ marginBottom: '0.15rem'}}>
+    <a href="#paramedic-adult">
+      Adult:
+    </a>
+  </h4>
+  <ul>
+    <li>Acetaminophen 650-1000 mg IV or PO.</li>
+    <li>Ibuprofen 600 mg PO.</li>
+    <li>Ketorolac 15 mg IV or 30 mg IM.</li>
+    <li>
+      Fentanyl 1 mcg/kg slow IV/IO/IM weight based (kg) to a max. of 150mcg
+      (150kg) or
+      Fentanyl 1 mcg/kg IN weight based (kg) to a max. of 150mcg
+      (150kg).
+    </li>
+    <li>Morphine Sulfate 0.1mg/kg IV/IO/IM/SC,(max 10 mg).</li>
+    <li>
+      Ketamine 0.3-0.5 mg/kg IV/IO SLOWLY-may repeat dose one time in 10 minutes
+    or 1 mg/kg IM/IN-may repeat IM/IN dose one time in 20 minutes.
+    </li>
+    <li>
+      For patients requiring electrical therapy (cardioversion or pacing) see 
+      <MyLink to="/sections/7/7.6-sedation-and-analgesia-for-electrical-therapy">
+        7.6 Sedation and Analgesia for Electrical Therapy-Adult
+      </MyLink>
+      <br />
+      Consider ketamine.
+    </li>
+  </ul>
+  <h4 id="paramedic-pedi" style={{ marginBottom: '0.15rem'}}>
+    <a href="#paramedic-pedi">
+      Pediatric:
+    </a>
+  </h4>
+
+  <ul>
+    <li>Acetaminophen 15 mg/kg IV or PO to max 1000 mg.</li>
+    <li>Ibuprofen 10 mg/kg PO to max 600 mg.</li>
+    <li>Ketorolac 0.5 mg/kg IV or IM to max 15 mg.</li>
+    <li>
+      Fentanyl 1 mcg/kg. to max. 150 mcg slow IV/IO/IM or
+      Fentanyl 1 mcg/kg. to max. 150 mcg IN.
+    </li>
+    <li>Morphine Sulfate 0.1 mg/kg IV/IO/IM/SC (maximum individual 5 mg)</li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>
+      Additional doses of above medication
+    </li>
+  </ul>
+</EMTLevel>

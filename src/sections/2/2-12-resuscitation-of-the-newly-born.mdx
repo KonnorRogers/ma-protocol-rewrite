@@ -3,3 +3,109 @@ name: 2.12 - Resuscitation of the Newly born
 route: /sections/2/2.12-resuscitation-of-the-newly-born
 menu: "Section 2: Medical Protocols"
 ---
+
+import EMTLevel from "../../components/emtLevel/emtLevel"
+import MyLink from "../../components/myLink/myLink"
+import Note from "../../components/note/note"
+
+<EMTLevel level="basic" outside={true}>
+  <EMTLevel level="advanced">
+    <ul>
+      <li>
+        <MyLink to="/sections/1/1.0-routine-patient-care">
+          1.0 Routine Patient Care
+        </MyLink>
+      </li>
+      <li>
+        Maintain an open airway and suction the mouth, then nose. If meconium (brown
+        stained fluid) is present, suction the hypopharynx only if the infant is not vigorous
+      </li>
+      <li>
+        (Contact ALS immediately if available for possible need of endotracheal
+        intubation).
+      </li>
+      <li>
+        Dry the infant, place on a dry blanket, cover the head and keep the infant warm.
+      </li>
+      <li>
+        If ventilations are inadequate or chest fails to rise, reposition 
+        head and neck, suction and initiate positive pressure ventilation at 
+        room air for term newborns or for preterm (less than 38 weeks gestation) 
+        newborns at 40-60 breaths per minute, as clinically indicated.
+      </li>
+      <li>
+        For heart rate less than 60, institute positive pressure ventilation
+        with 100% oxygen for 1 minute and if heart rate remains at 60 start 
+        chest compressions.
+      </li>
+    </ul>
+  </EMTLevel>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      If meconium is present, consider early endotracheal intubation and suctioning.
+      (Note: Do not suction or intubate a neonate with a vigorous cry).
+    </li>
+    <li>
+      Newly born in distress and requiring emergency care:
+    </li>
+    <li>
+      For heart rate 60-80 and rapidly rising:
+    </li>
+    <ul>
+      <li>
+        Continue manual ventilation at room air for term newborns or for preterm
+        (less then 38 weeks gestation) newborns at 40-60 breaths per minute
+      </li>
+      <li>Cardiac Monitor – Manage dysrhythmias per protocol.</li>
+    </ul>
+    <li>For heart rate less than 60:</li>
+    <ul>
+      <li>Initiate CPR as indicated.</li>
+      <li>
+        Institute positive pressure ventilation with 100% oxygen for 1 minute and if
+        heart rate remains at 60, start chest compressions.
+      </li>
+      <li>
+        Continue manual ventilation with 100% oxygen after CPR is initiated.
+      </li>
+      <li>
+        Advanced airway management if not already done and perform
+        capnography.
+      </li>
+      <li>
+        Cardiac Monitor. Manage dysrhythmias per protocol.
+      </li>
+      <li>
+        If defibrillation is indicated: initial energy level: 2 joules/kg 
+        subsequent: 4 joules/kg.
+      </li>
+      <li>
+        If synchronized cardioversion is indicated: 0.5-1 joules/kg.
+      </li>
+    </ul>
+    <li>
+      Establish IV or IO access, if indicated. (Note: appropriately trained and
+      authorized EMT-Paramedics may utilize umbilical lines when necessary).
+      Treat for shock with 10cc/kg of Normal Saline over 5-10 minutes.
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>Epinephrine 1:10,000 (0.01-0.03 mg/kg) IV/IO</li>
+    <li>Epinephrine Infusion: Administer 0.1-1 mcg/kg/min IV/IO</li>
+  </ul>
+</EMTLevel>
+
+<Note id="note-1" alignment="left">
+  The newly born should be evaluated for central cyanosis. Peripheral
+  cyanosis is common and may not be a reflection of inadequate
+  oxygenation. If central cyanosis is present in a breathing newborn
+  during stabilization, early administration of 100% oxygen is important
+  while the newborn is being assessed for need of additional 
+  resuscitative measures.
+</Note>
