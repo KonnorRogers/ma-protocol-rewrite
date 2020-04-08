@@ -3,3 +3,49 @@ name: 2.14 - Poisoning / Substance Abuse / Overdose
 route: /sections/2/2.14-poisoning-substance-abuse-overdose
 menu: "Section 2: Medical Protocols"
 ---
+
+import EMTLevel from "../../components/emtLevel/emtLevel"
+import MyLink from "../../components/myLink/myLink"
+import Note from "../../components/note/note"
+import Caution from "../../components/caution/caution";
+
+<Note id="note-1" alignment="left">
+  Naloxone should only be administered in suspected overdose patients
+  with inadequate respirations and respiratory rate. 
+
+  <br /><br />
+
+  Treatment should progress toward the restoration of adequate respirations. 
+  
+  <br /><br />
+
+  Patients with inadequate respiratory rates may need to be ventilated until
+  their respiratory rate increases.
+</Note>
+
+<br />
+
+<EMTLevel level="first-responder" outside={true}>
+  <EMTLevel level="basic">
+    <ul>
+      <li>
+        <MyLink to="/sections/1/1.0-routine-patient-care">
+          1.0 Routine Patient Care
+        </MyLink>
+      </li>
+      <li>Naloxone 2 mg-4 mg via Nasal Atomizer (IN) or 0.4 mg via auto-injector (IM).</li>
+      <li>If no response after 3-5 minutes, give second dose.</li>
+      <li>First Responders may only administer if trained and authorized.</li>
+      <li>If suspected or confirmed hypoglycemia, treat per protocol. </li>
+    </ul>
+  </EMTLevel>
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  Naloxone
+  <ul>
+    <li>ADULT: 0.4-4 mg IV/IO/IM/IN. May be repeated as indicated.</li>
+    <li>PEDI: 0.1 mg/kg IV/IO/IM/IN May be repeated as indicated.</li>
+  </ul>
+</EMTLevel>
+
