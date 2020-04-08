@@ -3,3 +3,99 @@ name: 2.15A - Seizures
 route: /sections/2/2.15A-seizures
 menu: "Section 2: Medical Protocols"
 ---
+
+import EMTLevel from "../../components/emtLevel/emtLevel";
+import MyLink from "../../components/myLink/myLink"
+import Note from "../../components/note/note"
+import Caution from "../../components/caution/caution";
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/1/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+    <li>
+      Manage hypoglycemia and narcotic overdose per protocol.
+    </li>
+    <li>
+      Consider eclampsia in a woman of childbearing age
+    </li>
+
+    <br />
+
+    <strong> CAUTION: </strong> Do NOT administer anything orally if the
+    patient does not have a reasonable level of consciousness and normal
+    gag reflex.
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  <ul>
+    <li>
+      If Diazepam rectal gel (Diastat) has been prescribed by the patient’s
+      physician, assist the caregiver with administration in accordance with
+      physician’s instructions.
+    </li>
+    <li>
+      If the patient has an implanted vagus nerve stimulator (VNS), suggest that
+      the family use the VNS magnet to activate the VNS and assist if required.
+    </li>
+    <ul>
+      <li>
+        To use the VNS magnet, pass the magnet closely over the VNS
+        device; if unsuccessful, repeat every 3-5 minutes for a total of 3 times.
+      </li>
+      <br />
+      Note: Do not delay medication administration.
+    </ul>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      Cardiac Monitor and if feasible 12 lead ECG – Manage dysrhythmias per
+      protocol.
+    </li>
+    <li>
+      If patient is in Status Epilepticus
+    </li>
+    <ul>
+      <li>
+        Midazolam 2 - 6 mg slow IV/IO/IM
+      </li>
+      OR
+      <li>
+        Midazolam 10 mg IN
+      </li>
+      <li>
+        Magnesium sulfate 2-4 grams IV/IO over 5 minutes if suspect eclampsia
+      </li>
+    </ul>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  Additional doses of above medications.
+</EMTLevel>
+
+<Caution id="caution-1">
+  Benzodiazepines may be contraindicated in head injury or hypotension;
+  discuss with medical control.
+</Caution>
+
+<Note id="note-1" alignment="left">
+  <ul>
+    <li>
+      Post-partum patients may experience eclamptic seizures up to several
+      weeks after giving birth.
+    </li>
+    <li>
+      Status epilepticus is defined as any generalized seizures lasting
+      more than 5 minutes.  This is a true emergency requiring rapid airway
+      control, treatment (including benzodiazepines), and transport.
+    </li>
+  </ul>
+</Note>
