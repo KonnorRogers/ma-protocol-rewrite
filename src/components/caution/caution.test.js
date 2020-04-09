@@ -1,6 +1,6 @@
 import React from "react"
 import { render } from "@testing-library/react"
-import Caution from "./caution.js"
+import Caution from "./index.js"
 
 test("Renders without error", () => {
   const { asFragment } = render(<Caution />)

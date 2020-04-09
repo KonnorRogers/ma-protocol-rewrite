@@ -1,6 +1,6 @@
 import React from "react"
 import { render } from "@testing-library/react"
-import PageNav from "./pageNav.js"
+import PageNav from "./index"
 
 // Mocked hook
 import { setCurrentDoc } from "docz"

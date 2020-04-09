@@ -1,5 +1,5 @@
 import React from "react"
-import MyLink from "../myLink/myLink.js"
+import MyLink from "../myLink"
 import PropTypes from "prop-types"
 
 import * as styles from "../../styles/global.js"

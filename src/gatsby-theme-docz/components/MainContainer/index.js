@@ -1,6 +1,6 @@
 import { MainContainer as OriginalMainContainer } from "gatsby-theme-docz/src/components/MainContainer/index"
-import PageNav from "../../../components/pageNav/pageNav.js"
-import Title from "../../../components/title/title.js"
+import PageNav from "../../../components/pageNav"
+import Title from "../../../components/title"
 
 export const MainContainer = ({ children, ...rest }) => {
   return (

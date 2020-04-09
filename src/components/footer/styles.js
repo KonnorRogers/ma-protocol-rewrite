@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import Screen from "../../utils/screen.js"
+import Screen from "../../utils/screen"
 
 export const footer = css`
   margin: 0;

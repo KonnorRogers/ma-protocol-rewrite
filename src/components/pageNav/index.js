@@ -1,6 +1,6 @@
 import React from "react"
-import PrevPage from "../prevPage/prevPage.js"
-import NextPage from "../nextPage/nextPage.js"
+import PrevPage from "../prevPage"
+import NextPage from "../nextPage"
 import { useCurrentDoc, useDocs } from "docz"
 
 import * as styles from "./styles.js"
@@ -10,13 +10,13 @@ const PageNav = ({ ...props }) => {
   const allDocs = useDocs()
 
   // Way to fix about being at the end, temporary fix
-  const aboutIndex = allDocs.findIndex(doc => doc.route === "/")
+  const aboutIndex = allDocs.findIndex((doc) => doc.route === "/")
   const aboutDoc = allDocs[aboutIndex]
   allDocs.splice(aboutIndex, 1)
   allDocs.unshift(aboutDoc)
 
   function getCurrentDocIndex() {
-    const currentDocIndex = doc => doc.id === currentDoc.id
+    const currentDocIndex = (doc) => doc.id === currentDoc.id
 
     return allDocs.findIndex(currentDocIndex)
   }

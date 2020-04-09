@@ -1,6 +1,6 @@
 import React from "react"
 import { render } from "@testing-library/react"
-import Title from "./title.js"
+import Title from "./index"
 
 // Mocked hook
 import { setCurrentDoc } from "docz"

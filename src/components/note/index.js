@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import InformationBox from "../informationBox/informationBox.js"
+import InformationBox from "../informationBox"
 
 const Note = ({ children, id, text, borderColor, ...rest }) => {
   return (

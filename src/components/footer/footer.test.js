@@ -1,6 +1,6 @@
 import React from "react"
 import { render } from "@testing-library/react"
-import { PureFooter as Footer } from "./footer.js"
+import { PureFooter as Footer } from "./index.js"
 
 test("Renders without error", () => {
   const data = {

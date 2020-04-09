@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react"
-import Footer from "../components/footer/footer.js"
+import Footer from "../components/footer"
 import * as styles from "../styles/global.js"
 import { jsx, Global, css } from "@emotion/core"
 
