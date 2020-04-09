@@ -8,7 +8,7 @@ import EMTLevel from "../../components/emtLevel"
 import MyLink from "../../components/myLink"
 import Caution from "../../components/caution";
 import Note from "../../components/note";
-import { BasicShockTable } from "../../data/tables/shockTable";
+import { BasicShockTable, AdvancedShockTable } from "../../data/tables/shockTable";
 
 <Note id="note-1" alignment="left">
   Any patient with signs, symptoms, and history suggesting inadequate
@@ -43,4 +43,8 @@ import { BasicShockTable } from "../../data/tables/shockTable";
     </li>
   </ul>
   <BasicShockTable />
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  <AdvancedShockTable />
 </EMTLevel>

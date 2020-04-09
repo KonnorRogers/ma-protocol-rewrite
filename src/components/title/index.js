@@ -4,7 +4,7 @@ import { useCurrentDoc } from "docz"
 import * as styles from "../../styles/global.js"
 import * as titleStyles from "./styles.js"
 
-const Title = ({ title, ...rest }) => {
+const Title = ({ title, align, ...rest }) => {
   if (!title) {
     title = useCurrentDoc().name
   }
