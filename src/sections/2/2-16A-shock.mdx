@@ -3,3 +3,44 @@ name: 2.16A - Shock
 route: /sections/2/2.16A-shock
 menu: "Section 2: Medical Protocols"
 ---
+
+import EMTLevel from "../../components/emtLevel"
+import MyLink from "../../components/myLink"
+import Caution from "../../components/caution";
+import Note from "../../components/note";
+import { BasicShockTable } from "../../data/tables/shockTable";
+
+<Note id="note-1" alignment="left">
+  Any patient with signs, symptoms, and history suggesting inadequate
+  tissue perfusion should be considered to be in shock. 
+
+  <br /><br />
+  Make every effort to determine and treat the underlying cause.
+  Regardless of etiology, shock patients should be transported
+  immediately to the nearest appropriate facility for definitive care .
+</Note>
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/1/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+    <li>
+      Keep the patient supine.
+    </li>
+    <li>
+      Prevent heat loss by covering with warm blankets if available and if the patient is not febrile.
+    </li>
+    <li>
+      Physiological signs:
+      <ul>
+       <li>Altered mental status.</li>
+       <li>Radial pulse cannot be palpated.</li>
+       <li>Systolic blood pressure less than 100 mmHg.</li>
+      </ul>
+    </li>
+  </ul>
+  <BasicShockTable />
+</EMTLevel>

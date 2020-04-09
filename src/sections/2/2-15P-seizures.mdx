@@ -5,9 +5,76 @@ menu: "Section 2: Medical Protocols"
 ---
 
 import EMTLevel from "../../components/emtLevel"
-<EMTLevel level="paramedic">
-   1.0 Routine Patient Care
-   Prevent patient from accidental self-harm. DO NOT use a bite block.
-  CAUTION: Do NOT administer anything orally if the patient does not have
-  a reasonable level of consciousness and normal gag reflex.
+import MyLink from "../../components/myLink"
+import Caution from "../../components/caution";
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+    <li>
+      Prevent patient from accidental self-harm. DO NOT use a bite block.
+    </li>
+    <li>
+      <strong>CAUTION: </strong> Do NOT administer anything orally if
+      the patient does not have a reasonable level of consciousness and
+      normal gag reflex.
+    </li>
+  </ul>
 </EMTLevel>
+
+<EMTLevel level="advanced">
+  <ul>
+    <li>
+      If Diazepam rectal gel (Diastat) has been prescribed by the patient’s
+      physician, assist the patient or caregiver with administration in accordance
+      with physician’s instructions.
+    </li>
+    <li>
+      If the patient has an implanted vagus nerve stimulator (VNS), suggest that
+      the family use the VNS magnet to activate the VNS and assist if required.
+    </li>
+    <li>
+      To use the VNS magnet, pass the magnet closely over the VNS
+      device; if unsuccessful, repeat every 3-5 minutes for a total of 3 times.
+    </li>
+    <br />
+    <strong>Note: </strong>do not delay medication administration.
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      If Glucose is less than 70mg/dL, treat per 
+      <MyLink to="/sections/2/2.03P-altered-mental">
+        2.3P Altered Mental/Neurological Status/Diabetic
+        Emergencies/Coma- Pediatric.
+      </MyLink>
+    </li>
+    <li>
+      Midazolam 0.1 mg/kg IV/IO/IM to a maximum single dose of 8 mg.
+    </li>
+    OR
+    <li>
+      Midazolam 0.2 mg/kg IN to a maximum dose of 10 mg.
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <ul>
+    <li>Additional doses of above medications</li>
+  </ul>
+</EMTLevel>
+
+<Caution id="caution-1">
+  For patients under 12 years old, the airway is in most cases best
+  managed with a BVM or SGA.  
+  <br /><br />
+  In some cases, intubation may be
+  preferred. This is at the discretion of the treating paramedic.
+</Caution>
