@@ -26,10 +26,10 @@ export const items = css`
 
   ul {
     text-align: left;
-    margin: 0;
+    margin: 0.2rem;
   }
 
   li {
-    margin: 0.2rem -0.25rem;
+    margin: 0 -0.5rem;
   }
 `
