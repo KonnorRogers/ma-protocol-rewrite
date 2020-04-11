@@ -8,17 +8,12 @@ export const table = ({ colorMode, minWidth }) => {
   minWidth = minWidth || "400px"
   const color = toColor(colorMode)
   return css`
-    overflow-x: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     border: 1px solid ${color};
     min-width: ${minWidth};
-
-    @media only screen and (min-width: ${minWidth}) {
-      overflow-x: auto;
-    }
   `
 }
 export const row = ({ lastRow, heading, colorMode }) => {

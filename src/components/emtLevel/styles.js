@@ -41,6 +41,7 @@ export const level = (level) => css`
   }
 
   ${Screen.small} {
+    overflow: auto;
     font-size: 1.25rem;
   }
 `

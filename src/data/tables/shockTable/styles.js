@@ -15,9 +15,15 @@ export const headings = css`
 
 export const items = css`
   font-size: 0.65rem;
+  li {
+    margin: 0 -0.5rem;
+  }
 
   ${Screen.small} {
     font-size: 0.75rem;
+    li {
+      margin: 0;
+    }
   }
 
   ${Screen.medium} {
@@ -27,9 +33,5 @@ export const items = css`
   ul {
     text-align: left;
     margin: 0.2rem;
-  }
-
-  li {
-    margin: 0 -0.5rem;
   }
 `
