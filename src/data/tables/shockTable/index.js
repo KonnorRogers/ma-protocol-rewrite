@@ -83,3 +83,68 @@ export function AdvancedShockTable(_props) {
     </BaseTable>
   )
 }
+
+export function ParamedicShockTable(_props) {
+  return (
+    <BaseTable>
+      <TableRow lastRow={true} css={styles.items}>
+        <TableItem>
+          <ul>
+            <li>
+              Norepinephrine infusion by pump 0.1-0.5 mcg/kg/min IV/IO, titrate
+              to goal Systolic Blood Pressure of 90mmHg,
+            </li>
+            OR
+            <li>Epinephrine infusion – 2-10 mcg/min IV/IO,</li>
+            OR
+            <li>Dopamine 2-20 mcg/kg/min IV/IO</li>
+          </ul>
+        </TableItem>
+        <TableItem>
+          <ul>
+            <li>
+              Norepinephrine infusion by pump 0.1-0.5 mcg/kg/ min IV/IO, titrate
+              to goal Systolic Blood Pressure of 90mmHg,
+            </li>
+            OR
+            <li>Epinephrine infusion – 2-10 mcg/min IV/IO,</li>
+            OR
+            <li>Dopamine 2-20 mcg/kg/min IV/IO</li>
+            <li>
+              For patients with confirmed or suspected Adrenal Insufficiency,
+              treat per
+              <MyLink to="/sections/2/2.01-adrenal-insufficiency-crisis">
+                2.1 Adrenal Insufficiency
+              </MyLink>
+            </li>
+          </ul>
+        </TableItem>
+        <TableItem>
+          <ul>
+            <li>
+              Norepinephrine infusion by pump 0.1-0.5 mcg/kg/ min IV/IO, titrate
+              to goal Systolic Blood Pressure of 90mmHg,
+            </li>
+            OR
+            <li>Epinephrine infusion – 2-10 mcg/min IV/IO,</li>
+            OR
+            <li>Dopamine 2-20 mcg/kg/min IV/IO</li>
+          </ul>
+        </TableItem>
+        <TableItem lastItem={true}>
+          <ul>
+            <li>
+              Norepinephrine infusion by pump 0.1-0.5 mcg/kg/ min IV/IO, titrate
+              to goal Systolic Blood Pressure of 90mmHg,
+            </li>
+            OR
+            <li>Epinephrine infusion – 2-10 mcg/min IV/IO,</li>
+            OR
+            <li>Dopamine 2-20 mcg/kg/min IV/IO</li>
+            <li>Needle Decompression, if tension pneumothorax suspected</li>
+          </ul>
+        </TableItem>
+      </TableRow>
+    </BaseTable>
+  )
+}

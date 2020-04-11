@@ -40,8 +40,11 @@ export const level = (level) => css`
     padding-right: 0.5rem;
   }
 
-  ${Screen.small} {
+  ${Screen.extraSmall} {
     overflow: auto;
+  }
+
+  ${Screen.small} {
     font-size: 1.25rem;
   }
 `
