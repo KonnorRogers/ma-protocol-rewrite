@@ -60,6 +60,7 @@ exports[`Renders med control without error 1`] = `
     </a>
   </h2>
   .emotion-0 {
+  overflow-x: scroll;
   margin: 0.5rem auto 2rem auto;
   padding: 1.5rem;
   border: 2px solid #ffbc0d;
@@ -79,6 +80,7 @@ exports[`Renders med control without error 1`] = `
 }
 
 .emotion-0 {
+  overflow-x: scroll;
   margin: 0.5rem auto 2rem auto;
   padding: 1.5rem;
   border: 2px solid #ffbc0d;
@@ -169,6 +171,7 @@ exports[`Renders without error 1`] = `
     </a>
   </h2>
   .emotion-0 {
+  overflow-x: scroll;
   margin: 0.5rem auto 2rem auto;
   padding: 1.5rem;
   border: 2px solid red;
@@ -188,6 +191,7 @@ exports[`Renders without error 1`] = `
 }
 
 .emotion-0 {
+  overflow-x: scroll;
   margin: 0.5rem auto 2rem auto;
   padding: 1.5rem;
   border: 2px solid red;
