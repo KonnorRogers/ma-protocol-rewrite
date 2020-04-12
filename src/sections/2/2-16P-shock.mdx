@@ -10,14 +10,13 @@ import EMTLevel from "../../components/emtLevel";
 import {
   PediatricBasicShockTable,
   PediatricAdvancedShockTable,
-  PediatricParamedicShockTable 
 } from "../../data/tables/shockTable"
 
-<Note id="note-1">
+<Note id="note-1" alignment="left">
   Any patient with signs, symptoms, and history suggesting inadequate
-  tissue perfusion should be considered to be in shock. Make every
-  effort to determine and treat the underlying cause. Regardless of
-  etiology, shock patients should be transported immediately to the
+  tissue perfusion should be considered tbe in shock. Make every
+  effort tdetermine and treat the underlying cause. Regardless of
+  etiology, shock patients should be transported immediately tthe
   nearest appropriate facility for definitive care .
 </Note>
 
@@ -40,3 +39,109 @@ import {
 <EMTLevel level="advanced">
   <PediatricAdvancedShockTable />
 </EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      Consider fluid administration
+    </li>
+    <li>
+      If signs and symptoms of hypoperfusion persist or symptoms worsen,
+      regardless of etiology, consider norepinephrine or dopamine
+      administration via length-based resuscitation tape in the absence of
+      hemorrhagic shock, with medical control approval. 
+    </li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+    <ul>
+      <li>
+        Norepinephrine infusion by pump 0.1mcg/kg/min IV/IO, titrate to
+        goal Systolic Blood Pressure of 90mmHg, OR
+      </li>
+      <li>
+        Dopamine 2-20 mcg/kg/min IV/IO
+      </li>
+      <li>
+        Needle decompression for tension pneumothorax
+      </li>
+    </ul>
+</EMTLevel>
+
+<Note id="note-2" alignment="left">
+  <strong style="display: block; margin: 0.5rem;">
+    Etiology of Shock
+  </strong>
+  <ul>
+    <li>
+      Cardiogenic Shock: History of cardiac surgery, rhythm disturbances, or
+      post cardiac arrest. Assess for acute MI and pulmonary edema.
+      <ul>
+        <li>
+          Signs & Symptoms of cardiogenic shock: chest pain, shortness of breath, crackles, JVD, hypotension, tachycardia, diaphoresis.
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      Distributive Shock: Anaphylaxis (see 2.2 Allergic
+      Reaction/Anaphylaxis), neurogenic shock, sepsis. Assess for fever
+      and signs of infection.
+
+      <ul>
+        <li>
+          Signs & Symptoms of neurogenic shock: sensory and/or motor loss, hypotension, bradycardia versus
+          normal heart-rate, warm, dry skin.
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      Hypovolemic Shock: Dehydration, volume loss, or hemorrhagic shock.
+      <ul>
+        <li>
+          Signs & Symptoms of hypovolemic shock: tachycardia,
+          tachypnea, hypotension, diaphoresis, cool skin, pallor, flat
+          neck veins.
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      Obstructive Shock: Consider tension pneumothorax, pulmonary embolism, and cardiac tamponade.
+      <ul>
+        <li>
+          Signs and symptoms of tension pneumothorax: asymmetric or
+          absent unilateral breath sounds, respiratory distress or
+          hypoxia, signs of shock including tachycardia and hypotension,
+          JVD, possible tracheal deviation above the sternal notch (late
+          sign).
+        </li>
+      </ul>
+    </li>
+  </ul>
+</Note>
+
+<Note id="note-3" alignment="left">
+  <strong style="display: block; margin: 0 auto 0.8rem auto">
+    For patients with uncontrolled hemorrhagic or penetrating torso injuries:
+  </strong>
+  <ul>
+    <li>
+      Restrict IV fluids. Delaying aggressive fluid resuscitation
+      until operative intervention may improve the outcome.
+    </li>
+    <li>
+      Patients should be reassessed frequently, with special attention
+      given to the lung examination to ensure volume overload does not
+      occur.
+    </li>
+    <li>
+      Several mechanisms for worse outcomes associated with IV fluid
+      administration have been suggested, including dislodgement of clot
+      formation, dilution of clotting factors, and acceleration of
+      hemorrhage caused by elevated blood pressure.
+    </li>
+  </ul>
+</Note>

@@ -30,7 +30,7 @@ export function AdultBasicShockTable(_props) {
         </TableItem>
         <TableItem>
           If patient has history of adrenal insufficiency, manage according to
-          <MyLink to="/sections/2/2-1-adrenal-insufficiency-crisis">
+          <MyLink to="/sections/2/2.01-adrenal-insufficiency-crisis">
             2.1 Adrenal Insufficiency.
           </MyLink>
         </TableItem>
@@ -157,7 +157,7 @@ export function PediatricBasicShockTable(_props) {
         <TableItem>
           If patient has history of adrenal insufficiency, manage according to
           protocol
-          <MyLink to="sections/2/2.1-adrenal-insufficiency-crisis">
+          <MyLink to="/sections/2/2.01-adrenal-insufficiency-crisis">
             2.1 Adrenal Insufficiency.
           </MyLink>
           <br />
@@ -205,21 +205,25 @@ export function PediatricAdvancedShockTable(_props) {
         <TableItem></TableItem>
         <DistributiveShock />
         <HypovolemicShock />
-        <TableItem></TableItem>
+        <TableItem>
+          <ul>
+            <li>Consider 20 ml/kg Normal Saline fluid bolus.</li>
+          </ul>
+        </TableItem>
       </TableRow>
     </BaseTable>
   )
 }
 
-export function PediatricParamedicShockTable(_props) {
-  return (
-    <BaseTable>
-      <TableRow lastRow={true}>
-        <TableItem></TableItem>
-        <TableItem></TableItem>
-        <TableItem></TableItem>
-        <TableItem></TableItem>
-      </TableRow>
-    </BaseTable>
-  )
-}
+// export function PediatricParamedicShockTable(_props) {
+//   return (
+//     <BaseTable>
+//       <TableRow lastRow={true}>
+//         <TableItem></TableItem>
+//         <TableItem></TableItem>
+//         <TableItem></TableItem>
+//         <TableItem></TableItem>
+//       </TableRow>
+//     </BaseTable>
+//   )
+// }

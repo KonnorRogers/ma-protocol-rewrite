@@ -16,15 +16,15 @@ export const headings = css`
 export const items = css`
   font-size: 0.65rem;
   li {
-    margin: 0 -0.5rem;
+    text-align: left;
+    margin: 0 -0.3rem;
+    padding: 0;
   }
 
   ${Screen.small} {
     font-size: 0.75rem;
     li {
-      text-align: left;
-      margin: 0;
-      padding: 0.2rem;
+      margin: 0.1rem;
     }
   }
 
