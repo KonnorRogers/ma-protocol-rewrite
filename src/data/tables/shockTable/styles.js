@@ -22,7 +22,9 @@ export const items = css`
   ${Screen.small} {
     font-size: 0.75rem;
     li {
+      text-align: left;
       margin: 0;
+      padding: 0.2rem;
     }
   }
 

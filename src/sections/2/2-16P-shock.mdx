@@ -3,3 +3,40 @@ name: 2.16P - Shock
 route: /sections/2/2.16P-shock
 menu: "Section 2: Medical Protocols"
 ---
+
+import Note from "../../components/note";
+import MyLink from "../../components/myLink"
+import EMTLevel from "../../components/emtLevel";
+import {
+  PediatricBasicShockTable,
+  PediatricAdvancedShockTable,
+  PediatricParamedicShockTable 
+} from "../../data/tables/shockTable"
+
+<Note id="note-1">
+  Any patient with signs, symptoms, and history suggesting inadequate
+  tissue perfusion should be considered to be in shock. Make every
+  effort to determine and treat the underlying cause. Regardless of
+  etiology, shock patients should be transported immediately to the
+  nearest appropriate facility for definitive care .
+</Note>
+
+<EMTLevel level="basic" medControl={true}>
+  <MyLink to="/sections/1/1.0-routine-patient-care">
+    1.0 Routine Patient Care
+  </MyLink>
+
+  <ul>
+    <li>Keep the patient supine</li>
+    <li>
+      Prevent heat loss by covering with warm blankets if available
+      and if the patient is not febrile.
+    </li>
+  </ul>
+
+  <PediatricBasicShockTable />
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  <PediatricAdvancedShockTable />
+</EMTLevel>

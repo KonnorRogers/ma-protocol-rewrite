@@ -17,7 +17,7 @@ function BaseTable({ children }) {
   )
 }
 
-export function BasicShockTable(_props) {
+export function AdultBasicShockTable(_props) {
   return (
     <BaseTable>
       <TableRow css={styles.items}>
@@ -44,7 +44,7 @@ export function BasicShockTable(_props) {
   )
 }
 
-export function AdvancedShockTable(_props) {
+export function AdultAdvancedShockTable(_props) {
   return (
     <BaseTable>
       <TableRow lastRow={true} css={styles.items}>
@@ -84,7 +84,7 @@ export function AdvancedShockTable(_props) {
   )
 }
 
-export function ParamedicShockTable(_props) {
+export function AdultParamedicShockTable(_props) {
   return (
     <BaseTable>
       <TableRow lastRow={true} css={styles.items}>
@@ -144,6 +144,81 @@ export function ParamedicShockTable(_props) {
             <li>Needle Decompression, if tension pneumothorax suspected</li>
           </ul>
         </TableItem>
+      </TableRow>
+    </BaseTable>
+  )
+}
+
+export function PediatricBasicShockTable(_props) {
+  return (
+    <BaseTable>
+      <TableRow lastRow={true} css={styles.items}>
+        <TableItem></TableItem>
+        <TableItem>
+          If patient has history of adrenal insufficiency, manage according to
+          protocol
+          <MyLink to="sections/2/2.1-adrenal-insufficiency-crisis">
+            2.1 Adrenal Insufficiency.
+          </MyLink>
+          <br />
+          <br />
+          If suspected anaphylaxis, manage according to protocol.
+          <br />
+          <br />
+          If neurogenic shock is suspected: Spinal immobilization
+        </TableItem>
+        <TableItem>
+          Control active bleeding using direct pressure, pressure bandages,
+          tourniquets (commercial tourniquets preferred), or hemostatic bandage.
+        </TableItem>
+        <TableItem></TableItem>
+      </TableRow>
+    </BaseTable>
+  )
+}
+
+export function PediatricAdvancedShockTable(_props) {
+  function DistributiveShock(_props) {
+    return (
+      <TableItem>
+        Obtain vascular access. Therapeutic endpoints to fluid resuscitation (in
+        order of importance) are:
+        <li>Capillary refill,</li>
+        <li>Normal pulses, </li>
+        <li>No difference between peripheral and central pulses, </li>
+        <li>Warm extremities,</li>
+        <li>Normal mental status,</li>
+        <li>
+          and THEN normal blood pressure. Consider 20 ml/kg Normal Saline fluid
+          bolus.
+        </li>
+      </TableItem>
+    )
+  }
+
+  function HypovolemicShock(_props) {
+    return <DistributiveShock />
+  }
+  return (
+    <BaseTable>
+      <TableRow lastRow={true} css={styles.items}>
+        <TableItem></TableItem>
+        <DistributiveShock />
+        <HypovolemicShock />
+        <TableItem></TableItem>
+      </TableRow>
+    </BaseTable>
+  )
+}
+
+export function PediatricParamedicShockTable(_props) {
+  return (
+    <BaseTable>
+      <TableRow lastRow={true}>
+        <TableItem></TableItem>
+        <TableItem></TableItem>
+        <TableItem></TableItem>
+        <TableItem></TableItem>
       </TableRow>
     </BaseTable>
   )
