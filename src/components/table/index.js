@@ -5,12 +5,18 @@ import { useColorMode } from "theme-ui"
 
 const TableContext = React.createContext(null)
 
-function Table({ columns, children, minWidth, colormode, ...rest }) {
+function Table({ children, minWidth, colormode, ...rest }) {
   let colorMode = useColorMode()[0]
 
+  // Used to override the useColorMode hook for specific circumstances
   if (colormode) {
     colorMode = colorMode
   }
+
+  // if (Array.isArray(children)) {
+  //   const columns = children.length
+  // }
+  const columns = children.length
 
   return (
     <TableContext.Provider value={{ colorMode, columns }}>
@@ -22,7 +28,7 @@ function Table({ columns, children, minWidth, colormode, ...rest }) {
 }
 
 Table.propTypes = {
-  columns: PropTypes.number.isRequired,
+  minWidth: PropTypes.string,
 }
 
 export function TableRow({
