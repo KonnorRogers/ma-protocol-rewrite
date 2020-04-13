@@ -10,7 +10,7 @@ function BaseTable({ children }) {
         <TableItem>Cardiogenic Shock</TableItem>
         <TableItem>Distributive Shock</TableItem>
         <TableItem>Hypovolemic Shock</TableItem>
-        <TableItem>Obstructive Shock</TableItem>
+        <TableItem lastItem={true}>Obstructive Shock</TableItem>
       </TableRow>
       {children}
     </Table>
@@ -171,7 +171,7 @@ export function PediatricBasicShockTable(_props) {
           Control active bleeding using direct pressure, pressure bandages,
           tourniquets (commercial tourniquets preferred), or hemostatic bandage.
         </TableItem>
-        <TableItem></TableItem>
+        <TableItem lastItem={true}></TableItem>
       </TableRow>
     </BaseTable>
   )
@@ -205,7 +205,7 @@ export function PediatricAdvancedShockTable(_props) {
         <TableItem></TableItem>
         <DistributiveShock />
         <HypovolemicShock />
-        <TableItem>
+        <TableItem lastItem={true}>
           <ul>
             <li>Consider 20 ml/kg Normal Saline fluid bolus.</li>
           </ul>
