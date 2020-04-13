@@ -3,20 +3,21 @@ import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 import { useColorMode } from "theme-ui"
 
-let TableContext
+const TableContext = React.createContext(null)
 
 function Table({ columns, children, minWidth, colormode, ...rest }) {
   let colorMode = useColorMode()[0]
-  TableContext = React.createContext({ columns, colorMode })
 
   if (colormode) {
     colorMode = colorMode
   }
 
   return (
-    <div css={styles.table({ minWidth, colorMode })} {...rest}>
-      {children}
-    </div>
+    <TableContext.Provider value={{ colorMode, columns }}>
+      <div css={styles.table({ minWidth, colorMode })} {...rest}>
+        {children}
+      </div>
+    </TableContext.Provider>
   )
 }
 
