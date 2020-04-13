@@ -3,7 +3,6 @@
 exports[`Table components Should properly render a table with darkMode 1`] = `
 <DocumentFragment>
   .emotion-16 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -21,12 +20,6 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-16 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {
@@ -120,7 +113,6 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
 }
 
 .emotion-16 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -138,12 +130,6 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-16 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {
@@ -365,7 +351,6 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
 }
 
 .emotion-16 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -383,12 +368,6 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   align-items: flex-start;
   border: 1px solid black;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-16 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {
@@ -482,7 +461,6 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
 }
 
 .emotion-16 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -500,12 +478,6 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   align-items: flex-start;
   border: 1px solid black;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-16 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {

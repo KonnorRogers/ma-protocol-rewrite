@@ -13,7 +13,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
     </a>
   </h3>
   .emotion-108 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,12 +30,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-108 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-5 {
@@ -153,7 +146,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
 }
 
 .emotion-108 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -171,12 +163,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-108 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-5 {

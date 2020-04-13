@@ -73,6 +73,12 @@ exports[`Renders med control without error 1`] = `
   padding-right: 0.5rem;
 }
 
+@media only screen and (min-width:450px) {
+  .emotion-0 {
+    overflow: auto;
+  }
+}
+
 @media only screen and (min-width:640px) {
   .emotion-0 {
     font-size: 1.25rem;
@@ -91,6 +97,12 @@ exports[`Renders med control without error 1`] = `
 .emotion-0 ul {
   padding-left: 1rem;
   padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:450px) {
+  .emotion-0 {
+    overflow: auto;
+  }
 }
 
 @media only screen and (min-width:640px) {
@@ -184,6 +196,12 @@ exports[`Renders without error 1`] = `
   padding-right: 0.5rem;
 }
 
+@media only screen and (min-width:450px) {
+  .emotion-0 {
+    overflow: auto;
+  }
+}
+
 @media only screen and (min-width:640px) {
   .emotion-0 {
     font-size: 1.25rem;
@@ -202,6 +220,12 @@ exports[`Renders without error 1`] = `
 .emotion-0 ul {
   padding-left: 1rem;
   padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:450px) {
+  .emotion-0 {
+    overflow: auto;
+  }
 }
 
 @media only screen and (min-width:640px) {

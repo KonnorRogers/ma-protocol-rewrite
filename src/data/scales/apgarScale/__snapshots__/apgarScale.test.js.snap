@@ -13,7 +13,6 @@ exports[`ApgarScale() Should render without error 1`] = `
     </a>
   </h3>
   .emotion-50 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -31,12 +30,6 @@ exports[`ApgarScale() Should render without error 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-50 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {
@@ -150,7 +143,6 @@ exports[`ApgarScale() Should render without error 1`] = `
 }
 
 .emotion-50 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -168,12 +160,6 @@ exports[`ApgarScale() Should render without error 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-50 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {

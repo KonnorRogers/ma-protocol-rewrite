@@ -16,7 +16,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
     Pediatric Atropine Dosing for Nerve Agent Toxicity Using Pediatric Atropens
   </p>
   .emotion-20 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -34,12 +33,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-20 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {
@@ -156,7 +149,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
 }
 
 .emotion-20 {
-  overflow-x: scroll;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -174,12 +166,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-20 {
-    overflow-x: auto;
-  }
 }
 
 .emotion-4 {
