@@ -41,7 +41,7 @@ export function TableRow({
   )
 }
 
-TableRow.propsTypes = {
+TableRow.propTypes = {
   heading: PropTypes.bool,
   lastRow: PropTypes.bool,
 }
