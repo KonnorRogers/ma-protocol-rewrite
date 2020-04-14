@@ -13,11 +13,25 @@ function Table({ children, minWidth, colormode, ...rest }) {
     colorMode = colorMode
   }
 
-  // if (Array.isArray(children)) {
-  //   const columns = children.length
-  // }
-  const columns = children.length
+  const count = React.Children.count(children)
+  const columns = count
+  const lastChildIdx = count - 1
 
+  React.useEffect(() => {
+    const childAry = [...children]
+
+    const lastChild = childAry[lastChildIdx]
+    const lastChildClone = React.cloneElement(lastChild, { lastRow: false })
+
+    childAry[lastChildIdx] = lastChildClone
+    children = childAry
+    console.log([...children][lastChildIdx].props.lastRow)
+  })
+
+  // React.useEffect(() => {
+  //   // console.log(React.Children.map(children, (child) => child)[-1])
+  //   console.log([...children])
+  // }, [children])
   return (
     <TableContext.Provider value={{ colorMode, columns }}>
       <div css={styles.table({ minWidth, colorMode })} {...rest}>
