@@ -3,7 +3,7 @@ import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 import { useColorMode } from "theme-ui"
 import { useLastChild } from "../../hooks/useLastChild"
-import { useTableColumns } from "../../hooks/useTableColumns"
+// import { useTableColumns } from "../../hooks/useTableColumns"
 
 function Table({ children, minWidth, colormode, ...rest }) {
   let colorMode = useColorMode()[0]
@@ -13,11 +13,11 @@ function Table({ children, minWidth, colormode, ...rest }) {
     colorMode = colormode
   }
 
-  const newChildren = useLastChild(children, {
-    lastRow: true,
-  })
+  // const newChildren = useLastChild(children, {
+  //   lastRow: true,
+  // })
 
-  children = newChildren
+  // children = newChildren
 
   return (
     <div css={styles.table({ minWidth, colorMode })} {...rest}>
@@ -30,6 +30,8 @@ Table.propTypes = {
   minWidth: PropTypes.string,
 }
 
+let tableColumns
+
 export function TableRow({
   children,
   heading,
@@ -38,15 +40,22 @@ export function TableRow({
   colormode,
   ...rest
 }) {
-  let [tableColumns, setTableColumns] = useTableColumns(children)
-  console.log(tableColumns)
+  // const [columns, setColumns] = React.useState(0)
+  let columns = 0
+
+  // React.useEffect(() => {
+  React.Children.forEach(children, (child) => {
+    // setColumns(columns + child.colspan)
+    columns += 1
+  })
+  // }, children)
+
+  // Hack
+  tableColumns = columns
 
   const colorMode = colormode || useColorMode()[0]
   return (
-    <div
-      css={[styles.row({ tableColumns, lastRow, heading, colorMode }), css]}
-      {...rest}
-    >
+    <div css={[styles.row({ lastRow, heading, colorMode }), css]} {...rest}>
       {children}
     </div>
   )
@@ -70,8 +79,9 @@ export function TableItem({
   colormode,
   ...rest
 }) {
-  const columns = useTableColumns()[0]
-  console.log(columns)
+  // hack
+  const columns = tableColumns
+
   const colorMode = colormode || useColorMode()[0]
 
   return (
