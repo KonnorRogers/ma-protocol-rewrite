@@ -2,26 +2,27 @@ import * as React from "react"
 import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 import { useColorMode } from "theme-ui"
+import { useLastChild } from "../../hooks/useLastChild"
+import { useTableColumns } from "../../hooks/useTableColumns"
 
-function Table({ children, minWidth, colorMode, ...rest }) {
-  colorMode = useColorMode()[0]
+function Table({ children, minWidth, colormode, ...rest }) {
+  let colorMode = useColorMode()[0]
 
   // Used to override the useColorMode hook for specific circumstances
-  if (colorMode) {
-    colorMode = colorMode
+  if (colormode) {
+    colorMode = colormode
   }
 
-  const count = React.Children.count(children)
-  const columns = count
-  const lastChildIdx = count - 1
+  const newChildren = useLastChild(children, {
+    lastRow: true,
+  })
 
-  useLastChild(children, { lastRow: true })
+  children = newChildren
+
   return (
-    <TableContext.Provider value={{ colorMode, columns }}>
-      <div css={styles.table({ minWidth, colorMode })} {...rest}>
-        {children}
-      </div>
-    </TableContext.Provider>
+    <div css={styles.table({ minWidth, colorMode })} {...rest}>
+      {children}
+    </div>
   )
 }
 
@@ -37,9 +38,15 @@ export function TableRow({
   colormode,
   ...rest
 }) {
-  const colorMode = colormode || React.useContext(TableContext).colorMode
+  let [tableColumns, setTableColumns] = useTableColumns(children)
+  console.log(tableColumns)
+
+  const colorMode = colormode || useColorMode()[0]
   return (
-    <div css={[styles.row({ lastRow, heading, colorMode }), css]} {...rest}>
+    <div
+      css={[styles.row({ tableColumns, lastRow, heading, colorMode }), css]}
+      {...rest}
+    >
       {children}
     </div>
   )
@@ -63,9 +70,9 @@ export function TableItem({
   colormode,
   ...rest
 }) {
-  const columns = React.useContext(TableContext).columns
-
-  const colorMode = colormode || React.useContext(TableContext).colorMode
+  const columns = useTableColumns()[0]
+  console.log(columns)
+  const colorMode = colormode || useColorMode()[0]
 
   return (
     <div
