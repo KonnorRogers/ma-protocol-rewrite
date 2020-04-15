@@ -3,13 +3,11 @@ import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 import { useColorMode } from "theme-ui"
 
-const TableContext = React.createContext(null)
-
-function Table({ children, minWidth, colormode, ...rest }) {
-  let colorMode = useColorMode()[0]
+function Table({ children, minWidth, colorMode, ...rest }) {
+  colorMode = useColorMode()[0]
 
   // Used to override the useColorMode hook for specific circumstances
-  if (colormode) {
+  if (colorMode) {
     colorMode = colorMode
   }
 
@@ -17,21 +15,7 @@ function Table({ children, minWidth, colormode, ...rest }) {
   const columns = count
   const lastChildIdx = count - 1
 
-  React.useEffect(() => {
-    const childAry = [...children]
-
-    const lastChild = childAry[lastChildIdx]
-    const lastChildClone = React.cloneElement(lastChild, { lastRow: false })
-
-    childAry[lastChildIdx] = lastChildClone
-    children = childAry
-    console.log([...children][lastChildIdx].props.lastRow)
-  })
-
-  // React.useEffect(() => {
-  //   // console.log(React.Children.map(children, (child) => child)[-1])
-  //   console.log([...children])
-  // }, [children])
+  useLastChild(children, { lastRow: true })
   return (
     <TableContext.Provider value={{ colorMode, columns }}>
       <div css={styles.table({ minWidth, colorMode })} {...rest}>
