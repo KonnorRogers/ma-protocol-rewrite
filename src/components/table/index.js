@@ -38,9 +38,14 @@ export function TableRow({
   ...rest
 }) {
   const colorMode = colormode || useColorMode()[0]
-  const [columnCount, setColumnCount] = React.useState(0)
+  const [count, setCount] = React.useState(0)
 
-  const count = React.Children.count(children)
+  React.useEffect(() => {
+    React.Children.forEach(children, (child) => {
+      setCount((prevCount) => (prevCount += child.props.colspan))
+    })
+  }, [children])
+
   const updatedChildren = React.Children.map(children, (child) => {
     return React.cloneElement(child, { count: count })
   })
@@ -72,9 +77,6 @@ export function TableItem({
   colormode,
   ...rest
 }) {
-  // hack
-  // const columns = tableColumns
-  console.log(count)
   const columns = count
 
   const colorMode = colormode || useColorMode()[0]
