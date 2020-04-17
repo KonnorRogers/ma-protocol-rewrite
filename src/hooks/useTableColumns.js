@@ -10,15 +10,13 @@ import * as React from "react"
  * @return {Array<ReactNode, Function>} - Returns [tableColumns, setTableColumns]
  */
 export function useTableColumns(children, columns = 0) {
-  let tableColumnCount = columns
+  const [tableColumnCount, setTableColumnCount] = React.useState(columns)
 
-  const firstChild = children[0]
-
-  React.Children.forEach(firstChild, (tableRow) => {
-    React.Children.forEach(tableRow.props.children, (tableItem) => {
-      tableColumnCount += tableItem.props.colspan
+  React.useEffect(() => {
+    React.Children.forEach(children, (child) => {
+      setTableColumnCount((prevCount) => (prevCount += child.props.colspan))
     })
-  })
+  }, [children])
 
   return tableColumnCount
 }
