@@ -25,7 +25,7 @@ function TableHeader(_props) {
 
   return (
     <TableRow heading={true} css={styles.header}>
-      <Items />
+      {React.Children.toArray(Items())}
     </TableRow>
   )
 }
