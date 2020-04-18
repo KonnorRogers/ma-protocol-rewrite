@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 import { useColorMode } from "theme-ui"
-// import { useLastChild } from "../../hooks/useLastChild"
+import { useLastChild } from "../../hooks/useLastChild"
 import { useTableColumns } from "../../hooks/useTableColumns"
 
 function Table({ children, minWidth, colormode, ...rest }) {
@@ -11,12 +11,6 @@ function Table({ children, minWidth, colormode, ...rest }) {
   if (colormode) {
     colorMode = colormode
   }
-
-  // const newChildren = useLastChild(children, {
-  //   lastRow: true,
-  // })
-
-  // children = newChildren
 
   return (
     <div css={styles.table({ minWidth, colorMode })} {...rest}>
@@ -39,8 +33,12 @@ export function TableRow({
 }) {
   const colorMode = colormode || useColorMode()[0]
   const tableColumns = useTableColumns(children)
+  const [lastChild, setLastChild] = useLastChild(children, { lastItem: true })
 
-  const updatedChildren = React.Children.map(children, (child) => {
+  const updatedChildren = React.Children.map(children, (child, index) => {
+    if (index >= children.length) {
+      child = lastChild
+    }
     return React.cloneElement(child, { tableColumns: tableColumns })
   })
 

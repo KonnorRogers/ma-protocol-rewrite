@@ -68,7 +68,7 @@ function AdultAutoInjectors(_props) {
         Use only if Pediatric Atropen or when Atropine/Pralidoxime vials are not
         available
       </p>
-      <Table columns={5}>
+      <Table>
         <TableHeader />
         <TableData />
       </Table>

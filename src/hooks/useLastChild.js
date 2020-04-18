@@ -7,24 +7,28 @@ import * as React from "react"
  * @param {Object} newProperties - Properties to set on the lastChild
  * @return {Array<ReactNode>} - Returns an update children array
  */
-export function useLastChild(children, newProperties = {}) {
-  if (!Array.isArray(children)) {
-    throw "Please pass an array to useLastChild()"
+export function useLastChild(children, newProperties) {
+  const [lastChild, setLastChild] = React.useState(null)
+
+  const childCount = React.Children.count(children)
+
+  if (childCount <= 0) {
+    return [lastChild, setLastChild]
   }
 
-  const lastChild = children[lastChildIndex]
+  if (childCount === 1) {
+    React.useEffect(() => {
+      setLastChild(React.cloneElement(children, newProperties))
+    }, [children])
+    return [lastChild, setLastChild]
+  }
+
   const lastChildIndex = children.length - 1
-  const lastChildClone = React.cloneElement(lastChild, newProperties)
+  const origLastChild = children[lastChildIndex]
 
-  const [lastChild, setLastChild] = React.useState(() => lastChildClone)
+  React.useEffect(() => {
+    setLastChild(React.cloneElement(origLastChild, newProperties))
+  }, [children])
 
-  const newChildren = React.Children.map((child, index) => {
-    if (index === lastChildIndex) {
-      return lastChildClone
-    }
-
-    return child
-  })
-
-  return newChildren
+  return [lastChild, setLastChild]
 }
