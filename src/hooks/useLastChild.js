@@ -5,7 +5,7 @@ import * as React from "react"
  * @typedef ReactNode
  * @param {Array<ReactNode>} children - Children array passed in from React
  * @param {Object} newProperties - Properties to set on the lastChild
- * @return {Array<ReactNode>} - Returns an update children array
+ * @return {Array<ReactNode,Function>} - Returns lastChild and setLastChild
  */
 export function useLastChild(children, newProperties) {
   const [lastChild, setLastChild] = React.useState(null)

@@ -12,11 +12,13 @@ import * as React from "react"
 export function useTableColumns(children, columns = 0) {
   const [tableColumnCount, setTableColumnCount] = React.useState(columns)
 
-  React.useEffect(() => {
+  // React.useEffect(() => {
+  React.useLayoutEffect(() => {
     React.Children.forEach(children, (child) => {
       setTableColumnCount((prevCount) => (prevCount += child.props.colspan))
     })
   }, [children])
+  // }, [children])
 
   return tableColumnCount
 }
