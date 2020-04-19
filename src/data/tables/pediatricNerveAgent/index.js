@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import * as React from "react"
-import Table, { TableRow, TableItem } from "../../../components/table"
+import { Table, TableRow, TableItem } from "../../../components/table"
 import data from "./data"
 import { jsx, css } from "@emotion/core"
 import Screen from "../../../utils/screen.js"
@@ -53,14 +53,8 @@ function Row({ object, lastRow, ...props }) {
   )
 }
 function Rows({ data }) {
-  const rows = data.map((object, index) => {
-    let lastRow = false
-
-    if (index >= data.length - 1) {
-      lastRow = true
-    }
-
-    return <Row object={object} key={object.kg.toString()} lastRow={lastRow} />
+  const rows = data.map((object) => {
+    return <Row object={object} key={object.kg.toString()} />
   })
 
   return rows
@@ -77,7 +71,7 @@ export default function PediatricNerveAgent({ children, ...rest }) {
           Pediatric Dosing for Nerve Agent Exposures
         </a>
       </h3>
-      <Table columns={5} {...rest}>
+      <Table {...rest}>
         <Header />
         <Rows data={data} />
         {children}

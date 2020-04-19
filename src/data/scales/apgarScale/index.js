@@ -1,6 +1,7 @@
 import * as React from "react"
 import { data, colors, headers } from "./data"
-import Table, {
+import {
+  Table,
   TableCell,
   TableRow,
   TableItem,

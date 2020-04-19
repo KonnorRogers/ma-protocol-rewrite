@@ -1,6 +1,6 @@
 import * as React from "react"
 import { render } from "@testing-library/react"
-import Table, { TableCell, TableRow, TableItem } from "./index.js"
+import { Table, TableCell, TableRow, TableItem } from "./index.js"
 
 // Mocked colorMode hook
 import { setColorMode } from "theme-ui"

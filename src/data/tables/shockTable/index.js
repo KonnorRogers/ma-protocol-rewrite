@@ -1,5 +1,5 @@
 import * as React from "react"
-import Table, { TableRow, TableItem } from "../../../components/table"
+import { Table, TableRow, TableItem } from "../../../components/table"
 import MyLink from "../../../components/myLink"
 import * as styles from "./styles"
 

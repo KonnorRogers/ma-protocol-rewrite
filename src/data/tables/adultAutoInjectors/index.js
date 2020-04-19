@@ -1,6 +1,6 @@
 import * as React from "react"
 import { data, headers } from "./data"
-import Table, { TableRow, TableItem } from "../../../components/table"
+import { Table, TableRow, TableItem } from "../../../components/table"
 import * as styles from "./styles"
 
 function TableHeader(_props) {

@@ -5,7 +5,7 @@ import { useColorMode } from "theme-ui"
 import { useLastChild } from "../../hooks/useLastChild"
 import { useTableColumns } from "../../hooks/useTableColumns"
 
-function Table({ children, minWidth, colormode, ...rest }) {
+export function Table({ children, minWidth, colormode, ...rest }) {
   let colorMode = useColorMode()[0]
 
   if (colormode) {
@@ -101,4 +101,3 @@ export function TableCell({ children, ...rest }) {
   )
 }
 
-export default Table

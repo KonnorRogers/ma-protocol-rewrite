@@ -1,5 +1,5 @@
 import * as React from "react"
-import Table, { TableRow, TableItem } from "../../../components/table"
+import { Table, TableRow, TableItem } from "../../../components/table"
 import data from "./data"
 import * as styles from "./styles"
 import { capitalize } from "../../../utils/stringUtils"
