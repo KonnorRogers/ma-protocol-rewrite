@@ -26,7 +26,7 @@ function TableHeader(_props) {
 
   return (
     <TableRow heading={true} css={styles.header}>
-      <TableHeaderItems />
+      {TableHeaderItems()}
     </TableRow>
   )
 }
@@ -63,7 +63,7 @@ function PediatricAtropens(_props) {
         Pediatric Atropine Dosing for Nerve Agent Toxicity Using Pediatric
         Atropens
       </p>
-      <Table columns={4}>
+      <Table>
         <TableHeader />
         <TableData />
       </Table>
