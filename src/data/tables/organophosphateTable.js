@@ -1,4 +1,4 @@
-import { Table, TableItem, TableRow } from "../../components/table"
+import { Table, TableItem, TableCell, TableRow } from "../../components/table"
 
 export default function OrganophosphateTable(_props) {
   return (
