@@ -63,7 +63,7 @@ export default function OrganophosphateTable(_props) {
         <TableItem>
           <TableCell>Severe</TableCell>
         </TableItem>
-        <TableItem align="left" style="padding-left: 1.25rem;">
+        <TableItem align="left" style={{ paddingLeft: "1.25rem" }}>
           All the above, plus:
           <ul>
             <li>Vomiting</li>
