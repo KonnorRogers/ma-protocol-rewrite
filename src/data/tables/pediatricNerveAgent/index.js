@@ -23,7 +23,7 @@ function Header() {
       <TableItem>Age</TableItem>
       <TableItem>Atropine</TableItem>
       <TableItem>Pralidoxime</TableItem>
-      <TableItem lastItem={true}>Midazolam</TableItem>
+      <TableItem>Midazolam</TableItem>
     </TableRow>
   )
 }
@@ -43,12 +43,12 @@ function Row({ object, lastRow, ...props }) {
     }
   `
   return (
-    <TableRow lastRow={lastRow} {...props} css={rowCss}>
+    <TableRow {...props} css={rowCss}>
       <TableItem>{kg}</TableItem>
       <TableItem>{age}</TableItem>
       <TableItem>{atropine}</TableItem>
       <TableItem>{pralidoxime}</TableItem>
-      <TableItem lastItem={true}>{midazolam}</TableItem>
+      <TableItem>{midazolam}</TableItem>
     </TableRow>
   )
 }
@@ -60,7 +60,8 @@ function Rows({ data }) {
   return rows
 }
 
-export default function PediatricNerveAgent({ children, ...rest }) {
+// @TODO FIX THIS IT ERRORS
+export default function PediatricNerveAgent({ ...rest }) {
   return (
     <>
       <h3
@@ -72,9 +73,8 @@ export default function PediatricNerveAgent({ children, ...rest }) {
         </a>
       </h3>
       <Table {...rest}>
-        <Header />
+        {Header()}
         <Rows data={data} />
-        {children}
       </Table>
     </>
   )

@@ -8,25 +8,25 @@ import * as React from "react"
  * @return {Array<ReactNode,Function>} - Returns lastChild and setLastChild
  */
 export function useLastChild(children, newProperties) {
-  const [lastChild, setLastChild] = React.useState(null)
-
-  const childCount = React.Children.count(children)
-
-  if (childCount <= 0) {
-    return [lastChild, setLastChild]
-  }
-
-  if (childCount === 1) {
-    React.useEffect(() => {
-      setLastChild(React.cloneElement(children, newProperties))
-    }, [children])
-    return [lastChild, setLastChild]
-  }
-
   const lastChildIndex = children.length - 1
   const origLastChild = children[lastChildIndex]
 
+  const [lastChild, setLastChild] = React.useState(() =>
+    React.cloneElement(origLastChild, newProperties)
+  )
+
   React.useEffect(() => {
+    const childCount = React.Children.count(children)
+
+    if (childCount <= 0) {
+      return
+    }
+
+    if (childCount === 1) {
+      setLastChild(React.cloneElement(children, newProperties))
+      return
+    }
+
     setLastChild(React.cloneElement(origLastChild, newProperties))
   }, [children])
 
