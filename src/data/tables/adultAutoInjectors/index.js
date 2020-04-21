@@ -7,45 +7,31 @@ function TableHeader(_props) {
   const objects = Object.entries(headers)
 
   function Items(_props) {
-    return objects.map((ary, index) => {
+    return objects.map((ary) => {
       const [key, value] = ary
-      let lastItem = false
 
-      if (index >= objects.length - 1) {
-        lastItem = true
-      }
-
-      return (
-        <TableItem lastItem={lastItem} key={key.toString()}>
-          {value}
-        </TableItem>
-      )
+      return <TableItem key={key.toString()}>{value}</TableItem>
     })
   }
 
   return (
     <TableRow heading={true} css={styles.header}>
-      {React.Children.toArray(Items())}
+      {Items()}
     </TableRow>
   )
 }
 
 function TableData(_props) {
-  return data.map((obj, index) => {
+  return data.map((obj) => {
     const { age, weight, autoinjectors, atropine, pralidoxime } = obj
-    let lastRow = false
-
-    if (index >= data.length - 1) {
-      lastRow = true
-    }
 
     return (
-      <TableRow key={age.toString()} lastRow={lastRow} css={styles.item}>
+      <TableRow key={age.toString()} css={styles.item}>
         <TableItem>{age}</TableItem>
         <TableItem>{weight}</TableItem>
         <TableItem>{autoinjectors}</TableItem>
         <TableItem>{atropine}</TableItem>
-        <TableItem lastItem={true}>{pralidoxime}</TableItem>
+        <TableItem>{pralidoxime}</TableItem>
       </TableRow>
     )
   })

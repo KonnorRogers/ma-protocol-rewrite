@@ -5,20 +5,10 @@ import * as styles from "./styles"
 import { capitalize } from "../../../utils/stringUtils"
 
 function TableHeader(_props) {
-  function TableHeaderItems(_props) {
+  function items() {
     const keys = Object.keys(data[0])
-    const columns = keys.map((key, index) => {
-      let lastItem = false
-
-      if (index >= keys.length - 1) {
-        lastItem = true
-      }
-
-      return (
-        <TableItem key={key} lastItem={lastItem}>
-          {capitalize(key.toString())}
-        </TableItem>
-      )
+    const columns = keys.map((key) => {
+      return <TableItem key={key}>{capitalize(key.toString())}</TableItem>
     })
 
     return columns
@@ -26,25 +16,19 @@ function TableHeader(_props) {
 
   return (
     <TableRow heading={true} css={styles.header}>
-      {TableHeaderItems()}
+      {items()}
     </TableRow>
   )
 }
 
 function TableData(_props) {
-  return data.map((obj, index) => {
-    let lastRow = false
-
-    if (index >= data.length - 1) {
-      lastRow = true
-    }
-
+  return data.map((obj) => {
     return (
-      <TableRow key={obj.weight.toString()} lastRow={lastRow} css={styles.row}>
+      <TableRow key={obj.weight.toString()} css={styles.row}>
         <TableItem>{obj.weight}</TableItem>
         <TableItem>{obj.mild}</TableItem>
         <TableItem>{obj.moderate}</TableItem>
-        <TableItem lastItem={true}>{obj.severe}</TableItem>
+        <TableItem>{obj.severe}</TableItem>
       </TableRow>
     )
   })

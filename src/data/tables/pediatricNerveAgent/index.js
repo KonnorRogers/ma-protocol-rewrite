@@ -28,7 +28,7 @@ function Header() {
   )
 }
 
-function Row({ object, lastRow, ...props }) {
+function Row({ object, ...rest }) {
   const { kg, age, atropine, pralidoxime, midazolam } = object
 
   const rowCss = css`
@@ -43,7 +43,7 @@ function Row({ object, lastRow, ...props }) {
     }
   `
   return (
-    <TableRow {...props} css={rowCss}>
+    <TableRow {...rest} css={rowCss}>
       <TableItem>{kg}</TableItem>
       <TableItem>{age}</TableItem>
       <TableItem>{atropine}</TableItem>
@@ -52,18 +52,20 @@ function Row({ object, lastRow, ...props }) {
     </TableRow>
   )
 }
-function Rows({ data }) {
+
+function Rows() {
   const rows = data.map((object) => {
     return <Row object={object} key={object.kg.toString()} />
   })
 
-  return <>{React.Children.map(rows, (child) => React.cloneElement(child))}</>
+  console.log(rows)
+  return rows
 }
 
-// @TODO FIX THIS IT ERRORS
 export default function PediatricNerveAgent({ ...rest }) {
-  const rows = <Rows data={data} />
-  console.log(rows)
+  // @TODO FIX THIS IT ERRORS
+
+  // const Rows = React.Children.map(rows(), (child) => child)
   return (
     <>
       <h3
@@ -75,8 +77,8 @@ export default function PediatricNerveAgent({ ...rest }) {
         </a>
       </h3>
       <Table {...rest}>
-        {Header()}
-        <Rows data={data} />
+        <Header />
+        <Rows />
       </Table>
     </>
   )

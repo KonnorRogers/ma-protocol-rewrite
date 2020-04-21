@@ -13,12 +13,12 @@ export function Table({ children, minWidth, colormode, ...rest }) {
     colorMode = colormode
   }
 
-  children = updateLastChild(children, lastChild)
-  // console.log(children)
+  const updatedChildren = updateLastChild(children, lastChild)
+  console.log(lastChild)
 
   return (
     <div css={styles.table({ minWidth, colorMode })} {...rest}>
-      {children}
+      {updatedChildren}
     </div>
   )
 }

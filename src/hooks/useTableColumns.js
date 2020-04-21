@@ -16,6 +16,10 @@ export function useTableColumns(children, columns = 0) {
     React.Children.forEach(children, (child) => {
       setTableColumnCount((prevCount) => (prevCount += child.props.colspan))
     })
+
+    return () => {
+      setTableColumnCount(columns)
+    }
   }, [children])
 
   return tableColumnCount
