@@ -16,9 +16,8 @@ export const table = ({ colorMode, minWidth }) => {
     min-width: ${minWidth};
   `
 }
-export const row = ({ lastRow, heading, colorMode }) => {
+export const row = ({ heading, colorMode }) => {
   const color = toColor(colorMode)
-  const borderBottom = lastRow ? "none" : `1px solid ${color}`
 
   const fontSize = heading ? "1.15rem" : "initial"
   const fontWeight = heading ? "bold" : "normal"
@@ -31,21 +30,27 @@ export const row = ({ lastRow, heading, colorMode }) => {
     text-align: center;
     width: 100%;
     align-items: stretch;
-    border-bottom: ${borderBottom};
+    border-bottom: 1px solid ${color};
+
+    div:last-of-type {
+      border-bottom: none;
+    }
   `
 }
 
-export const item = ({ colspan, tableColumns, align, lastItem, colorMode }) => {
+export const item = ({ colspan, tableColumns, align, colorMode }) => {
   const columnWidth = (100 / tableColumns) * colspan
   const color = toColor(colorMode)
 
-  const borderRight = lastItem ? "none" : `1px solid ${color}`
-
   return css`
     width: ${columnWidth}%;
-    border-right: ${borderRight};
+    border-right: 1 px solid ${color};
     padding: 0.5rem;
     text-align: ${align};
+
+    div:last-of-type {
+      border: none;
+    }
   `
 }
 

@@ -58,7 +58,6 @@ function Rows() {
     return <Row object={object} key={object.kg.toString()} />
   })
 
-  console.log(rows)
   return rows
 }
 

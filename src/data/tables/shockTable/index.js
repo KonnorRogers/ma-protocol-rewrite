@@ -227,7 +227,7 @@ export function PediatricAdvancedShockTable(_props) {
 // export function PediatricParamedicShockTable(_props) {
 //   return (
 //     <BaseTable>
-//       <TableRow lastRow={true}>
+//       <TableRow Row={true}>
 //         <TableItem></TableItem>
 //         <TableItem></TableItem>
 //         <TableItem></TableItem>

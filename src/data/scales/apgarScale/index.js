@@ -13,18 +13,8 @@ import * as styles from "./styles"
 function HeaderRow(_props) {
   function Items(_props) {
     const headerValues = Object.values(headers)
-    return headerValues.map((header, index) => {
-      let lastItem = false
-
-      if (index >= headerValues.length - 1) {
-        lastItem = true
-      }
-
-      return (
-        <TableItem key={index} lastItem={lastItem}>
-          {header}
-        </TableItem>
-      )
+    return headerValues.map((header) => {
+      return <TableItem key={index}>{header}</TableItem>
     })
   }
 
@@ -41,13 +31,7 @@ function Data(_props) {
 
   return rows.map((key, rowIndex) => {
     const Items = (_props) => {
-      return objects.map((item, index) => {
-        let lastItem = false
-
-        if (index >= objects.length - 1) {
-          lastItem = true
-        }
-
+      return objects.map((item) => {
         let string = capitalize(data[item][key])
         const firstLetter = string[0]
         const restOfWord = string.slice(1)

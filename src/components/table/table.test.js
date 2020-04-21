@@ -7,26 +7,26 @@ import { setColorMode } from "theme-ui"
 
 function renderTable() {
   return render(
-    <Table columns={4}>
+    <Table>
       <TableRow heading={true}>
         <TableItem> Hi there </TableItem>
         <TableItem> Hi there </TableItem>
         <TableItem> Hi there </TableItem>
-        <TableItem lastItem={true}> Hi there </TableItem>
+        <TableItem Item={true}> Hi there </TableItem>
       </TableRow>
       <TableRow>
         <TableItem>Yo dawg</TableItem>
         <TableItem>Yo dawg</TableItem>
         <TableItem>Yo dawg</TableItem>
-        <TableItem lastItem={true}>Yo dawg</TableItem>
+        <TableItem Item={true}>Yo dawg</TableItem>
       </TableRow>
-      <TableRow lastRow={true}>
+      <TableRow Row={true}>
         <TableItem>
           <TableCell>Table Cell for centering</TableCell>
         </TableItem>
         <TableItem>Testing 123</TableItem>
         <TableItem>Testing 123</TableItem>
-        <TableItem lastItem={true}>Testing 123</TableItem>
+        <TableItem Item={true}>Testing 123</TableItem>
       </TableRow>
     </Table>
   )
