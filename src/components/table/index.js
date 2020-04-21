@@ -14,7 +14,7 @@ export function Table({ children, minWidth, colormode, ...rest }) {
   }
 
   children = updateLastChild(children, lastChild)
-  console.log(children)
+  // console.log(children)
 
   return (
     <div css={styles.table({ minWidth, colorMode })} {...rest}>

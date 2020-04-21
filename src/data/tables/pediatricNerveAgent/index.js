@@ -57,11 +57,13 @@ function Rows({ data }) {
     return <Row object={object} key={object.kg.toString()} />
   })
 
-  return rows
+  return <>{React.Children.map(rows, (child) => React.cloneElement(child))}</>
 }
 
 // @TODO FIX THIS IT ERRORS
 export default function PediatricNerveAgent({ ...rest }) {
+  const rows = <Rows data={data} />
+  console.log(rows)
   return (
     <>
       <h3
