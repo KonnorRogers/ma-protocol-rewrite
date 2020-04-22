@@ -50,7 +50,6 @@ function Data(_props) {
           <TableItem
             style={{ backgroundColor: colors[key], color: "black" }}
             key={data[item][key]}
-            lastItem={lastItem}
             colormode="light"
           >
             <TableCell>{string}</TableCell>
@@ -59,13 +58,8 @@ function Data(_props) {
       })
     }
 
-    let lastRow = false
-    if (rowIndex >= rows.length - 1) {
-      lastRow = true
-    }
-
     return (
-      <TableRow key={key} lastRow={lastRow} colormode="light">
+      <TableRow key={key} colormode="light">
         <Items />
       </TableRow>
     )

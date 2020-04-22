@@ -14,6 +14,10 @@ export const table = ({ colorMode, minWidth }) => {
     align-items: flex-start;
     border: 1px solid ${color};
     min-width: ${minWidth};
+
+    div:last-of-type {
+      border-bottom: none;
+    }
   `
 }
 export const row = ({ heading, colorMode }) => {
@@ -33,7 +37,7 @@ export const row = ({ heading, colorMode }) => {
     border-bottom: 1px solid ${color};
 
     div:last-of-type {
-      border-bottom: none;
+      border-right: none;
     }
   `
 }
@@ -44,13 +48,9 @@ export const item = ({ colspan, tableColumns, align, colorMode }) => {
 
   return css`
     width: ${columnWidth}%;
-    border-right: 1 px solid ${color};
+    border-right: 1px solid ${color};
     padding: 0.5rem;
     text-align: ${align};
-
-    div:last-of-type {
-      border: none;
-    }
   `
 }
 
