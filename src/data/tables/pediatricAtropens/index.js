@@ -43,7 +43,6 @@ function PediatricAtropens(_props) {
       >
         <a href="#pediatric-atropens">Pediatric Atropens</a>
       </h3>
-      <Items />
       <Table columns={4}>
         <TableHeader />
         <TableData />

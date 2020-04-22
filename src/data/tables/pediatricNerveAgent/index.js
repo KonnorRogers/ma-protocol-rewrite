@@ -62,9 +62,6 @@ function Rows() {
 }
 
 export default function PediatricNerveAgent({ ...rest }) {
-  // @TODO FIX THIS IT ERRORS
-
-  // const Rows = React.Children.map(rows(), (child) => child)
   return (
     <>
       <h3
@@ -75,7 +72,7 @@ export default function PediatricNerveAgent({ ...rest }) {
           Pediatric Dosing for Nerve Agent Exposures
         </a>
       </h3>
-      <Table {...rest}>
+      <Table columns={5} {...rest}>
         <Header />
         <Rows />
       </Table>

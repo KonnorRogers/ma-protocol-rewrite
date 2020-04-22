@@ -3,7 +3,7 @@ import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 import { useColorMode } from "theme-ui"
 
-const TableContext = React.createContext(1)
+const TableContext = React.createContext({ columns: 1 })
 
 export function Table({ children, columns, minWidth, colormode, ...rest }) {
   let colorMode = useColorMode()[0]
@@ -13,7 +13,7 @@ export function Table({ children, columns, minWidth, colormode, ...rest }) {
   }
 
   return (
-    <TableContext.Provider value={columns}>
+    <TableContext.Provider value={{ columns: columns }}>
       <div css={styles.table({ minWidth, colorMode })} {...rest}>
         {children}
       </div>
@@ -22,6 +22,7 @@ export function Table({ children, columns, minWidth, colormode, ...rest }) {
 }
 
 Table.propTypes = {
+  columns: PropTypes.number.isRequired,
   minWidth: PropTypes.string,
 }
 
@@ -53,7 +54,7 @@ export function TableItem({
 }) {
   const colorMode = colormode || useColorMode()[0]
 
-  const tableColumns = React.useContext(TableContext)
+  const tableColumns = React.useContext(TableContext).columns
 
   return (
     <div
