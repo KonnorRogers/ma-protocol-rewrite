@@ -5,7 +5,7 @@ import * as styles from "./styles"
 import { capitalize } from "../../../utils/stringUtils"
 
 function TableHeader(_props) {
-  function items() {
+  function Items(_props) {
     const keys = Object.keys(data[0])
     const columns = keys.map((key) => {
       return <TableItem key={key}>{capitalize(key.toString())}</TableItem>
@@ -16,7 +16,7 @@ function TableHeader(_props) {
 
   return (
     <TableRow heading={true} css={styles.header}>
-      {items()}
+      <Items />
     </TableRow>
   )
 }
@@ -43,11 +43,8 @@ function PediatricAtropens(_props) {
       >
         <a href="#pediatric-atropens">Pediatric Atropens</a>
       </h3>
-      <p>
-        Pediatric Atropine Dosing for Nerve Agent Toxicity Using Pediatric
-        Atropens
-      </p>
-      <Table>
+      <Items />
+      <Table columns={4}>
         <TableHeader />
         <TableData />
       </Table>

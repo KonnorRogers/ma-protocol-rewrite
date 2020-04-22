@@ -16,7 +16,7 @@ function TableHeader(_props) {
 
   return (
     <TableRow heading={true} css={styles.header}>
-      {Items()}
+      <Items />
     </TableRow>
   )
 }
@@ -54,7 +54,7 @@ function AdultAutoInjectors(_props) {
         Use only if Pediatric Atropen or when Atropine/Pralidoxime vials are not
         available
       </p>
-      <Table>
+      <Table columns={5}>
         <TableHeader />
         <TableData />
       </Table>

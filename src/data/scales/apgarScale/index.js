@@ -10,14 +10,14 @@ import {
 import { capitalize } from "../../../utils/stringUtils"
 import * as styles from "./styles"
 
-function HeaderRow(_props) {
-  function Items(_props) {
-    const headerValues = Object.values(headers)
-    return headerValues.map((header) => {
-      return <TableItem key={index}>{header}</TableItem>
-    })
-  }
+function Items(_props) {
+  const headerValues = Object.values(headers)
+  return headerValues.map((header) => {
+    return <TableItem key={header}>{header}</TableItem>
+  })
+}
 
+function HeaderRow(_props) {
   return (
     <TableRow heading={true} css={styles.heading}>
       <Items />
@@ -25,25 +25,31 @@ function HeaderRow(_props) {
   )
 }
 
+function boldFirstLetter(string) {
+  const firstLetter = string[0]
+  const restOfWord = string.slice(1)
+
+  return (
+    <span>
+      <strong>{firstLetter}</strong>
+      {restOfWord}
+    </span>
+  )
+}
+
 function Data(_props) {
   const objects = Object.keys(data)
   const rows = Object.keys(data.features)
 
-  return rows.map((key, rowIndex) => {
+  // return rows.map((key) => {
+  return rows.map((key) => {
     const Items = (_props) => {
-      return objects.map((item) => {
+      return objects.map((item, index) => {
         let string = capitalize(data[item][key])
-        const firstLetter = string[0]
-        const restOfWord = string.slice(1)
 
         // Only bold the first column
         if (index === 0) {
-          string = (
-            <span>
-              <strong>{firstLetter}</strong>
-              {restOfWord}
-            </span>
-          )
+          string = boldFirstLetter(string)
         }
 
         return (
@@ -58,9 +64,12 @@ function Data(_props) {
       })
     }
 
+    const check = <Items />
+    console.log(check)
+
     return (
       <TableRow key={key} colormode="light">
-        <Items />
+        {Items()}
       </TableRow>
     )
   })

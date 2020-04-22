@@ -7,7 +7,7 @@ import { setColorMode } from "theme-ui"
 
 function renderTable() {
   return render(
-    <Table>
+    <Table columns={4}>
       <TableRow heading={true}>
         <TableItem> Hi there </TableItem>
         <TableItem> Hi there </TableItem>

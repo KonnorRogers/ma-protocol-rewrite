@@ -2,9 +2,10 @@ import * as React from "react"
 import * as styles from "./styles.js"
 import PropTypes from "prop-types"
 import { useColorMode } from "theme-ui"
-import { useTableColumns } from "../../hooks/useTableColumns"
 
-export function Table({ children, minWidth, colormode, ...rest }) {
+const TableContext = React.createContext(1)
+
+export function Table({ children, columns, minWidth, colormode, ...rest }) {
   let colorMode = useColorMode()[0]
 
   if (colormode) {
@@ -12,9 +13,11 @@ export function Table({ children, minWidth, colormode, ...rest }) {
   }
 
   return (
-    <div css={styles.table({ minWidth, colorMode })} {...rest}>
-      {children}
-    </div>
+    <TableContext.Provider value={columns}>
+      <div css={styles.table({ minWidth, colorMode })} {...rest}>
+        {children}
+      </div>
+    </TableContext.Provider>
   )
 }
 
@@ -24,16 +27,10 @@ Table.propTypes = {
 
 export function TableRow({ children, heading, css, colormode, ...rest }) {
   const colorMode = colormode || useColorMode()[0]
-  const tableColumns = useTableColumns(children)
-
-  const newChildren = updateChildrenWithColumns({
-    children,
-    tableColumns,
-  })
 
   return (
     <div css={[styles.row({ heading, colorMode }), css]} {...rest}>
-      {newChildren}
+      {children}
     </div>
   )
 }
@@ -48,7 +45,6 @@ TableRow.defaultProps = {
 
 export function TableItem({
   colspan,
-  tableColumns,
   count,
   children,
   align,
@@ -56,6 +52,8 @@ export function TableItem({
   ...rest
 }) {
   const colorMode = colormode || useColorMode()[0]
+
+  const tableColumns = React.useContext(TableContext)
 
   return (
     <div
@@ -83,18 +81,4 @@ export function TableCell({ children, ...rest }) {
       {children}
     </div>
   )
-}
-
-/**
- * Updates the children so that they have tableColumns appended to them.
- * @typedef {Object} ReactNode
- * @param {Object} obj - The object to pass into tableColumns
- * @param {ReactNode[]} obj.children - Array of children to map over
- * @param {number} obj.tableColumns - Number of columns to add to each child
- * @return {ReactNode[]} Returns an array of ReactNodes with tableColumns appended to it
- */
-function updateChildrenWithColumns({ children, tableColumns }) {
-  return React.Children.map(children, (child) => {
-    return React.cloneElement(child, { tableColumns: tableColumns })
-  })
 }
