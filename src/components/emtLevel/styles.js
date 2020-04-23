@@ -44,12 +44,12 @@ export const level = (level) => css`
     padding-right: 0.5rem;
   }
 
+  ${Screen.extraSmall} {
+    overflow: auto;
+  }
+
   ${Screen.small} {
     font-size: 1.25rem;
     padding: 0.75rem 1.5rem 0 1.5rem;
-  }
-
-  ${Screen.extraSmall} {
-    overflow: auto;
   }
 `
