@@ -34,10 +34,10 @@ const InformationBox = ({
 
   if (id) {
     return (
-      <>
+      <div style={{ margin: "auto", maxWidth: "1000px" }}>
         <IdAnchor />
         <InfoBox />
-      </>
+      </div>
     )
   }
 
