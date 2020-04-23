@@ -12,21 +12,21 @@ function renderTable() {
         <TableItem> Hi there </TableItem>
         <TableItem> Hi there </TableItem>
         <TableItem> Hi there </TableItem>
-        <TableItem Item={true}> Hi there </TableItem>
+        <TableItem> Hi there </TableItem>
       </TableRow>
       <TableRow>
         <TableItem>Yo dawg</TableItem>
         <TableItem>Yo dawg</TableItem>
         <TableItem>Yo dawg</TableItem>
-        <TableItem Item={true}>Yo dawg</TableItem>
+        <TableItem>Yo dawg</TableItem>
       </TableRow>
-      <TableRow Row={true}>
+      <TableRow>
         <TableItem>
           <TableCell>Table Cell for centering</TableCell>
         </TableItem>
         <TableItem>Testing 123</TableItem>
         <TableItem>Testing 123</TableItem>
-        <TableItem Item={true}>Testing 123</TableItem>
+        <TableItem>Testing 123</TableItem>
       </TableRow>
     </Table>
   )
