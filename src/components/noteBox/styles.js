@@ -7,7 +7,8 @@ export const flex = css`
   box-shadow: none;
   border: none;
   position: relative;
-  a {
+  span {
+    text-align: left;
     width: 100%;
   }
 

@@ -32,6 +32,10 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   min-width: 400px;
 }
 
+.emotion-108 div:last-of-type {
+  border-bottom: none;
+}
+
 .emotion-5 {
   font-weight: bold;
   font-size: 1.15rem;
@@ -53,6 +57,10 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   font-size: 0.65rem;
 }
 
+.emotion-5 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-5 {
     font-size: 0.75rem;
@@ -68,13 +76,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
 .emotion-0 {
   width: 20%;
   border-right: 1px solid white;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.emotion-4 {
-  width: 20%;
-  border-right: none;
   padding: 0.5rem;
   text-align: center;
 }
@@ -100,6 +101,10 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   font-size: 0.65rem;
 }
 
+.emotion-11 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:768px) {
   .emotion-11 {
     font-size: 0.75rem;
@@ -108,39 +113,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
 
 @media only screen and (min-width:1280px) {
   .emotion-11 {
-    font-size: 1rem;
-  }
-}
-
-.emotion-107 {
-  font-weight: normal;
-  font-size: initial;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 100%;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  border-bottom: none;
-  font-size: 0.65rem;
-}
-
-@media only screen and (min-width:768px) {
-  .emotion-107 {
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (min-width:1280px) {
-  .emotion-107 {
     font-size: 1rem;
   }
 }
@@ -165,6 +137,10 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   min-width: 400px;
 }
 
+.emotion-108 div:last-of-type {
+  border-bottom: none;
+}
+
 .emotion-5 {
   font-weight: bold;
   font-size: 1.15rem;
@@ -186,6 +162,10 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   font-size: 0.65rem;
 }
 
+.emotion-5 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-5 {
     font-size: 0.75rem;
@@ -201,13 +181,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
 .emotion-0 {
   width: 20%;
   border-right: 1px solid white;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.emotion-4 {
-  width: 20%;
-  border-right: none;
   padding: 0.5rem;
   text-align: center;
 }
@@ -233,6 +206,10 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
   font-size: 0.65rem;
 }
 
+.emotion-11 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:768px) {
   .emotion-11 {
     font-size: 0.75rem;
@@ -241,39 +218,6 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
 
 @media only screen and (min-width:1280px) {
   .emotion-11 {
-    font-size: 1rem;
-  }
-}
-
-.emotion-107 {
-  font-weight: normal;
-  font-size: initial;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 100%;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  border-bottom: none;
-  font-size: 0.65rem;
-}
-
-@media only screen and (min-width:768px) {
-  .emotion-107 {
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (min-width:1280px) {
-  .emotion-107 {
     font-size: 1rem;
   }
 }
@@ -305,7 +249,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         Pralidoxime
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         Midazolam
       </div>
@@ -334,7 +278,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         20-40 mg/kg
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         0.1mg/kg
       </div>
@@ -363,7 +307,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         20-40mg
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         0.05-0.1mg
       </div>
@@ -392,7 +336,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         40-80mg
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         0.1-0.2mg
       </div>
@@ -421,7 +365,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         100-200mg
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         0.25-0.5mg
       </div>
@@ -450,7 +394,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         200-400mg
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         0.5-1mg
       </div>
@@ -479,7 +423,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         300-600mg
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         2mg
       </div>
@@ -508,7 +452,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         400-800mg
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         2.5mg
       </div>
@@ -537,7 +481,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         500mg-1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         3mg
       </div>
@@ -566,7 +510,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         600mg-1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         3.5mg
       </div>
@@ -595,7 +539,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         700mg-1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         4mg
       </div>
@@ -624,7 +568,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         800mg-1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         4.5mg
       </div>
@@ -653,7 +597,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         900mg-1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         5mg
       </div>
@@ -682,7 +626,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         5mg
       </div>
@@ -711,7 +655,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         5mg
       </div>
@@ -740,7 +684,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         5mg
       </div>
@@ -769,13 +713,13 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         5mg
       </div>
     </div>
     <div
-      class="emotion-107"
+      class="emotion-11"
     >
       <div
         class="emotion-0"
@@ -798,7 +742,7 @@ exports[`PediatricNerveAgent Renders without error 1`] = `
         1g
       </div>
       <div
-        class="emotion-4"
+        class="emotion-0"
       >
         5mg
       </div>

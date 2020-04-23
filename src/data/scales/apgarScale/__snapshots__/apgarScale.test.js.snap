@@ -32,6 +32,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   min-width: 400px;
 }
 
+.emotion-50 div:last-of-type {
+  border-bottom: none;
+}
+
 .emotion-4 {
   font-weight: bold;
   font-size: 1.15rem;
@@ -53,6 +57,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
+.emotion-4 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-4 {
     font-size: 0.85rem;
@@ -68,13 +76,6 @@ exports[`ApgarScale() Should render without error 1`] = `
 .emotion-0 {
   width: 25%;
   border-right: 1px solid white;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.emotion-3 {
-  width: 25%;
-  border-right: none;
   padding: 0.5rem;
   text-align: center;
 }
@@ -99,6 +100,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   border-bottom: 1px solid black;
 }
 
+.emotion-13 div:last-of-type {
+  border-right: none;
+}
+
 .emotion-6 {
   width: 25%;
   border-right: 1px solid black;
@@ -120,26 +125,6 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-}
-
-.emotion-49 {
-  font-weight: normal;
-  font-size: initial;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 100%;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  border-bottom: none;
 }
 
 .emotion-50 {
@@ -162,6 +147,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   min-width: 400px;
 }
 
+.emotion-50 div:last-of-type {
+  border-bottom: none;
+}
+
 .emotion-4 {
   font-weight: bold;
   font-size: 1.15rem;
@@ -183,6 +172,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
+.emotion-4 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-4 {
     font-size: 0.85rem;
@@ -198,13 +191,6 @@ exports[`ApgarScale() Should render without error 1`] = `
 .emotion-0 {
   width: 25%;
   border-right: 1px solid white;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.emotion-3 {
-  width: 25%;
-  border-right: none;
   padding: 0.5rem;
   text-align: center;
 }
@@ -229,6 +215,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   border-bottom: 1px solid black;
 }
 
+.emotion-13 div:last-of-type {
+  border-right: none;
+}
+
 .emotion-6 {
   width: 25%;
   border-right: 1px solid black;
@@ -250,26 +240,6 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
-}
-
-.emotion-49 {
-  font-weight: normal;
-  font-size: initial;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 100%;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  border-bottom: none;
 }
 
 <div
@@ -294,7 +264,7 @@ exports[`ApgarScale() Should render without error 1`] = `
         1 Point
       </div>
       <div
-        class="emotion-3"
+        class="emotion-0"
       >
         0 Points
       </div>
@@ -338,7 +308,7 @@ exports[`ApgarScale() Should render without error 1`] = `
         </div>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-6"
         style="background-color: rgb(255, 227, 227); color: black;"
       >
         <div
@@ -387,7 +357,7 @@ exports[`ApgarScale() Should render without error 1`] = `
         </div>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-6"
         style="background-color: rgb(221, 214, 229); color: black;"
       >
         <div
@@ -436,7 +406,7 @@ exports[`ApgarScale() Should render without error 1`] = `
         </div>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-6"
         style="background-color: rgb(215, 227, 191); color: black;"
       >
         <div
@@ -485,7 +455,7 @@ exports[`ApgarScale() Should render without error 1`] = `
         </div>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-6"
         style="background-color: rgb(191, 207, 226); color: black;"
       >
         <div
@@ -496,7 +466,7 @@ exports[`ApgarScale() Should render without error 1`] = `
       </div>
     </div>
     <div
-      class="emotion-49"
+      class="emotion-13"
     >
       <div
         class="emotion-6"
@@ -534,7 +504,7 @@ exports[`ApgarScale() Should render without error 1`] = `
         </div>
       </div>
       <div
-        class="emotion-3"
+        class="emotion-6"
         style="background-color: rgb(250, 250, 175); color: black;"
       >
         <div

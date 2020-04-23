@@ -14,12 +14,14 @@ const InformationBox = ({
   ...rest
 }) => {
   const IdAnchor = () => (
-    <a
-      href={`#${id}`}
-      css={[styles.links, infoStyles.text({ alignment, borderColor })]}
-    >
-      <strong>{text}</strong>
-    </a>
+    <span style={{ display: "inline-block" }}>
+      <a
+        href={`#${id}`}
+        css={[styles.links, infoStyles.text({ alignment, borderColor })]}
+      >
+        <strong>{text}</strong>
+      </a>
+    </span>
   )
 
   const InfoBox = () => (
@@ -34,7 +36,7 @@ const InformationBox = ({
 
   if (id) {
     return (
-      <div css={styles.wrapper}>
+      <div css={infoStyles.wrapper}>
         <IdAnchor />
         <InfoBox />
       </div>

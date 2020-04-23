@@ -4,7 +4,7 @@ import Title from "../../../components/title"
 
 export const MainContainer = ({ children, ...rest }) => {
   return (
-    <OriginalMainContainer {...rest}>
+    <OriginalMainContainer {...rest} style={{ maxWidth: "1100px" }}>
       <PageNav data-testid="top-page-nav" />
       <Title data-testid="page-title" />
       {children}

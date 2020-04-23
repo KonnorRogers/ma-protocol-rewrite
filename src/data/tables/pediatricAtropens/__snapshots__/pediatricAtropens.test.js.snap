@@ -12,9 +12,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
       Pediatric Atropens
     </a>
   </h3>
-  <p>
-    Pediatric Atropine Dosing for Nerve Agent Toxicity Using Pediatric Atropens
-  </p>
   .emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,6 +30,10 @@ exports[`PediatricAtropens Should render without error 1`] = `
   align-items: flex-start;
   border: 1px solid white;
   min-width: 400px;
+}
+
+.emotion-20 div:last-of-type {
+  border-bottom: none;
 }
 
 .emotion-4 {
@@ -56,6 +57,10 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
+.emotion-4 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-4 {
     font-size: 0.95rem;
@@ -71,13 +76,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
 .emotion-0 {
   width: 25%;
   border-right: 1px solid white;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.emotion-3 {
-  width: 25%;
-  border-right: none;
   padding: 0.5rem;
   text-align: center;
 }
@@ -103,6 +101,10 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.65rem;
 }
 
+.emotion-9 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-9 {
     font-size: 0.75rem;
@@ -111,39 +113,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
 
 @media only screen and (min-width:768px) {
   .emotion-9 {
-    font-size: 0.85rem;
-  }
-}
-
-.emotion-19 {
-  font-weight: normal;
-  font-size: initial;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 100%;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  border-bottom: none;
-  font-size: 0.65rem;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-19 {
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (min-width:768px) {
-  .emotion-19 {
     font-size: 0.85rem;
   }
 }
@@ -168,6 +137,10 @@ exports[`PediatricAtropens Should render without error 1`] = `
   min-width: 400px;
 }
 
+.emotion-20 div:last-of-type {
+  border-bottom: none;
+}
+
 .emotion-4 {
   font-weight: bold;
   font-size: 1.15rem;
@@ -189,6 +162,10 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
+.emotion-4 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-4 {
     font-size: 0.95rem;
@@ -204,13 +181,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
 .emotion-0 {
   width: 25%;
   border-right: 1px solid white;
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.emotion-3 {
-  width: 25%;
-  border-right: none;
   padding: 0.5rem;
   text-align: center;
 }
@@ -236,6 +206,10 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.65rem;
 }
 
+.emotion-9 div:last-of-type {
+  border-right: none;
+}
+
 @media only screen and (min-width:640px) {
   .emotion-9 {
     font-size: 0.75rem;
@@ -244,39 +218,6 @@ exports[`PediatricAtropens Should render without error 1`] = `
 
 @media only screen and (min-width:768px) {
   .emotion-9 {
-    font-size: 0.85rem;
-  }
-}
-
-.emotion-19 {
-  font-weight: normal;
-  font-size: initial;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: center;
-  width: 100%;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  border-bottom: none;
-  font-size: 0.65rem;
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-19 {
-    font-size: 0.75rem;
-  }
-}
-
-@media only screen and (min-width:768px) {
-  .emotion-19 {
     font-size: 0.85rem;
   }
 }
@@ -303,7 +244,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
         Moderate
       </div>
       <div
-        class="emotion-3"
+        class="emotion-0"
       >
         Severe
       </div>
@@ -327,7 +268,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
         1 x 1mg Atropen
       </div>
       <div
-        class="emotion-3"
+        class="emotion-0"
       >
         3 x 0.5mg Atropen
       </div>
@@ -351,13 +292,13 @@ exports[`PediatricAtropens Should render without error 1`] = `
         1 x 2mg Atropen
       </div>
       <div
-        class="emotion-3"
+        class="emotion-0"
       >
         3 x 1mg Atropen
       </div>
     </div>
     <div
-      class="emotion-19"
+      class="emotion-9"
     >
       <div
         class="emotion-0"
@@ -375,7 +316,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
         2 x 2mg Atropen
       </div>
       <div
-        class="emotion-3"
+        class="emotion-0"
       >
         3 x 2mg Atropen
       </div>
