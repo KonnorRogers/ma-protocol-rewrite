@@ -2,6 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import InformationBox from "../informationBox"
 
+/**
+ * Caution component
+ */
 const Caution = ({ children, borderColor, text, alignment, ...rest }) => {
   return (
     <InformationBox
