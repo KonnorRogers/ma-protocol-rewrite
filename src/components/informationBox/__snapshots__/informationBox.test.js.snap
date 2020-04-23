@@ -3,12 +3,13 @@
 exports[`Renders without error 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  margin: 0.75rem;
+  margin: 0.75rem auto;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   border: 2px solid red;
   text-align: center;
   font-size: 1rem;
+  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {
@@ -18,12 +19,13 @@ exports[`Renders without error 1`] = `
 }
 
 .emotion-0 {
-  margin: 0.75rem;
+  margin: 0.75rem auto;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   border: 2px solid red;
   text-align: center;
   font-size: 1rem;
+  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {

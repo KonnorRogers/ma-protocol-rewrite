@@ -3,3 +3,59 @@ name: 2.17A - Sepsis
 route: /sections/2/2.17A-sepsis
 menu: "Section 2: Medical Protocols"
 ---
+
+import Note from "../../components/note"
+import EMTLevel from "../../components/emtLevel"
+import MyLink from "../../components/myLink"
+
+<Note id="note-1" alignment="left">
+  <ul>
+    <strong style="display: block; text-align: center; margin-bottom:
+    0.25rem;">
+      IDENTIFICATION OF POSSIBLE SEPTIC SHOCK
+    </strong>
+    <li>Suspected infection – YES</li>
+    <li>Evidence of sepsis criteria-YES (2 or more):</li>
+    <ul>
+      <li>Temperature less than 96.8 ° F or greater than 100.4 ° F</li>
+      <li>Heart Rate greater than 90 bpm</li>
+      <li>Respiratory rate greater than 22 bpm</li>
+      <li>Systolic BP less than 90 mmHg OR Mean Arterial Blood Pressure (MAP) less than 65 mm Hg</li>
+      <li>New onset altered mental status OR increasing mental status change with previously altered mental statu</li>
+      <li>Serum Lactate level greater than 4 mmol/l-(if trained and equipment available)</li>
+      <li>ETCO2 less than or equal to 25 mmHg </li>
+    </ul>
+  </ul>
+</Note>
+
+<EMTLevel level="basic">
+  <ul>
+    <MyLink to="/sections/1/1.0-routine-patient-care">
+      <li>
+        1.0 Routine Patient Care
+      </li>
+    </MyLink>
+    <li>Notify hospital of incoming Sepsis Alert prior to arrival if applicable</li>
+    <li>Supplemental oxygen to achieve SpO2 of 94%</li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="advanced">
+<ul>
+  <li>Full ALS Assessment and treatment</li>
+  <li>Large bore IV access</li>
+  <li>IV 0.9% NaCl enroute: administer 500 ml boluses up to 30cc/kg</li>
+
+  Warning: assess lung sounds frequently to ensure volume overload does not occur
+</ul>
+</EMTLevel>
+
+<EMTLevel level="paramedic" medControl={true}>
+  <li>
+    Norepinephrine infusion by pump 0.1-0.5 mcg/kg/min IV/IO by pump, titrate
+    to goal systolic Blood Pressure of 90mmHg, OR
+  </li>
+  <li>Epinephrine infusion 2-10 mcg/min IV/IO OR</li>
+  <li>Dopamine 2-20 mcg/kg/min IV/IO.</li>
+  <li>Additional Fluid boluses.</li>
+</EMTLevel>

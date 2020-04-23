@@ -25,6 +25,32 @@ exports[`Renders med control without error 1`] = `
   text-decoration: underline;
 }
 
+.emotion-2 {
+  overflow-x: scroll;
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid #ffbc0d;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:450px) {
+  .emotion-2 {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   font-size: 1.2rem;
@@ -48,78 +74,56 @@ exports[`Renders med control without error 1`] = `
   text-decoration: underline;
 }
 
-<h2
-    class="emotion-1"
-    id="advanced-med-control"
+.emotion-2 {
+  overflow-x: scroll;
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid #ffbc0d;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:450px) {
+  .emotion-2 {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
+<div
+    style="margin: auto; max-width: 800px;"
   >
-    <a
-      class="emotion-0"
-      href="#advanced-med-control"
+    <h2
+      class="emotion-1"
+      id="advanced-med-control"
     >
-      EMT-Advanced (Medical Control)
-    </a>
-  </h2>
-  .emotion-0 {
-  overflow-x: scroll;
-  margin: 0.5rem auto 2rem auto;
-  padding: 1.5rem;
-  border: 2px solid #ffbc0d;
-  border-radius: 12px;
-  font-size: 1.15rem;
-}
-
-.emotion-0 ul {
-  padding-left: 1rem;
-  padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:450px) {
-  .emotion-0 {
-    overflow: auto;
-  }
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.25rem;
-  }
-}
-
-.emotion-0 {
-  overflow-x: scroll;
-  margin: 0.5rem auto 2rem auto;
-  padding: 1.5rem;
-  border: 2px solid #ffbc0d;
-  border-radius: 12px;
-  font-size: 1.15rem;
-}
-
-.emotion-0 ul {
-  padding-left: 1rem;
-  padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:450px) {
-  .emotion-0 {
-    overflow: auto;
-  }
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.25rem;
-  }
-}
-
-<section
-    class="advanced emotion-0"
-  >
-    <ul>
-      <li>
-        More Protocols
-      </li>
-    </ul>
-  </section>
+      <a
+        class="emotion-0"
+        href="#advanced-med-control"
+      >
+        EMT-Advanced (Medical Control)
+      </a>
+    </h2>
+    <section
+      class="advanced emotion-2"
+    >
+      <ul>
+        <li>
+          More Protocols
+        </li>
+      </ul>
+    </section>
+  </div>
 </DocumentFragment>
 `;
 
@@ -148,6 +152,32 @@ exports[`Renders without error 1`] = `
   text-decoration: underline;
 }
 
+.emotion-2 {
+  overflow-x: scroll;
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid red;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:450px) {
+  .emotion-2 {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
 .emotion-1 {
   margin: 0;
   font-size: 1.2rem;
@@ -171,77 +201,55 @@ exports[`Renders without error 1`] = `
   text-decoration: underline;
 }
 
-<h2
-    class="emotion-1"
-    id="paramedic"
+.emotion-2 {
+  overflow-x: scroll;
+  margin: 0.5rem auto 2rem auto;
+  padding: 1.5rem;
+  border: 2px solid red;
+  border-radius: 12px;
+  font-size: 1.15rem;
+}
+
+.emotion-2 ul {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+@media only screen and (min-width:450px) {
+  .emotion-2 {
+    overflow: auto;
+  }
+}
+
+@media only screen and (min-width:640px) {
+  .emotion-2 {
+    font-size: 1.25rem;
+  }
+}
+
+<div
+    style="margin: auto; max-width: 800px;"
   >
-    <a
-      class="emotion-0"
-      href="#paramedic"
+    <h2
+      class="emotion-1"
+      id="paramedic"
     >
-      EMT-Paramedic (Standing Orders)
-    </a>
-  </h2>
-  .emotion-0 {
-  overflow-x: scroll;
-  margin: 0.5rem auto 2rem auto;
-  padding: 1.5rem;
-  border: 2px solid red;
-  border-radius: 12px;
-  font-size: 1.15rem;
-}
-
-.emotion-0 ul {
-  padding-left: 1rem;
-  padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:450px) {
-  .emotion-0 {
-    overflow: auto;
-  }
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.25rem;
-  }
-}
-
-.emotion-0 {
-  overflow-x: scroll;
-  margin: 0.5rem auto 2rem auto;
-  padding: 1.5rem;
-  border: 2px solid red;
-  border-radius: 12px;
-  font-size: 1.15rem;
-}
-
-.emotion-0 ul {
-  padding-left: 1rem;
-  padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:450px) {
-  .emotion-0 {
-    overflow: auto;
-  }
-}
-
-@media only screen and (min-width:640px) {
-  .emotion-0 {
-    font-size: 1.25rem;
-  }
-}
-
-<section
-    class="paramedic emotion-0"
-  >
-    <ul>
-      <li>
-        Protocols
-      </li>
-    </ul>
-  </section>
+      <a
+        class="emotion-0"
+        href="#paramedic"
+      >
+        EMT-Paramedic (Standing Orders)
+      </a>
+    </h2>
+    <section
+      class="paramedic emotion-2"
+    >
+      <ul>
+        <li>
+          Protocols
+        </li>
+      </ul>
+    </section>
+  </div>
 </DocumentFragment>
 `;

@@ -6,6 +6,7 @@ menu: "Section 2: Medical Protocols"
 
 import EMTLevel from "../../components/emtLevel"
 import Note from "../../components/note"
+import NoteBox from "../../components/noteBox"
 import MyLink from "../../components/myLink"
 import Screen from "../../utils/screen"
 import { css } from "@emotion/core"
@@ -77,31 +78,6 @@ import { css } from "@emotion/core"
   </ul>
 </EMTLevel>
 
-export const flex = css`
-  text-align: center;
-  box-shadow: none;
-  border: none;
-  position: relative;
-  a {
-    width: 100%;
-  }
-  ${Screen.extraLarge} {
-    margin-top: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    a {
-      width: auto;
-      position: absolute;
-      top: -2rem;
-      &:nth-of-type(1) {
-        left: 5%;
-      }
-      &:nth-of-type(2) {
-        right: 42%;
-      }
-    }
-  }
-`
 
 export const innerBox = css`
   ${Screen.extraLarge} {
@@ -111,8 +87,8 @@ export const innerBox = css`
   }
 `
 
-<Note css={flex}>
-  <Note id="note-1" alignment="left" css={innerBox}>
+<NoteBox>
+  <Note id="note-1" alignment="left">
     Adrenal insufficiency results when the body does not
     produce the essential life-sustaining hormones cortisol
     and aldosterone, which are vital to maintaining blood
@@ -140,7 +116,7 @@ export const innerBox = css`
     illness or trauma and are not given a stress dose and, as
     necessary, supplemental doses of hydrocortisone.
   </Note>
-  <Note id="note-2" alignment="left" css={innerBox}>
+  <Note id="note-2" alignment="left">
     A “stress dose” of hydrocortisone should be given
     to patients with known chronic adrenal insufficiency
     who have the following illnesses/injuries:
@@ -158,4 +134,4 @@ export const innerBox = css`
       <li>Hypoglycemia</li>
     </ul>
   </Note>
-</Note>
+</NoteBox>

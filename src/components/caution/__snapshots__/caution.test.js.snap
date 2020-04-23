@@ -2,21 +2,9 @@
 
 exports[`Renders with different props 1`] = `
 <DocumentFragment>
-  .emotion-0 {
-  color: var(--link-blue);
-  padding: 0.25rem;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  display: inline-block;
-  margin: 1rem 0 -0.25rem 0;
-  padding: 0.25rem 1rem;
-  text-align: left;
-  color: green;
-}
-
-.emotion-0:hover {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
+  .emotion-2 {
+  margin: auto;
+  max-width: 800px;
 }
 
 .emotion-0 {
@@ -25,7 +13,7 @@ exports[`Renders with different props 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   display: inline-block;
-  margin: 1rem 0 -0.25rem 0;
+  margin: 1rem auto -0.25rem auto;
   padding: 0.25rem 1rem;
   text-align: left;
   color: green;
@@ -36,61 +24,94 @@ exports[`Renders with different props 1`] = `
   text-decoration: underline;
 }
 
-<a
-    class="emotion-0"
-    href="#caution-1"
-  >
-    <strong>
-      My caution
-    </strong>
-  </a>
-  .emotion-0 {
-  margin: 0.75rem;
+.emotion-1 {
+  margin: 0.75rem auto;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   border: 2px solid green;
   text-align: left;
   font-size: 1rem;
+  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1.1rem;
   }
 }
 
+.emotion-2 {
+  margin: auto;
+  max-width: 800px;
+}
+
 .emotion-0 {
-  margin: 0.75rem;
+  color: var(--link-blue);
+  padding: 0.25rem;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 1rem auto -0.25rem auto;
+  padding: 0.25rem 1rem;
+  text-align: left;
+  color: green;
+}
+
+.emotion-0:hover {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
+  margin: 0.75rem auto;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   border: 2px solid green;
   text-align: left;
   font-size: 1rem;
+  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {
-  .emotion-0 {
+  .emotion-1 {
     font-size: 1.1rem;
   }
 }
 
 <div
-    class="emotion-0"
-    data-testid="caution"
-    id="caution-1"
-  />
+    class="emotion-2"
+  >
+    <span
+      style="display: inline-block;"
+    >
+      <a
+        class="emotion-0"
+        href="#caution-1"
+      >
+        <strong>
+          My caution
+        </strong>
+      </a>
+    </span>
+    <div
+      class="emotion-1"
+      data-testid="caution"
+      id="caution-1"
+    />
+  </div>
 </DocumentFragment>
 `;
 
 exports[`Renders without error 1`] = `
 <DocumentFragment>
   .emotion-0 {
-  margin: 0.75rem;
+  margin: 0.75rem auto;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   border: 2px solid rgba(218,165,32,1);
   text-align: left;
   font-size: 1rem;
+  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {
@@ -100,12 +121,13 @@ exports[`Renders without error 1`] = `
 }
 
 .emotion-0 {
-  margin: 0.75rem;
+  margin: 0.75rem auto;
   padding: 1.5rem 2rem;
   border-radius: 12px;
   border: 2px solid rgba(218,165,32,1);
   text-align: left;
   font-size: 1rem;
+  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {

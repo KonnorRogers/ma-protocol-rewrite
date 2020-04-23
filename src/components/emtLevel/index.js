@@ -72,7 +72,7 @@ const EMTLevel = ({ children, level, medControl }) => {
   }
 
   return (
-    <>
+    <div style={{ margin: "auto", maxWidth: "800px" }}>
       <h2 id={getLevel()} css={styles.header(level)}>
         <a css={styles.link(level)} href={`#${getLevel()}`}>
           {getLevelText()}
