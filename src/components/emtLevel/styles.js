@@ -27,6 +27,14 @@ export const link = (level) => css`
   }
 `
 
+export const outerBlock = css`
+  padding: inherit 0.25rem 0.5rem 0.25rem;
+
+  ${Screen.small} {
+    padding: inherit 0.5rem 0.75rem 0.5rem;
+  }
+`
+
 export const level = (level) => css`
   overflow-x: scroll;
   margin: 0.5rem auto 2rem auto;
@@ -34,6 +42,10 @@ export const level = (level) => css`
   border: 2px solid ${colors[level]};
   border-radius: 12px;
   font-size: 1.15rem;
+
+  .emt-box {
+    ${outerBlock}
+  }
 
   ul {
     padding-left: 1rem;
@@ -49,14 +61,3 @@ export const level = (level) => css`
   }
 `
 
-export const outerBlock = css`
-  padding-bottom: 0.5rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-
-  ${Screen.small} {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.75rem;
-  }
-`

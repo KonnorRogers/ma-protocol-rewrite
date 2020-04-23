@@ -1,4 +1,4 @@
-import { jsx, css } from "@emotion/core"
+import { css } from "@emotion/core"
 
 function toColor(colormode) {
   return colormode === "dark" ? "white" : "black"

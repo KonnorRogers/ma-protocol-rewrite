@@ -60,20 +60,9 @@ const EMTLevel = ({ children, level, medControl, outside }) => {
     return levelText + standingOrders
   }
 
-  function EmtBox({ outside, children, level }) {
-    if (outside) {
-      return (
-        <section
-          className={level}
-          css={[styles.level(level), styles.outerBlock]}
-        >
-          {children}
-        </section>
-      )
-    }
-
+  function EmtBox({ children, level }) {
     return (
-      <section className={level} css={styles.level(level)}>
+      <section className={`${level} emt-box`} css={styles.level(level)}>
         {children}
       </section>
     )
@@ -86,9 +75,7 @@ const EMTLevel = ({ children, level, medControl, outside }) => {
           {getLevelText()}
         </a>
       </h2>
-      <EmtBox level={level} outside={outside}>
-        {children}
-      </EmtBox>
+      <EmtBox level={level}>{children}</EmtBox>
     </>
   )
 }
