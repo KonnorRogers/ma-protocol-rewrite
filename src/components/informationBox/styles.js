@@ -9,7 +9,7 @@ export const info = ({ alignment = "center", borderColor }) => {
     border: 2px solid ${borderColor};
     text-align: ${alignment};
     font-size: 1rem;
-    max-width: 1000px;
+    max-width: 800px;
 
     ${Screen.small} {
       font-size: 1.1rem;
@@ -22,4 +22,9 @@ export const text = ({ alignment, borderColor }) => css`
   padding: 0.25rem 1rem;
   text-align: ${alignment};
   color: ${borderColor};
+`
+
+export const wrapper = css`
+  margin: auto;
+  max-width: 800px;
 `

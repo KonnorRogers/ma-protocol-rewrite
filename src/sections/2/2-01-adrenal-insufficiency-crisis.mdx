@@ -6,6 +6,7 @@ menu: "Section 2: Medical Protocols"
 
 import EMTLevel from "../../components/emtLevel"
 import Note from "../../components/note"
+import NoteBox from "../../components/noteBox"
 import MyLink from "../../components/myLink"
 import Screen from "../../utils/screen"
 import { css } from "@emotion/core"
@@ -77,38 +78,6 @@ import { css } from "@emotion/core"
   </ul>
 </EMTLevel>
 
-export const flex = css`
-  width: 100%;
-  text-align: center;
-  box-shadow: none;
-  border: none;
-  position: relative;
-  a {
-    width: 100%;
-  }
-  ${Screen.extraLarge} {
-    margin: 0;
-    margin-top: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    a {
-      width: auto;
-      position: absolute;
-      top: -2rem;
-      &:nth-of-type(1) {
-        left: 5%;
-      }
-      &:nth-of-type(2) {
-        right: 42%;
-      }
-    }
-    div {
-      width: 45%;
-      padding: 1rem;
-      margin: 0 auto;
-    }
-  }
-`
 
 export const innerBox = css`
   ${Screen.extraLarge} {
@@ -118,7 +87,7 @@ export const innerBox = css`
   }
 `
 
-<div css={flex}>
+<NoteBox>
   <Note id="note-1" alignment="left">
     Adrenal insufficiency results when the body does not
     produce the essential life-sustaining hormones cortisol
@@ -165,4 +134,4 @@ export const innerBox = css`
       <li>Hypoglycemia</li>
     </ul>
   </Note>
-</div>
+</NoteBox>
