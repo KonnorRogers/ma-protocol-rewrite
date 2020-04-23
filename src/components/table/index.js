@@ -5,6 +5,9 @@ import { useColorMode } from "theme-ui"
 
 const TableContext = React.createContext({ columns: 1 })
 
+/**
+ * A basic table
+ */
 export function Table({ children, columns, minWidth, colormode, ...rest }) {
   let colorMode = useColorMode()[0]
 

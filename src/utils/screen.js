@@ -6,7 +6,7 @@ function mediaSize(size) {
 }
 
 const screens = {
-  extraSmall: mediaSize("450px"),
+  extraSmall: mediaSize("400px"),
   small: mediaSize("640px"),
   medium: mediaSize("768px"),
   large: mediaSize("1024px"),

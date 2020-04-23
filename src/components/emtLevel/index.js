@@ -4,7 +4,10 @@ import PropTypes from "prop-types"
 import { capitalize } from "../../utils/stringUtils"
 import * as styles from "./styles.js"
 
-const EMTLevel = ({ children, level, medControl, outside }) => {
+/**
+ * The EmtLevel of the provider.
+ */
+const EMTLevel = ({ children, level, medControl }) => {
   const standingOrders = " (Standing Orders)"
   const medicalControl = " (Medical Control)"
 

@@ -35,3 +35,17 @@ yarn test # jest
 yarn test:watch # jest --watch
 yarn test:watchAll # jest --watchAll
 ```
+
+## Issues
+
+You may run into an issue with the `sharp` module saying it has not self
+registered.
+
+If this is the case run:
+
+```bash
+docker-compose run --rm web yarn install --force
+docker-compose up
+```
+
+This will force a rebuild of your `node_modules` in docker.
