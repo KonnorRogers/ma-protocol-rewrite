@@ -79,7 +79,7 @@ const EMTLevel = ({ children, level, medControl }) => {
         </a>
       </h2>
       <EmtBox level={level}>{children}</EmtBox>
-    </>
+    </div>
   )
 }
 
