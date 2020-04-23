@@ -7,6 +7,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -102,6 +103,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -298,6 +300,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -393,6 +396,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;

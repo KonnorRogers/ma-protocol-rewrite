@@ -23,6 +23,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -128,6 +129,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin: 1rem auto;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;

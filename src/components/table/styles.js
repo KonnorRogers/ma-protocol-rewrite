@@ -9,6 +9,7 @@ export const table = ({ colorMode, minWidth }) => {
   const color = toColor(colorMode)
   return css`
     display: flex;
+    margin: 1rem auto;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
