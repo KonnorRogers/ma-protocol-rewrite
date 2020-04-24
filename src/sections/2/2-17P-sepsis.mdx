@@ -3,3 +3,125 @@ name: 2.17P - Sepsis
 route: /sections/2/2.17P-sepsis
 menu: "Section 2: Medical Protocols"
 ---
+
+import EMTLevel from "../../components/emtLevel"
+import Note from "../../components/note"
+import MyLink from "../../components/myLink"
+
+<Note id="note-1" alignment="left">
+  <strong style="display: block; text-align: center;">
+    IDENTIFICATION OF POSSIBLE SEPTIC SHOCK
+  </strong>
+  <ul>
+    <li>Suspected infection – YES</li>
+    <li>Evidence of sepsis criteria - YES (2 or more):</li>
+
+      <ul>
+        <li>Temperature less than 96.8° F or greater than 100.4° F</li>
+        <li>
+          Heart Rate greater than normal limit for age (heart rate may not be elevated in septic
+          hypothermic patients) AND at least one of the following indications of altered organ function
+        </li>
+        <li>Altered mental status (decreased, irritable, confused)</li>
+        <li>Capillary refill time &lt; 1 second(flash) or &gt; 3 seconds</li>
+        <li>Mottled cool extremities</li>
+        <li>Decreased urine output</li>
+      </ul>
+  </ul>
+
+  NOTE: Consider early consultation with Medical Control for suspected pediatric septic
+  shock patients.
+</Note>
+
+<EMTLevel level="basic">
+  <ul>
+    <li>
+      <MyLink to="/sections/1/1.0-routine-patient-care">
+        1.0 Routine Patient Care
+      </MyLink>
+    </li>
+    <li>Notify hospital of incoming Sepsis Alert prior to arrival if applicable</li>
+    <li>Monitor and maintain airway and breathing as these may change precipitously</li>
+    <li>Administer oxygen and continue regardless of oxygen saturation levels</li>
+    <li>Obtain blood glucose reading if available</li>
+    <li>Do not delay transport</li>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="advanced">
+  <ul>
+    <li>
+      IV/IO fluids should be titrated to attain normal capillary refill, peripheral
+      pulses, and level of consciousness.
+    </li>
+    <li>
+      Administer fluid boluses of 20 mL/kg of 0.9% NaCl by syringe push method:
+    </li>
+
+    <ul>
+      <li>
+        Reassess patient immediately after completion of bolus and repeat 2
+        times (max 60 mL/kg) if inadequate response to boluses.
+      </li>
+    </ul>
+  </ul>
+
+  <strong>
+    NOTE: Reassessment of patient after boluses should include assessment of
+    improving clinical signs and signs of volume overload (rales, increased work
+    of breathing, or increased oxygen requirements).
+  </strong>
+
+  <br /><br />
+</EMTLevel>
+
+<EMTLevel level="paramedic">
+  <ul>
+    <li>
+      If there is no response after 3 fluid boluses, contact Medical Control to
+      consider:
+    </li>
+    <ul>
+      <li>
+        Additional fluids OR
+      </li>
+      <li>
+        Epinephrine infusion: 0.1 mcg/kg/min IV/IO, titrate to maintain
+        perfusion with a max dose of 1 mcg/kg/min.
+        <br />
+        Recommended administration via infusion pump.
+      </li>
+    </ul>
+  </ul>
+</EMTLevel>
+
+<EMTLevel level="" medControl={true}>
+  
+</EMTLevel>
+
+<Note id="note-2" alignment="left">
+  PEARLS:
+  <ul>
+    <li>
+      To stabilize blood pressure-titrate infusions to maintain perfusion.
+    </li>
+    <li>
+      Blood pressure can be assessed by using this formula: 70+(age in years times 2).
+    </li>
+    <li>
+      Sepsis is a systemic inflammatory response due to infection.
+      Frequent causes of septic shock include urinary, respiratory, or
+      gastrointestinal infections and complications from catheters and
+      feeding tubes.
+    </li>
+    <li>
+      Patient who are immuno-compromised are also susceptible to sepsis.
+    </li>
+    <li>
+      Septic shock has a high mortality and is one of the leading causes of pediatric deaths.
+    </li>
+    <li>
+      Aggressive IV therapy and early antibiotic significantly reduce death.
+    </li>
+  </ul>
+</Note>

@@ -3,3 +3,55 @@ name: 2.18 - Stroke
 route: /sections/2/2.18-stroke
 menu: "Section 2: Medical Protocols"
 ---
+
+import Caution from "../../components/caution"
+import EMTLevel from "../../components/emtLevel"
+import myLink from "../../components/myLink"
+
+<Caution id="caution-1">
+  Say “Stroke Alert” in Hospital Entry Note if patient meets the Stroke Criteria,
+  even if symptoms have resolved.
+</Caution>
+
+<EMTLevel level="basic">
+  <EMTLevel level="advanced">
+    <EMTLevel level="paramedic">
+      <ul>
+        <li>
+          <MyLink to="/sections/1/1.0-routine-patient-care">
+            1.0 Routine Patient Care
+          </MyLink>
+        </li>
+        <li>Perform FAST-ED Stroke Scale.</li>
+        <li>Clearly determine last time known well.</li>
+        <li>
+          If the patient wakes from sleep or is found with symptoms of stroke, the time
+          is defined as the last time the patient was observed to be normal. Notify the
+          emergency department as soon as possible.
+        </li>
+        <li>
+          If any one of the signs of the stroke scale is abnormal and onset of
+          symptoms are less than 5 hours, notify receiving hospital of a “Stroke Alert”.
+        </li>
+        <li>
+          Elevate the head of the stretcher 30 degrees.
+        </li>
+        <li>
+          Do not delay transport for ALS intercept.
+        </li>
+        <li>
+          Consider transporting a witness, family member, or caregiver with the patient
+          to verify the time of the onset of stroke symptoms.
+        </li>
+        <li>
+          If the onset of signs and symptoms PLUS transport time is &lt; 5 hours,
+          consider transport to the most appropriate facility in accordance with local
+          guidelines/agreements.
+        </li>
+        <li>
+          Transport to a Department approved Stroke Point-of-Entry (POE) hospital.
+        </li>
+      </ul>
+    </EMTLevel>
+  </EMTLevel>
+</EMTLevel>

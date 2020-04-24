@@ -50,6 +50,9 @@ export const level = (level) => css`
 
   ${Screen.small} {
     font-size: 1.25rem;
+  }
+
+  ${Screen.large} {
     padding: 0.75rem 1.5rem 0 1.5rem;
   }
 `
