@@ -13,6 +13,7 @@ const Note = ({ children, id, text, borderColor, ...rest }) => {
 Note.defaultProps = {
   borderColor: `#6666ff`,
   text: "Note:",
+  alignment: "left",
 }
 
 Note.propTypes = {
