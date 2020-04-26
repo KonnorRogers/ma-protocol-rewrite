@@ -15,6 +15,7 @@ export const table = ({ colorMode, minWidth }) => {
     align-items: flex-start;
     border: 1px solid ${color};
     min-width: ${minWidth};
+    overflow: hidden;
 
     div:last-of-type {
       border-bottom: none;

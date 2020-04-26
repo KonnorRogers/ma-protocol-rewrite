@@ -187,9 +187,9 @@ export function PediatricBasicShockTable(_props) {
 }
 
 export function PediatricAdvancedShockTable(_props) {
-  function DistributiveShock(_props) {
+  function DistributiveShock({ ...rest }) {
     return (
-      <TableItem>
+      <TableItem {...rest}>
         Obtain vascular access. Therapeutic endpoints to fluid resuscitation (in
         order of importance) are:
         <li>Capillary refill,</li>
@@ -205,8 +205,8 @@ export function PediatricAdvancedShockTable(_props) {
     )
   }
 
-  function HypovolemicShock(_props) {
-    return <DistributiveShock />
+  function HypovolemicShock({ ...rest }) {
+    return <DistributiveShock {...rest} />
   }
   return (
     <BaseTable>
