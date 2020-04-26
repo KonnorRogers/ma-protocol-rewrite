@@ -15,6 +15,6 @@ COPY ./yarn.lock .
 # The port gatsby runs on
 EXPOSE 8000
 
-RUN yarn install && yarn cache clean
+RUN yarn install --force && yarn cache clean
 COPY . .
 CMD ["gatsby", "develop", "-H", "0.0.0.0" ]
