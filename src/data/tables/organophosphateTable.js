@@ -2,7 +2,7 @@ import { Table, TableItem, TableCell, TableRow } from "../../components/table"
 
 export default function OrganophosphateTable(_props) {
   return (
-    <Table columns={3}>
+    <Table>
       <TableRow heading={true}>
         <TableItem>Severity</TableItem>
         <TableItem>Signs & Symptoms</TableItem>

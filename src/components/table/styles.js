@@ -43,12 +43,11 @@ export const row = ({ heading, colorMode }) => {
   `
 }
 
-export const item = ({ colspan, tableColumns, align, colorMode }) => {
-  const columnWidth = (100 / tableColumns) * colspan
+export const item = ({ colspan, align, colorMode }) => {
   const color = toColor(colorMode)
 
   return css`
-    width: ${columnWidth}%;
+    flex: ${colspan};
     border-right: 1px solid ${color};
     padding: 0.5rem;
     text-align: ${align};

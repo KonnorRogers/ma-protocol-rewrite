@@ -14,7 +14,7 @@ const keys = {
 
 function BaseTable({ children }) {
   return (
-    <Table columns={4}>
+    <Table>
       <TableRow key={keys.heading} heading={true} css={styles.headings}>
         <TableItem key={keys.cardiogenic}>Cardiogenic Shock</TableItem>
         <TableItem key={keys.distributive}>Distributive Shock</TableItem>

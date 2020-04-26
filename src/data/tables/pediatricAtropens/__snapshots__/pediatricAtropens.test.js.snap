@@ -75,7 +75,9 @@ exports[`PediatricAtropens Should render without error 1`] = `
 }
 
 .emotion-0 {
-  width: 25%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-right: 1px solid white;
   padding: 0.5rem;
   text-align: center;
@@ -181,7 +183,9 @@ exports[`PediatricAtropens Should render without error 1`] = `
 }
 
 .emotion-0 {
-  width: 25%;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-right: 1px solid white;
   padding: 0.5rem;
   text-align: center;

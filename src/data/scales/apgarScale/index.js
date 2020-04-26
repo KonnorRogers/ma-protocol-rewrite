@@ -12,7 +12,7 @@ import * as styles from "./styles"
 
 function Items(_props) {
   const headerValues = Object.values(headers)
-  return headerValues.map((header) => {
+  return headerValues.map(header => {
     return <TableItem key={header}>{header}</TableItem>
   })
 }
@@ -42,8 +42,8 @@ function Data(_props) {
   const rows = Object.keys(data.features)
 
   // return rows.map((key) => {
-  return rows.map((key) => {
-    const Items = (_props) => {
+  return rows.map(key => {
+    const Items = _props => {
       return objects.map((item, index) => {
         let string = capitalize(data[item][key])
 
@@ -64,12 +64,9 @@ function Data(_props) {
       })
     }
 
-    const check = <Items />
-    console.log(check)
-
     return (
       <TableRow key={key} colormode="light">
-        {Items()}
+        <Items />
       </TableRow>
     )
   })
@@ -81,7 +78,7 @@ function ApgarScale(_props) {
       <h3 id="apgar-scale" style={{ textAlign: "center", marginTop: "1.5rem" }}>
         <a href="#apgar-scale">APGAR Scale</a>
       </h3>
-      <Table columns={4}>
+      <Table>
         <HeaderRow />
         <Data />
       </Table>

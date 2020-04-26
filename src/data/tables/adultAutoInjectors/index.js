@@ -7,7 +7,7 @@ function TableHeader(_props) {
   const objects = Object.entries(headers)
 
   function Items(_props) {
-    return objects.map((ary) => {
+    return objects.map(ary => {
       const [key, value] = ary
 
       return <TableItem key={key.toString()}>{value}</TableItem>
@@ -22,7 +22,7 @@ function TableHeader(_props) {
 }
 
 function TableData(_props) {
-  return data.map((obj) => {
+  return data.map(obj => {
     const { age, weight, autoinjectors, atropine, pralidoxime } = obj
 
     return (
@@ -54,7 +54,7 @@ function AdultAutoInjectors(_props) {
         Use only if Pediatric Atropen or when Atropine/Pralidoxime vials are not
         available
       </p>
-      <Table columns={5}>
+      <Table>
         <TableHeader />
         <TableData />
       </Table>

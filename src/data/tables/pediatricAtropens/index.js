@@ -7,7 +7,7 @@ import { capitalize } from "../../../utils/stringUtils"
 function TableHeader(_props) {
   function Items(_props) {
     const keys = Object.keys(data[0])
-    const columns = keys.map((key) => {
+    const columns = keys.map(key => {
       return <TableItem key={key}>{capitalize(key.toString())}</TableItem>
     })
 
@@ -22,7 +22,7 @@ function TableHeader(_props) {
 }
 
 function TableData(_props) {
-  return data.map((obj) => {
+  return data.map(obj => {
     return (
       <TableRow key={obj.weight.toString()} css={styles.row}>
         <TableItem>{obj.weight}</TableItem>
@@ -43,7 +43,7 @@ function PediatricAtropens(_props) {
       >
         <a href="#pediatric-atropens">Pediatric Atropens</a>
       </h3>
-      <Table columns={4}>
+      <Table>
         <TableHeader />
         <TableData />
       </Table>

@@ -54,7 +54,7 @@ function Row({ object, ...rest }) {
 }
 
 function Rows() {
-  const rows = data.map((object) => {
+  const rows = data.map(object => {
     return <Row object={object} key={object.kg.toString()} />
   })
 
@@ -72,7 +72,7 @@ export default function PediatricNerveAgent({ ...rest }) {
           Pediatric Dosing for Nerve Agent Exposures
         </a>
       </h3>
-      <Table columns={5} {...rest}>
+      <Table {...rest}>
         <Header />
         <Rows />
       </Table>
