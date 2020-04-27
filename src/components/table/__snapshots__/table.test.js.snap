@@ -3,11 +3,12 @@
 exports[`Table components Should properly render a table with darkMode 1`] = `
 <DocumentFragment>
   .emotion-16 {
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem auto;
+  margin: 1rem;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -20,7 +21,10 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid white;
-  min-width: 400px;
+  min-width: 500px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .emotion-16 div:last-of-type {
@@ -45,19 +49,33 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid white;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-4 div:last-of-type {
   border-right: none;
 }
 
+.emotion-4 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
+}
+
 .emotion-0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid white;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-9 {
@@ -78,10 +96,22 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid white;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-9 div:last-of-type {
   border-right: none;
+}
+
+.emotion-9 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
 }
 
 .emotion-10 {
@@ -101,11 +131,12 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
 }
 
 .emotion-16 {
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem auto;
+  margin: 1rem;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -118,7 +149,10 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid white;
-  min-width: 400px;
+  min-width: 500px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .emotion-16 div:last-of-type {
@@ -143,19 +177,33 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid white;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-4 div:last-of-type {
   border-right: none;
 }
 
+.emotion-4 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
+}
+
 .emotion-0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid white;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-9 {
@@ -176,10 +224,22 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid white;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-9 div:last-of-type {
   border-right: none;
+}
+
+.emotion-9 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
 }
 
 .emotion-10 {
@@ -300,11 +360,12 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
 }
 
 .emotion-16 {
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem auto;
+  margin: 1rem;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -317,7 +378,10 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid black;
-  min-width: 400px;
+  min-width: 500px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .emotion-16 div:last-of-type {
@@ -342,19 +406,33 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid black;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-4 div:last-of-type {
   border-right: none;
 }
 
+.emotion-4 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
+}
+
 .emotion-0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid black;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-9 {
@@ -375,10 +453,22 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid black;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-9 div:last-of-type {
   border-right: none;
+}
+
+.emotion-9 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
 }
 
 .emotion-10 {
@@ -398,11 +488,12 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
 }
 
 .emotion-16 {
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem auto;
+  margin: 1rem;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -415,7 +506,10 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid black;
-  min-width: 400px;
+  min-width: 500px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .emotion-16 div:last-of-type {
@@ -440,19 +534,33 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid black;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-4 div:last-of-type {
   border-right: none;
 }
 
+.emotion-4 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
+}
+
 .emotion-0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid black;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-9 {
@@ -473,10 +581,22 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid black;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-9 div:last-of-type {
   border-right: none;
+}
+
+.emotion-9 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
 }
 
 <div

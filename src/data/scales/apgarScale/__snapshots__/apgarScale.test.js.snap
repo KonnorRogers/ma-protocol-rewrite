@@ -13,11 +13,12 @@ exports[`ApgarScale() Should render without error 1`] = `
     </a>
   </h3>
   .emotion-50 {
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem auto;
+  margin: 1rem;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -30,7 +31,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid white;
-  min-width: 400px;
+  min-width: 500px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .emotion-50 div:last-of-type {
@@ -55,11 +59,23 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid white;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   font-size: 0.75rem;
 }
 
 .emotion-4 div:last-of-type {
   border-right: none;
+}
+
+.emotion-4 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
 }
 
 @media only screen and (min-width:640px) {
@@ -75,12 +91,14 @@ exports[`ApgarScale() Should render without error 1`] = `
 }
 
 .emotion-0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid white;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-13 {
@@ -101,19 +119,33 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid black;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-13 div:last-of-type {
   border-right: none;
 }
 
+.emotion-13 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
+}
+
 .emotion-6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid black;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-5 {
@@ -133,11 +165,12 @@ exports[`ApgarScale() Should render without error 1`] = `
 }
 
 .emotion-50 {
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 1rem auto;
+  margin: 1rem;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -150,7 +183,10 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid white;
-  min-width: 400px;
+  min-width: 500px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .emotion-50 div:last-of-type {
@@ -175,11 +211,23 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid white;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   font-size: 0.75rem;
 }
 
 .emotion-4 div:last-of-type {
   border-right: none;
+}
+
+.emotion-4 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
 }
 
 @media only screen and (min-width:640px) {
@@ -195,12 +243,14 @@ exports[`ApgarScale() Should render without error 1`] = `
 }
 
 .emotion-0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid white;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-13 {
@@ -221,19 +271,33 @@ exports[`ApgarScale() Should render without error 1`] = `
   -ms-flex-align: stretch;
   align-items: stretch;
   border-bottom: 1px solid black;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .emotion-13 div:last-of-type {
   border-right: none;
 }
 
+.emotion-13 div:last-of-type:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -2rem;
+  width: 2rem;
+  height: 1px;
+}
+
 .emotion-6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  min-width: 0px;
+  -webkit-flex: 1 0 0;
+  -ms-flex: 1 0 0;
+  flex: 1 0 0;
   border-right: 1px solid black;
   padding: 0.5rem;
   text-align: center;
+  position: relative;
 }
 
 .emotion-5 {

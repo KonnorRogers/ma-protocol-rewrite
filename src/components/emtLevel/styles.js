@@ -8,7 +8,7 @@ const colors = {
   paramedic: "red",
 }
 
-export const header = (level) => css`
+export const header = level => css`
   margin: 0;
   font-size: 1.2rem;
   color: ${colors[level]};
@@ -18,7 +18,7 @@ export const header = (level) => css`
   }
 `
 
-export const link = (level) => css`
+export const link = level => css`
   color: ${colors[level]};
   text-decoration: none;
 
@@ -27,8 +27,8 @@ export const link = (level) => css`
   }
 `
 
-export const level = (level) => css`
-  overflow-x: scroll;
+export const level = level => css`
+  overflow-x: auto;
   margin: 0.5rem auto 1rem auto;
   border: 2px solid ${colors[level]};
   border-radius: 12px;
@@ -42,10 +42,6 @@ export const level = (level) => css`
   ul {
     padding-left: 1rem;
     padding-right: 0.5rem;
-  }
-
-  ${Screen.extraSmall} {
-    overflow: auto;
   }
 
   ${Screen.small} {

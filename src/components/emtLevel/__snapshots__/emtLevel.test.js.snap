@@ -26,7 +26,7 @@ exports[`Renders med control without error 1`] = `
 }
 
 .emotion-2 {
-  overflow-x: scroll;
+  overflow-x: auto;
   margin: 0.5rem auto 1rem auto;
   border: 2px solid #ffbc0d;
   border-radius: 12px;
@@ -41,12 +41,6 @@ exports[`Renders med control without error 1`] = `
 .emotion-2 ul {
   padding-left: 1rem;
   padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-2 {
-    overflow: auto;
-  }
 }
 
 @media only screen and (min-width:640px) {
@@ -85,7 +79,7 @@ exports[`Renders med control without error 1`] = `
 }
 
 .emotion-2 {
-  overflow-x: scroll;
+  overflow-x: auto;
   margin: 0.5rem auto 1rem auto;
   border: 2px solid #ffbc0d;
   border-radius: 12px;
@@ -100,12 +94,6 @@ exports[`Renders med control without error 1`] = `
 .emotion-2 ul {
   padding-left: 1rem;
   padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-2 {
-    overflow: auto;
-  }
 }
 
 @media only screen and (min-width:640px) {
@@ -173,7 +161,7 @@ exports[`Renders without error 1`] = `
 }
 
 .emotion-2 {
-  overflow-x: scroll;
+  overflow-x: auto;
   margin: 0.5rem auto 1rem auto;
   border: 2px solid red;
   border-radius: 12px;
@@ -188,12 +176,6 @@ exports[`Renders without error 1`] = `
 .emotion-2 ul {
   padding-left: 1rem;
   padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-2 {
-    overflow: auto;
-  }
 }
 
 @media only screen and (min-width:640px) {
@@ -232,7 +214,7 @@ exports[`Renders without error 1`] = `
 }
 
 .emotion-2 {
-  overflow-x: scroll;
+  overflow-x: auto;
   margin: 0.5rem auto 1rem auto;
   border: 2px solid red;
   border-radius: 12px;
@@ -247,12 +229,6 @@ exports[`Renders without error 1`] = `
 .emotion-2 ul {
   padding-left: 1rem;
   padding-right: 0.5rem;
-}
-
-@media only screen and (min-width:400px) {
-  .emotion-2 {
-    overflow: auto;
-  }
 }
 
 @media only screen and (min-width:640px) {
