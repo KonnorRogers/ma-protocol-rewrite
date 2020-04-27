@@ -1,5 +1,12 @@
-function PatientInformation() {}
-function StrokeAlertCriteria() {}
-function FastStrokeScale() {}
-function StrokeHistory() {}
-function AcuteStrokeSymptoms() {}
+import * as React from "react"
+import StrokeNote from "./strokeNote"
+import PatientInformation from "./patientInformation"
+
+export default function StrokeCard({ ...rest }) {
+  return (
+    <>
+      <StrokeNote />
+      <PatientInformation />
+    </>
+  )
+}

@@ -2,6 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import InformationBox from "../informationBox"
 
+/**
+ * Basic note
+ */
 const Note = ({ children, id, text, borderColor, ...rest }) => {
   return (
     <InformationBox id={id} text={text} borderColor={borderColor} {...rest}>
