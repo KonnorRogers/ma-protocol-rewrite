@@ -5,8 +5,9 @@ import Note from "../../../components/note"
 const flexBox = css`
   display: flex;
   justify-content: space-between;
+  margin: 0.5rem 0;
   div:last-of-type {
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
 `
 
