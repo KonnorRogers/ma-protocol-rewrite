@@ -2,67 +2,42 @@ import * as React from "react"
 import Screen from "../../../utils/screen"
 import { css } from "@emotion/core"
 import { useColorMode } from "theme-ui"
+import * as styles from "./styles"
 
 export default function StrokeAlertCriteria(_props) {
   return (
-    <div style={{ width: "100%" }}>
+    <div css={styles.border} style={{ paddingTop: "3rem", width: "100%" }}>
       <div>
         <CriteriaHeading />
-      </div>
-      <div>
         <CriteriaData />
       </div>
+      <div></div>
     </div>
   )
 }
 
 function CriteriaHeading(_props) {
   return (
-    <>
-      <div style={{ textAlign: "center" }}>
-        <strong>STROKE ALERT! Criteria:</strong>
-      </div>
-    </>
+    <div style={{ textAlign: "center" }}>
+      <strong>STROKE ALERT! Criteria:</strong>
+    </div>
   )
 }
 
-const flexBox = css`
-  display: flex;
-  flex-direction column;
-  margin: 1rem;
-  justify-content: center;
-  font-size: 0.75rem;
-  
-  ${Screen.small} {
-    font-size: 1rem;
-  }
-
-
-  div {
-    justify-content: space-between;
-    display: flex;
-    margin: 0.5rem 0;
-    align-items: center;
-  }
-
-  p {
-    width: 50%;
-  }
-`
-
 function CriteriaData(_props) {
+  const colorMode = useColorMode()[0]
   return (
-    <div css={flexBox}>
-      <div>
-        <p>Time last known well (TLKW) &lt;5hours? </p>
-        <ThreeSquares />
-      </div>
-      <div style={{ margin: "auto 0" }}>
-        <p>Any abnormal finding not attributable to head trauma?</p>
+    <div css={styles.criteriaBox(colorMode)}>
+      <div css={styles.addHeaders}>
+        <span>Time last known well (TLKW) &lt;5hours? </span>
         <ThreeSquares />
       </div>
       <div>
-        <p>Blood Glucose &gt;60?</p>
+        <span>Any abnormal finding not attributable to head trauma?</span>
+        <ThreeSquares />
+      </div>
+      <div>
+        <span>Blood Glucose &gt;60?</span>
         <ThreeSquares />
       </div>
     </div>
@@ -82,9 +57,9 @@ function ThreeSquares(_props) {
 const squareCss = color => css`
   height: 1.25rem;
   width: 1.25rem;
-  border: 2px solid black;
   flex: 0 0 1.25rem;
-  border: 2px solid ${color};
+  border: 1.25px solid ${color};
+  position: relative;
 
   ${Screen.small} {
     height: 2rem;
