@@ -18,7 +18,7 @@ export const addHeaders = css`
     position: absolute;
     top: -2rem;
 
-    ${Screen.small} {
+    ${Screen.extraSmall} {
       font-size: 1rem;
     }
   }

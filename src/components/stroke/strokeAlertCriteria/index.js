@@ -62,9 +62,9 @@ const squareCss = color => css`
   position: relative;
 
   ${Screen.small} {
-    height: 2rem;
-    width: 2rem;
-    flex-basis: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    flex-basis: 1.5rem;
   }
 `
 
