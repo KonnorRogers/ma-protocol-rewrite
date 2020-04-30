@@ -1,5 +1,6 @@
 import Screen from "../../../utils/screen"
 import { css } from "@emotion/core"
+import Screen from "../../../utils/screen"
 import * as colors from "../colors"
 
 export const wrapper = css`
@@ -15,9 +16,14 @@ const nth = num => {
 
 export const addHeaders = css`
   & > div:after {
+    font-size: 0.65rem;
     content: "Hi";
     position: absolute;
     top: -2rem;
+
+    ${Screen.small} {
+      font-size: 1rem;
+    }
   }
 
   ${nth(1)} {
@@ -96,4 +102,23 @@ export const entryBox = css`
   height: 2rem;
   max-width: 10rem;
   margin: auto;
+
+  & > div {
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0;
+    padding: 0.5rem 0;
+    align-items: center;
+    border: 1px solid ${colors.peach};
+    margin-top: -1px;
+    margin-bottom: -1px;
+  }
+
+  span {
+    width: 50%;
+  }
+
+  ${Screen.small} {
+    font-size: 1rem;
+  }
 `
