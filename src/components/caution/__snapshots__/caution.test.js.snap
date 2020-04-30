@@ -4,7 +4,6 @@ exports[`Renders with different props 1`] = `
 <DocumentFragment>
   .emotion-2 {
   margin: auto;
-  max-width: 800px;
 }
 
 .emotion-0 {
@@ -31,7 +30,6 @@ exports[`Renders with different props 1`] = `
   border: 2px solid green;
   text-align: left;
   font-size: 1rem;
-  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {
@@ -42,7 +40,6 @@ exports[`Renders with different props 1`] = `
 
 .emotion-2 {
   margin: auto;
-  max-width: 800px;
 }
 
 .emotion-0 {
@@ -69,7 +66,6 @@ exports[`Renders with different props 1`] = `
   border: 2px solid green;
   text-align: left;
   font-size: 1rem;
-  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {
@@ -111,7 +107,6 @@ exports[`Renders without error 1`] = `
   border: 2px solid rgba(218,165,32,1);
   text-align: left;
   font-size: 1rem;
-  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {
@@ -127,7 +122,6 @@ exports[`Renders without error 1`] = `
   border: 2px solid rgba(218,165,32,1);
   text-align: left;
   font-size: 1rem;
-  max-width: 800px;
 }
 
 @media only screen and (min-width:640px) {

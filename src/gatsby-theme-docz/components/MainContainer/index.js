@@ -4,10 +4,15 @@ import Title from "../../../components/title"
 
 export const MainContainer = ({ children, ...rest }) => {
   return (
-    <OriginalMainContainer {...rest} style={{ maxWidth: "1100px" }}>
+    <OriginalMainContainer {...rest} style={{ maxWidth: "1200px" }}>
       <PageNav data-testid="top-page-nav" />
-      <Title data-testid="page-title" />
-      {children}
+      <section
+        style={{ maxWidth: "800px", margin: "auto" }}
+        data-testid="main-items"
+      >
+        <Title data-testid="page-title" />
+        {children}
+      </section>
       <PageNav data-testid="bottom-page-nav" />
     </OriginalMainContainer>
   )

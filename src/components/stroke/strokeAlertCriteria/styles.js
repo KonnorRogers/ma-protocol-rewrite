@@ -1,6 +1,5 @@
 import Screen from "../../../utils/screen"
 import { css } from "@emotion/core"
-import Screen from "../../../utils/screen"
 import * as colors from "../colors"
 
 export const wrapper = css`
@@ -56,7 +55,6 @@ export const criteriaBox = css`
     align-items: center;
     border: 1px solid ${colors.peach};
     margin-top: -1px;
-    margin-bottom: -1px;
   }
 
   span {

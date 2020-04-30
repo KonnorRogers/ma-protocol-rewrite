@@ -4,7 +4,7 @@ import * as styles from "./styles"
 
 export default function StrokeAlertCriteria(_props) {
   return (
-    <div css={styles.wrapper} style={{ paddingTop: "3rem", width: "100%" }}>
+    <div css={styles.wrapper}>
       <div>
         <CriteriaHeading />
         <CriteriaData />
