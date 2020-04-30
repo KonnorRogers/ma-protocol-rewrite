@@ -25,9 +25,8 @@ function CriteriaHeading(_props) {
 }
 
 function CriteriaData(_props) {
-  const colorMode = useColorMode()[0]
   return (
-    <div css={styles.criteriaBox(colorMode)}>
+    <div css={styles.criteriaBox}>
       <div css={styles.addHeaders}>
         <span>Time last known well (TLKW) &lt;5hours? </span>
         <ThreeSquares />
