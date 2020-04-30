@@ -12,9 +12,8 @@ const nth = num => {
 }
 
 export const addHeaders = css`
-  font-size: 0.65rem;
-
   & > div:after {
+    font-size: 0.65rem;
     content: "Hi";
     position: absolute;
     top: -2rem;
