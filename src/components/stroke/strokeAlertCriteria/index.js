@@ -1,14 +1,15 @@
 import * as React from "react"
 import { useColorMode } from "theme-ui"
+import { Table, TableItem, TableCell, TableRow } from "../../table"
 import * as styles from "./styles"
 
 export default function StrokeAlertCriteria(_props) {
   return (
     <div css={styles.wrapper}>
-      <div>
+      <Table>
         <CriteriaHeading />
         <CriteriaData />
-      </div>
+      </Table>
       <div css={styles.additionalVitals}>
         <TimeLastKnownWell />
         <BloodGlucoseLevel />
@@ -19,28 +20,42 @@ export default function StrokeAlertCriteria(_props) {
 
 function CriteriaHeading(_props) {
   return (
-    <div style={{ textAlign: "center" }}>
-      <strong>STROKE ALERT! Criteria:</strong>
-    </div>
+    <TableRow>
+      <TableItem style={{ textAlign: "center" }}>
+        <strong>STROKE ALERT! Criteria:</strong>
+      </TableItem>
+    </TableRow>
   )
 }
 
 function CriteriaData(_props) {
+  const colorMode = useColorMode()[0]
   return (
-    <div css={styles.criteriaBox}>
-      <div css={styles.addHeaders}>
-        <span>Time last known well (TLKW) &lt;5hours? </span>
+    <>
+      <TableRow>
+        <TableItem></TableItem>
+        <TableItem>Yes</TableItem>
+        <TableItem>No</TableItem>
+        <TableItem>Unknown</TableItem>
+      </TableRow>
+
+      <TableRow>
+        <TableItem>Time last known well (TLKW) &lt;5hours?</TableItem>
         <ThreeSquares />
-      </div>
-      <div>
-        <span>Any abnormal finding not attributable to head trauma?</span>
+      </TableRow>
+
+      <TableRow>
+        <TableItem>
+          Any abnormal finding not attributable to head trauma?
+        </TableItem>
         <ThreeSquares />
-      </div>
-      <div>
-        <span>Blood Glucose &gt;60?</span>
+      </TableRow>
+
+      <TableRow>
+        <TableItem>Blood Glucose &gt;60?</TableItem>
         <ThreeSquares />
-      </div>
-    </div>
+      </TableRow>
+    </>
   )
 }
 
@@ -57,7 +72,13 @@ function ThreeSquares(_props) {
 function Square() {
   const colorMode = useColorMode()[0]
   const color = colorMode === "dark" ? "white" : "black"
-  return <div css={styles.square(color)}></div>
+  return (
+    <TableItem>
+      <TableCell>
+        <div css={styles.square(color)}></div>
+      </TableCell>
+    </TableItem>
+  )
 }
 
 function TimeLastKnownWell() {

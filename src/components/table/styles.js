@@ -18,7 +18,7 @@ export const table = ({ colorMode, minWidth }) => {
     min-width: ${minWidth};
     flex: 1 1 auto;
 
-    div:last-of-type {
+    & > div:last-of-type {
       border-bottom: none;
     }
   `
@@ -40,7 +40,7 @@ export const row = ({ heading, colorMode }) => {
     border-bottom: 1px solid ${color};
     flex: 1 0 0;
 
-    div:last-of-type {
+    & > div:last-of-type {
       border-right: none;
     }
 

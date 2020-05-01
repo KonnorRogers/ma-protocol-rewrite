@@ -9,60 +9,63 @@ export const wrapper = css`
   width: 100%;
 `
 
-const nth = num => {
-  return `& > div:nth-of-type(${num}):after`
-}
+export const criteriaBox = colorMode => {
+  let backgroundColor
 
-export const addHeaders = css`
-  & > div:after {
-    font-size: 0.65rem;
-    content: "Hi";
-    position: absolute;
-    top: -2rem;
+  if (colorMode === "dark") {
+    backgroundColor = "#111111"
+  } else {
+    backgroundColor = "ghostwhite"
+  }
+
+  return css`
+    display: flex;
+    flex-direction column;
+    justify-content: center;
+    margin: 1rem;
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+
+    & > div {
+      justify-content: space-evenly;
+      display: flex;
+      margin: 0;
+      padding: 0.5rem 0;
+      align-items: center;
+      border: 2px solid ${colors.peach};
+      margin-top: -2px;
+    }
+
+    & > div:nth-of-type(even) {
+      background: ${backgroundColor};
+    }
+
+    span {
+      width: 50%;
+    }
 
     ${Screen.small} {
       font-size: 1rem;
     }
-  }
+  `
+}
 
-  ${nth(1)} {
-    content: "Yes";
-  }
-
-  ${nth(2)} {
-    content: "No";
-  }
-
-  ${nth(3)} {
-    margin-left: -0.75rem;
-    content: "Unknown";
-  }
-`
-
-export const criteriaBox = css`
-  display: flex;
-  flex-direction column;
-  justify-content: center;
-  margin: 1rem;
-  padding-top: 1.5rem;
-  font-size: 0.75rem;
-
-  & > div {
-    justify-content: space-evenly;
-    display: flex;
-    margin: 0;
-    padding: 0.5rem 0;
-    align-items: center;
-    border: 1px solid ${colors.peach};
-    margin-top: -1px;
-  }
-
+export const headings = css`
   span {
     width: 50%;
+    flex: 1 0 75%;
+    border: 1px solid black;
   }
+  div {
+    margin: 0 1.25rem;
+    width: 1.25rem;
+    flex: 0 0 1.25rem;
 
-  ${Screen.small} {
-    font-size: 1rem;
+    ${Screen.small} {
+      margin: 0 1.5rem;
+      width: 1.5rem;
+      flex-basis: 1.5rem;
+    }
   }
 `
 
