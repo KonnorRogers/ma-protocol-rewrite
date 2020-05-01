@@ -29,7 +29,6 @@ function CriteriaHeading(_props) {
 }
 
 function CriteriaData(_props) {
-  const colorMode = useColorMode()[0]
   return (
     <>
       <TableRow>

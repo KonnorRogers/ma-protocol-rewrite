@@ -44,6 +44,7 @@ export const row = ({ heading, colorMode }) => {
       border-right: none;
     }
 
+    // Provides a margin for small screens
     div:last-of-type:after {
       content: "";
       display: block;
