@@ -6,7 +6,7 @@ import * as styles from "./styles"
 export default function StrokeAlertCriteria(_props) {
   return (
     <div css={styles.wrapper}>
-      <Table>
+      <Table css={styles.table}>
         <CriteriaHeading />
         <CriteriaData />
       </Table>
@@ -21,7 +21,7 @@ export default function StrokeAlertCriteria(_props) {
 function CriteriaHeading(_props) {
   return (
     <TableRow>
-      <TableItem style={{ textAlign: "center" }}>
+      <TableItem className="header" css={styles.heading}>
         <strong>STROKE ALERT! Criteria:</strong>
       </TableItem>
     </TableRow>
@@ -72,9 +72,9 @@ function Square() {
   const colorMode = useColorMode()[0]
   const color = colorMode === "dark" ? "white" : "black"
   return (
-    <TableItem>
+    <TableItem css={styles.square(color)}>
       <TableCell>
-        <div css={styles.square(color)}></div>
+        <div className="square"></div>
       </TableCell>
     </TableItem>
   )
