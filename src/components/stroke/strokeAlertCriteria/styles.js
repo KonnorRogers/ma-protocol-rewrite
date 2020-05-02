@@ -79,23 +79,13 @@ export const entryBox = css`
   height: 2rem;
   max-width: 10rem;
   margin: auto;
-
-  & > div {
-    justify-content: space-evenly;
-    display: flex;
-    margin: 0;
-    padding: 0.5rem 0;
-    align-items: center;
-    border: 2px solid ${colors.peach};
-    margin-top: -1px;
-    margin-bottom: -1px;
-  }
-
-  span {
-    width: 50%;
-  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0.5rem;
+  font-size: 0.75rem;
 
   ${Screen.small} {
-    font-size: 1rem;
+    font-size: 0.85rem;
   }
 `

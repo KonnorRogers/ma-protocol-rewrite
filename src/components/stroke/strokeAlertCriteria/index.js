@@ -93,7 +93,7 @@ function BloodGlucoseLevel() {
   return (
     <div>
       <div>Blood Glucose Level:</div>
-      <div css={styles.entryBox}></div>
+      <div css={styles.entryBox}>mg/dL</div>
     </div>
   )
 }
