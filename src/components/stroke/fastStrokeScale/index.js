@@ -1,33 +1,20 @@
 import * as React from "react"
-import { useColorMode } from "theme-ui"
-import { css } from "@emotion/core"
-import { Table, TableRow, TableItem } from "../../table"
+import { useThemeUI } from "theme-ui"
+import { Table, TableRow, TableItem, TableCell } from "../../table"
 import data from "./data"
-
-const tableCss = colorMode => {
-  let color = "#000000"
-  // let font = ''
-
-  if (colorMode === "dark") {
-    color = "#555555"
-  }
-
-  return css`
-    .item-heading {
-      background-color: ${color};
-    }
-  `
-}
+import * as styles from "./styles"
 
 export default function FastStrokeScale() {
-  const colorMode = useColorMode()[0]
+  const { theme } = useThemeUI()
   return (
-    <Table css={tableCss(colorMode)} style={{ minWidth: "200px" }}>
+    <Table css={styles.tableCss(theme)} style={{ minWidth: "200px" }}>
       <TableRow>
-        <TableItem> Fast ED Stroke Scale </TableItem>
+        <TableItem style={{ fontSize: "1.2rem" }}>
+          Fast ED Stroke Scale
+        </TableItem>
       </TableRow>
-      <TableRow>
-        <TableItem colspan={4}> Item </TableItem>
+      <TableRow style={{ fontSize: "1.1rem" }}>
+        <TableItem colspan={4}>Item</TableItem>
         <TableItem> Score </TableItem>
       </TableRow>
 
@@ -39,12 +26,15 @@ export default function FastStrokeScale() {
 function TableData() {
   return data.map(obj => {
     return (
-      <>
+      <React.Fragment key={obj.heading}>
         <TableRow>
-          <TableItem className="item-heading">{obj.heading}</TableItem>
+          <TableItem colspan={4} className="item-heading">
+            {obj.heading}
+          </TableItem>
+          <TableItem className="item-heading" />
         </TableRow>
         {itemsMap(obj)}
-      </>
+      </React.Fragment>
     )
   })
 }
@@ -52,11 +42,13 @@ function TableData() {
 function itemsMap(obj) {
   return obj.items.map((item, index) => {
     return (
-      <TableRow>
-        <TableItem key={item} colspan={4}>
+      <TableRow key={obj.heading + " " + item}>
+        <TableItem className="data-item" colspan={4}>
           {item}
         </TableItem>
-        <TableItem key={item}>{index}</TableItem>
+        <TableItem>
+          <TableCell>{index}</TableCell>
+        </TableItem>
       </TableRow>
     )
   })

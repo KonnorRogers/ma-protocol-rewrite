@@ -21,7 +21,7 @@ export default function StrokeAlertCriteria(_props) {
 function CriteriaHeading(_props) {
   return (
     <TableRow>
-      <TableItem className="header" css={styles.heading}>
+      <TableItem className="header">
         <strong>STROKE ALERT! Criteria:</strong>
       </TableItem>
     </TableRow>
