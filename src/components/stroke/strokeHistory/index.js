@@ -1,6 +1,7 @@
+/** @jsx jsx */
 import * as React from "react"
 import data from "./data"
-import { Box, Flex } from "theme-ui"
+import { jsx, Box, Flex, useThemeUI } from "theme-ui"
 
 export default function StrokeHistory() {
   return (
@@ -11,29 +12,67 @@ export default function StrokeHistory() {
   )
 }
 
+function CheckBox() {
+  const { theme } = useThemeUI()
+
+  let color = theme.colors.text
+  return (
+    <Box
+      sx={{
+        flex: "0 0 1rem",
+        margin: "0 1rem",
+        height: "1rem",
+        width: "1rem",
+        border: `1px solid ${color}`,
+      }}
+    />
+  )
+}
+
+function CheckListWrapper({ children }) {
+  return (
+    <Flex sx={{ flexDirection: "column", margin: "1rem" }}>{children}</Flex>
+  )
+}
+
+function CheckList({ children }) {
+  return <Flex sx={{ alignItems: "center" }}>{children}</Flex>
+}
+
 function Medications() {
   const { medications } = data
-  const medMap = medications.map(medication => (
-    <Box key={medication}>{medication}</Box>
-  ))
+  const medMap = medications.map((medication) => {
+    return (
+      <CheckList key={medication}>
+        <CheckBox />
+        <Box>{medication}</Box>
+      </CheckList>
+    )
+  })
   return (
-    <Flex>
+    <CheckListWrapper>
       <Box>Medications</Box>
       <Box>{medMap}</Box>
-    </Flex>
+    </CheckListWrapper>
   )
 }
 
 function Conditions() {
   const { conditions } = data
 
-  const conditionMap = conditions.map(condition => (
-    <Box key={condition}>{condition}</Box>
-  ))
+  const conditionMap = conditions.map((condition) => {
+    return (
+      <CheckList key={condition}>
+        <CheckBox />
+        <Box>{condition}</Box>
+      </CheckList>
+    )
+  })
+
   return (
-    <Flex sx={{ flex: "1 1 auto" }}>
-      <Box>Medications</Box>
+    <CheckListWrapper>
+      <Box>Conditions</Box>
       <Box>{conditionMap}</Box>
-    </Flex>
+    </CheckListWrapper>
   )
 }
