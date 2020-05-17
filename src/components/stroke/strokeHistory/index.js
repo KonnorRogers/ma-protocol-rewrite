@@ -1,21 +1,29 @@
 /** @jsx jsx */
 import * as React from "react"
 import data from "./data"
-import { jsx, Box } from "theme-ui"
+import { jsx, Box, Flex, useThemeUI } from "theme-ui"
 import CheckList from "../../checkList"
 import * as colors from "../colors"
 
 export default function StrokeHistory() {
   return (
-    <Box sx={{ border: `2px solid ${colors.peach}`, borderRadius: "8px" }}>
+    <Flex
+      sx={{
+        marginTop: "1rem",
+        flexDirection: ["column", "row"],
+        border: `2px solid ${colors.peach}`,
+        borderRadius: "8px",
+      }}
+    >
       <Medications />
       <Conditions />
-    </Box>
+    </Flex>
   )
 }
 
 function Medications() {
   const { medications } = data
+
   const medMap = medications.map(medication => {
     return (
       <CheckList.List key={medication}>
@@ -26,7 +34,7 @@ function Medications() {
   })
   return (
     <CheckList.Wrapper>
-      <Box>Medications</Box>
+      <CheckList.UnderlinedBox>Medications</CheckList.UnderlinedBox>
       <Box>{medMap}</Box>
     </CheckList.Wrapper>
   )
@@ -46,7 +54,7 @@ function Conditions() {
 
   return (
     <CheckList.Wrapper>
-      <Box>Conditions</Box>
+      <CheckList.UnderlinedBox>Conditions</CheckList.UnderlinedBox>
       <Box>{conditionMap}</Box>
     </CheckList.Wrapper>
   )

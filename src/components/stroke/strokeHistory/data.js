@@ -1,17 +1,17 @@
 const conditions = [
-  "Head Trauma/Seizures",
+  "Head Trauma / Seizures",
   "Cardiac Arrhythmias",
-  "Recent/current bleeding, trauma, surgery or invasive procedure",
+  "Recent / current bleeding, trauma, surgery or invasive procedure",
   "Bleeding disorder",
   "Pregnancy",
 ]
 
 const medications = [
-  "Coumadin/warfarin",
-  "Pradaxa/dabigatran",
-  "Xaralto/rivaroxaban",
-  "Eliquis/apixaban",
-  "aspirin",
+  "Coumadin / Warfarin",
+  "Pradaxa / Dabigatran",
+  "Xaralto / Rivaroxaban",
+  "Eliquis / Apixaban",
+  "Aspirin",
 ]
 
 const data = { conditions, medications }

@@ -1,5 +1,5 @@
 // https://css-tricks.com/converting-color-spaces-in-javascript/#article-header-id-2
-function hexToRGB(h) {
+export default function hexToRGB(h, a = 1) {
   let r = 0,
     g = 0,
     b = 0
@@ -17,5 +17,5 @@ function hexToRGB(h) {
     b = "0x" + h[5] + h[6]
   }
 
-  return "rgb(" + +r + "," + +g + "," + +b + ")"
+  return "rgb(" + +r + "," + +g + "," + +b + +a + ")"
 }

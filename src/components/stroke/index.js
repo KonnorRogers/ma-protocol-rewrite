@@ -4,16 +4,18 @@ import PatientInformation from "./patientInformation"
 import StrokeAlertCriteria from "./strokeAlertCriteria"
 import FastStrokeScale from "./fastStrokeScale"
 import StrokeHistory from "./strokeHistory"
+import { jsx, Flex } from "theme-ui"
 
 export default function Stroke(_props) {
   return (
     <>
-      <StrokeHistory />
+      <StrokeNote />
+      <PatientInformation />
+      <StrokeAlertCriteria />
+      <Flex sx={{ flexDirection: ["column", "column", "row"] }}>
+        <FastStrokeScale />
+        <StrokeHistory />
+      </Flex>
     </>
   )
 }
-
-// <StrokeNote />
-// <PatientInformation />
-// <StrokeAlertCriteria />
-// <FastStrokeScale />

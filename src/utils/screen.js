@@ -5,12 +5,20 @@ function mediaSize(size) {
   return mediaQuery.concat(size).concat(")")
 }
 
+export const breakpoints = {
+  extraSmall: "400px",
+  small: "640px",
+  medium: "768px",
+  large: "1024px",
+  extraLarge: "1280px",
+}
+
 const screens = {
-  extraSmall: mediaSize("400px"),
-  small: mediaSize("640px"),
-  medium: mediaSize("768px"),
-  large: mediaSize("1024px"),
-  extraLarge: mediaSize("1280px"),
+  extraSmall: mediaSize(breakpoints.extraSmall),
+  small: mediaSize(breakpoints.small),
+  medium: mediaSize(breakpoints.medium),
+  large: mediaSize(breakpoints.large),
+  extraLarge: mediaSize(breakpoints.extraLarge),
 }
 
 export default (function Screen() {

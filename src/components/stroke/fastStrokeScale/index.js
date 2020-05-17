@@ -1,5 +1,6 @@
 import * as React from "react"
 import { useThemeUI } from "theme-ui"
+import * as docz from "docz"
 import { Table, TableRow, TableItem, TableCell } from "../../table"
 import data from "./data"
 import * as styles from "./styles"

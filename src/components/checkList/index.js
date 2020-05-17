@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, useThemeUI } from "theme-ui"
+import hexToRGB from "../../utils/hexToRGB"
 
 export function CheckBox({ children, ...rest }) {
   const { theme } = useThemeUI()
 
   let color = theme.colors.text
-  console.log(color)
+
+  const boxShadowColor = hexToRGB(color, "0.7")
 
   return (
     <Box
@@ -16,7 +18,7 @@ export function CheckBox({ children, ...rest }) {
         height: "1rem",
         width: "1rem",
         border: `1px solid ${color}`,
-        boxShadow: `2px 2px 1px rgba(${color}, 0.7)`,
+        boxShadow: `1px 1px 1px ${boxShadowColor}`,
       }}
       {...rest}
     >
@@ -27,7 +29,10 @@ export function CheckBox({ children, ...rest }) {
 
 export function Wrapper({ children, ...rest }) {
   return (
-    <Flex sx={{ flexDirection: "column", margin: "1rem" }} {...rest}>
+    <Flex
+      sx={{ width: ["100%", "45%"], flexDirection: "column", margin: "1rem" }}
+      {...rest}
+    >
       {children}
     </Flex>
   )
@@ -37,10 +42,29 @@ export function List({ children, ...rest }) {
   return <Flex {...rest}>{children}</Flex>
 }
 
+export function UnderlinedBox({ children, ...rest }) {
+  const { theme } = useThemeUI()
+
+  let color = theme.colors.text
+  return (
+    <Box
+      sx={{
+        borderBottom: `1px solid ${color}`,
+        width: "fit-content",
+        marginBottom: "0.75rem",
+      }}
+      {...rest}
+    >
+      {children}
+    </Box>
+  )
+}
+
 const CheckList = {
   List: List,
   Wrapper: Wrapper,
   CheckBox: CheckBox,
+  UnderlinedBox: UnderlinedBox,
 }
 
 export default CheckList
