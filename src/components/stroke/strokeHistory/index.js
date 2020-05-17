@@ -11,6 +11,7 @@ export default function StrokeHistory() {
       sx={{
         marginTop: "1rem",
         flexDirection: ["column", "row"],
+        height: "fit-content",
         border: `2px solid ${colors.peach}`,
         borderRadius: "8px",
       }}

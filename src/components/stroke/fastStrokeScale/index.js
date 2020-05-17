@@ -1,5 +1,6 @@
+/** @jsx jsx */
 import * as React from "react"
-import { useThemeUI } from "theme-ui"
+import { jsx, useThemeUI } from "theme-ui"
 import * as docz from "docz"
 import { Table, TableRow, TableItem, TableCell } from "../../table"
 import data from "./data"
@@ -8,13 +9,17 @@ import * as styles from "./styles"
 export default function FastStrokeScale() {
   const { theme } = useThemeUI()
   return (
-    <Table css={styles.tableCss(theme)} style={{ minWidth: "200px" }}>
+    <Table
+      css={styles.tableCss(theme)}
+      sx={{ marginRight: [null, null, "3rem"] }}
+      style={{ minWidth: "200px" }}
+    >
       <TableRow>
         <TableItem style={{ fontSize: "1.2rem" }}>
           Fast ED Stroke Scale
         </TableItem>
       </TableRow>
-      <TableRow style={{ fontSize: "1.1rem" }}>
+      <TableRow sx={{ fontSize: ["0.75rem", "0.85rem"] }}>
         <TableItem colspan={4}>Item</TableItem>
         <TableItem> Score </TableItem>
       </TableRow>
