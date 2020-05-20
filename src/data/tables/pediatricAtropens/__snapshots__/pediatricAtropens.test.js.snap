@@ -37,7 +37,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-20 div:last-of-type {
+.emotion-20 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -65,7 +65,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -125,7 +125,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.65rem;
 }
 
-.emotion-9 div:last-of-type {
+.emotion-9 > div:last-of-type {
   border-right: none;
 }
 
@@ -175,7 +175,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-20 div:last-of-type {
+.emotion-20 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -203,7 +203,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -263,7 +263,7 @@ exports[`PediatricAtropens Should render without error 1`] = `
   font-size: 0.65rem;
 }
 
-.emotion-9 div:last-of-type {
+.emotion-9 > div:last-of-type {
   border-right: none;
 }
 

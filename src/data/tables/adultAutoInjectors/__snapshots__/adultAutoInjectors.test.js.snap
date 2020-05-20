@@ -43,7 +43,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-24 div:last-of-type {
+.emotion-24 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -71,7 +71,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   font-size: 0.7rem;
 }
 
-.emotion-5 div:last-of-type {
+.emotion-5 > div:last-of-type {
   border-right: none;
 }
 
@@ -131,7 +131,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   font-size: 0.65rem;
 }
 
-.emotion-11 div:last-of-type {
+.emotion-11 > div:last-of-type {
   border-right: none;
 }
 
@@ -181,7 +181,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-24 div:last-of-type {
+.emotion-24 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -209,7 +209,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   font-size: 0.7rem;
 }
 
-.emotion-5 div:last-of-type {
+.emotion-5 > div:last-of-type {
   border-right: none;
 }
 
@@ -269,7 +269,7 @@ exports[`AdultAutoInjector Renders without error 1`] = `
   font-size: 0.65rem;
 }
 
-.emotion-11 div:last-of-type {
+.emotion-11 > div:last-of-type {
   border-right: none;
 }
 

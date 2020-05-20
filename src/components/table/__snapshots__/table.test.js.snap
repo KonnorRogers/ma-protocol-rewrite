@@ -27,7 +27,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-16 div:last-of-type {
+.emotion-16 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -54,7 +54,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -101,7 +101,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-9 div:last-of-type {
+.emotion-9 > div:last-of-type {
   border-right: none;
 }
 
@@ -155,7 +155,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-16 div:last-of-type {
+.emotion-16 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -182,7 +182,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -229,7 +229,7 @@ exports[`Table components Should properly render a table with darkMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-9 div:last-of-type {
+.emotion-9 > div:last-of-type {
   border-right: none;
 }
 
@@ -384,7 +384,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-16 div:last-of-type {
+.emotion-16 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -411,7 +411,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -458,7 +458,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-9 div:last-of-type {
+.emotion-9 > div:last-of-type {
   border-right: none;
 }
 
@@ -512,7 +512,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-16 div:last-of-type {
+.emotion-16 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -539,7 +539,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -586,7 +586,7 @@ exports[`Table components Should properly render a table with lightMode 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-9 div:last-of-type {
+.emotion-9 > div:last-of-type {
   border-right: none;
 }
 

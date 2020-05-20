@@ -37,7 +37,7 @@ exports[`ApgarScale() Should render without error 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-50 div:last-of-type {
+.emotion-50 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -65,7 +65,7 @@ exports[`ApgarScale() Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -124,7 +124,7 @@ exports[`ApgarScale() Should render without error 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-13 div:last-of-type {
+.emotion-13 > div:last-of-type {
   border-right: none;
 }
 
@@ -189,7 +189,7 @@ exports[`ApgarScale() Should render without error 1`] = `
   flex: 1 1 auto;
 }
 
-.emotion-50 div:last-of-type {
+.emotion-50 > div:last-of-type {
   border-bottom: none;
 }
 
@@ -217,7 +217,7 @@ exports[`ApgarScale() Should render without error 1`] = `
   font-size: 0.75rem;
 }
 
-.emotion-4 div:last-of-type {
+.emotion-4 > div:last-of-type {
   border-right: none;
 }
 
@@ -276,7 +276,7 @@ exports[`ApgarScale() Should render without error 1`] = `
   flex: 1 0 0;
 }
 
-.emotion-13 div:last-of-type {
+.emotion-13 > div:last-of-type {
   border-right: none;
 }
 
